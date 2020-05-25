@@ -38,15 +38,17 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       >
         <div style={{ width: '100%', maxWidth: '600px' }}>
           <div style={{ margin: '100px 0px 50px 0px' }}>
-            <h1
-              style={{
-                margin: '10px 0px 10px 0px',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              {title}
-            </h1>
+            {title && (
+              <h1
+                style={{
+                  margin: '10px 0px 10px 0px',
+                  padding: 0,
+                  border: 'none',
+                }}
+              >
+                {title}
+              </h1>
+            )}
             {subtitle && (
               <h2
                 style={{

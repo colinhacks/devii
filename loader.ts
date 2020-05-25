@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 import glob from 'glob';
 export type PostData = {
   path: string;
-  title: string;
+  title?: string;
   subtitle?: string;
   content: string;
   date?: number;

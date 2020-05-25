@@ -3,18 +3,6 @@ import Head from 'next/head';
 import { PostData, loadPosts } from '../loader';
 import { PostCard } from '../components/PostCard';
 
-/*
-
-This is the home page!
-
-It also demonstrates how to render a custom Markdown block within another page
-
-- add the .md file under `/md`
-- load its contents in `getStaticProps` using `loadMarkdownFile`
-- render the content using the <Markdown source={} /> component
-
-*/
-
 const Home = (props: { post: string; posts: PostData[] }) => {
   return (
     <div style={{ width: '100%', padding: '0px 10vw' }}>
