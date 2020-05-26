@@ -1,29 +1,38 @@
 # Devii 😎
 
-A blog starter for the modern developer
+A dev blog starter for 2020. Check out the blog post describing the motivation + design of this project at [https://vriad.com/blog/devii](https://vriad.com/blog/devii)
 
 Next.js + React + TypeScript + Markdown + syntax highlighting = 🔥🔥🔥
 
+### Powered by Next.js
+
+Devii is powered by Next.js. We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website.
+
+Check out the Next.js documentation [here](https://nextjs.org/docs) to make sure it's the right choice for your project.
+
 ## Get started
 
-To get started, clone the repo and start the development server:
+To get started, clone the repo and install the dependencies.
 
 ```
 git clone git@github.com:vriad/devii.git my-blog
 cd my-blog
 yarn
-yarn dev
 ```
 
-The default project only contains two pages: a home page (`http://localhost:3000`) and a sample blog post (`http://localhost:3000/blog/test`).
+Then start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
-To add a new blog post, just add a new Markdown file under `/md/blog`.
+## Project structure
 
-## Powered by Next.js
+The default repo only contains two pages: a home page (`/pages/index.tsx`) and one sample blog post (`/md/blog/test.md`).
 
-Devii is powered by Next.js. We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website.
+## The home page
 
-Check out the Next.js documentation [here](https://nextjs.org/docs) to make sure it's the right choice for your project.
+The home page is intentionally minimal. You can put whatever you want in `index.tsx`; one of our goals in designing Devii was to place no restrictions on the developer. Use your imagination! Your website is the online manifestion of you. You can use whatever npm packages or styling libraries you like.
+
+## Adding a new blog post
+
+Create a new Markdown file called `foo.md` within the `/md/blog` directory. Add in some basic Markdown content. Then go to `http://localhost:3000/blog/foo`. You should see the new post.
 
 ## Frontmatter support
 
@@ -45,15 +54,6 @@ type PostData = {
   thumbnailPhoto?: string;
 };
 ```
-
-## TypeScript + React
-
-Devii is entirely built with TypeScript and functional React components. Implementing any sort of interactive widget is often hard with Markdown-centric static-site generators, but Devii makes it easy to mix Markdown and React on the same page.
-
-You can either:
-
-- Drop a string of Markdown content into the `<Markdown source={'# Markdown!'}/>` component
-- Load the content from the file system by passing a file path into `loadMarkdownFile`. `loadMarkdownFile` looks for a file at the provided path \_within the `/md` directory. So `loadMarkdownFile('about.md')` will look for a Markdown file at `/md/about.md`.
 
 ## Medium-inspired design
 
