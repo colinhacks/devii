@@ -9,8 +9,9 @@ Next.js + React + TypeScript + Markdown + syntax highlighting = 🔥🔥🔥
 To get started, clone the repo and start the development server:
 
 ```
-git clone git@github.com:vriad/devii.git
-cd devii
+git clone git@github.com:vriad/devii.git my-blog
+cd my-blog
+yarn
 yarn dev
 ```
 
@@ -67,7 +68,7 @@ Works out-of-the-box for all programming languages. Specify your language with a
   <pre>
   ```ts
   // pretty neat huh?
-  const test: (arg: string) => boolean = (arg) => {
+  const test = (arg: string) => {
     return arg.length > 5;
   };
   ```</pre>
@@ -76,7 +77,7 @@ turns into
 
 ```ts
 // pretty neat huh?
-const test: (arg: string) => boolean = (arg) => {
+const test = (arg: string) => {
   return arg.length > 5;
 };
 ```

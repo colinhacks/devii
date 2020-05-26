@@ -1,7 +1,31 @@
 {
-  "name": "colin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "devii",
+  "version": "0.0.1",
+  "description": "A dev blog starter for the modern developer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vriad/devii"
+  },
+  "author": "Colin McDonnell <colin@vriad.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vriad/devii/issues"
+  },
+  "homepage": "https://github.com/vriad/devii",
+  "tags": [
+    "blog template",
+    "react",
+    "nextjs",
+    "syntax highlighting",
+    "static generation"
+  ],
+  "keywords": [
+    "blog template",
+    "react",
+    "nextjs",
+    "syntax highlighting",
+    "static generation"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

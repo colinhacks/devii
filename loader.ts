@@ -17,16 +17,10 @@ type RawFile = { path: string; contents: string };
 
 export const loadMarkdownFile = async (path: string): Promise<RawFile> => {
   const mdFile = await import(`./md/${path}`);
-  console.log('loadmarkdownfile');
-  console.log(mdFile);
-  console.log(mdFile.default);
   return { path, contents: mdFile.default };
 };
 
 export const mdToPost = (file: RawFile): PostData => {
-  console.log('MDTOPOST');
-  console.log(file);
-  console.log(file.contents);
   const metadata = matter(file.contents);
 
   const post = {
@@ -54,7 +48,6 @@ export const loadMarkdownFiles = async (path: string) => {
     blogPaths.map((blogPath) => {
       const modPath = blogPath.slice(blogPath.indexOf(`md/`) + 3);
       return loadMarkdownFile(`${modPath}`);
-      // return {path:modPath,content:loaded}
     })
   );
   return postDataList;

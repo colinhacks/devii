@@ -17,7 +17,7 @@ const Home = (props: { post: string; posts: PostData[] }) => {
         }}
       >
         <h1 style={{ textAlign: 'center' }}>Welcome to my blog!</h1>
-        <h2>My posts</h2>
+
         <div
           style={{
             display: 'grid',
@@ -38,6 +38,21 @@ export default Home;
 
 export const getStaticProps = async () => {
   const posts = await loadPosts();
-  const props = { posts };
+  const props = {
+    posts: [
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+      { ...posts[0] },
+    ],
+  };
   return { props };
 };
