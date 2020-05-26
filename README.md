@@ -1,14 +1,12 @@
 # Devii 😎
 
-A dev blog starter for 2020. Check out the blog post describing the motivation + design of this project at [https://vriad.com/blog/devii](https://vriad.com/blog/devii)
+A dev blog starter for 2020. Get started quickly with Next.js + React + TypeScript + Markdown + syntax highlighting.
 
-Next.js + React + TypeScript + Markdown + syntax highlighting = 🔥🔥🔥
+Check out the blog post describing the motivation + design of this project at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
 ### Powered by Next.js
 
-Devii is powered by Next.js. We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website.
-
-Check out the Next.js documentation [here](https://nextjs.org/docs) to make sure it's the right choice for your project.
+The core of this repo is [Next.js](https://https://nextjs.org). We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website. Check out the documentation [here](https://nextjs.org/docs) to make sure it's the right choice for your project.
 
 ## Get started
 
