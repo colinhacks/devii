@@ -10,6 +10,9 @@ if you're happy and you know it, star this repo ⭐
 created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a> 👋
 </p>
 
+<br/>
+<br/>
+<br/>
 A dev blog starter for 2020. Get started quickly with Next.js + React + TypeScript + Markdown + syntax highlighting.
 
 Check out the blog post describing the motivation + design of this project at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
