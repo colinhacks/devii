@@ -1,4 +1,15 @@
-# Devii 😎
+<p align="center">
+  <img src="logo.svg" width="200px" align="center" />
+  <h1 align="center">Devii 😎</h1>
+</p>
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/vriad/devii" alt="License"></a>
+</p>
+<p align="center">
+if you're happy and you know it, star this repo ⭐
+<br/>
+created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a> 👋
+</p>
 
 A dev blog starter for 2020. Get started quickly with Next.js + React + TypeScript + Markdown + syntax highlighting.
 
