@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="logo.svg" width="200px" align="center" />
   <h1 align="center">Devii 😎</h1>
 </p>
 <p align="center">
