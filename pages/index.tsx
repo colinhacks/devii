@@ -39,20 +39,7 @@ export default Home;
 export const getStaticProps = async () => {
   const posts = await loadPosts();
   const props = {
-    posts: [
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-      { ...posts[0] },
-    ],
+    posts,
   };
   return { props };
 };
