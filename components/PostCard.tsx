@@ -31,7 +31,7 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
         {post.thumbnailPhoto && (
           <div
             style={{
-              background: `url(${post.thumbnailPhoto}) no-repeat center center;`,
+              background: `url(${post.thumbnailPhoto}) no-repeat center center`,
               backgroundSize: 'cover',
               width: '100%',
               flex: 1,
