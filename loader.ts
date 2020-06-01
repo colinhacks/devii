@@ -5,7 +5,7 @@ export type PostData = {
   title?: string;
   subtitle?: string;
   content: string;
-  date?: number;
+  datePublished?: number;
   author?: string;
   authorPhoto?: string;
   tags?: string[];
@@ -27,7 +27,7 @@ export const mdToPost = (file: RawFile): PostData => {
     path: file.path.replace('.md', ''),
     title: metadata.data.title || null,
     subtitle: metadata.data.subtitle || null,
-    date: metadata.data.date || null,
+    datePublished: metadata.data.datePublished || null,
     tags: metadata.data.tags || null,
     author: metadata.data.author || null,
     authorPhoto: metadata.data.authorPhoto || null,
@@ -58,6 +58,6 @@ export const loadPost = async (path: string): Promise<PostData> => {
   return mdToPost(file);
 };
 
-export const loadPosts = async (): Promise<PostData[]> => {
+export const loadBlogPosts = async (): Promise<PostData[]> => {
   return await (await loadMarkdownFiles(`blog/*.md`)).map(mdToPost);
 };

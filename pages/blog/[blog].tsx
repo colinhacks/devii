@@ -22,7 +22,6 @@ export const getStaticPaths = () => {
 };
 
 export const getStaticProps = async ({ params }: any) => {
-  // const mdFile = await import(`../../md/blog/${params.blog}.md`);
   const post = await loadPost(`blog/${params.blog}.md`);
   return { props: { post } };
 };

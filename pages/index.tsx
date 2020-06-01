@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { PostData, loadPosts } from '../loader';
+import { PostData, loadBlogPosts } from '../loader';
 import { PostCard } from '../components/PostCard';
 
 const Home = (props: { post: string; posts: PostData[] }) => {
@@ -20,13 +20,17 @@ const Home = (props: { post: string; posts: PostData[] }) => {
 
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: `repeat(auto-fit, minmax(300px,1fr));`,
-            gridRowGap: '8px',
-            gridColumnGap: '8px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
           {props.posts.map((post, j) => {
+            return (
+              <a href={post.path} target="_blank">
+                {post.title}
+              </a>
+            );
             return <PostCard post={post} key={j} />;
           })}
         </div>
@@ -37,9 +41,6 @@ const Home = (props: { post: string; posts: PostData[] }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const posts = await loadPosts();
-  const props = {
-    posts,
-  };
-  return { props };
+  const posts = await loadBlogPosts();
+  return { props: { posts } };
 };

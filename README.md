@@ -13,13 +13,15 @@ created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a> 👋
 <br/>
 <br/>
 <br/>
-A dev blog starter for 2020. Get started quickly with Next.js + React + TypeScript + Markdown + syntax highlighting.
 
-Check out the blog post describing the motivation + design of this project at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
+A dev blog starter for 2020.
 
-### Powered by Next.js
+- Works as a Markdown static-site generator out of the box
+- Supports static exporting and hot reload (powered by Next.js)
+- Makes it easy to write custom pages/code in React + TypeScript
+- Out of the box support for code blocks with syntax highlighting
 
-The core of this repo is [Next.js](https://https://nextjs.org). We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website. Check out the documentation [here](https://nextjs.org/docs) to make sure it's the right choice for your project.
+Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
 ## Get started
 
@@ -33,23 +35,88 @@ yarn
 
 Then start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
+## Powered by Next.js
+
+The core of this repo is [Next.js](https://https://nextjs.org). We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website. The documentation is excellent; read it first: [Next.js Documentation](https://nextjs.org/docs).
+
+The important con
+
 ## Project structure
 
-The default repo only contains two pages: a home page (`/pages/index.tsx`) and one sample blog post (`/md/blog/test.md`).
+Here's is an abbreviated version of the project structure. Certain config files (`next.config.js`, `next-end.d.ts`, `.gitignore`) have been removed for simplicity.
+
+```
+.
+├── README.md
+├── public // all static assets (images, css, etc) go here
+├── pages // every .tsx component in this dir becomes a page of the final site
+|   ├── index.tsx // the home page (which has access to the list of all blog posts)
+|   ├── blog
+|       ├── [blog].md // a template component that renders the blog posts under `/md/blog`
+├── md
+|   ├── blog
+|       ├── devii.md // this page!
+        ├── whatever.md // every MD file in this directory becomes a blog post
+├── components
+|   ├── Code.tsx
+|   ├── Markdown.tsx
+|   ├── Header.tsx
+|   ├── Header.tsx
+|   ├── <various>
+├── loader.ts // contains utility functions for loading/parsing Markdown
+├── node_modules
+├── tsconfig.json
+├── package.json
+```
+
+Next.js generates a new webpage for each file in the `pages` directory. If you want to add an About page to your blog, just add `about.tsx` inside `pages` and start writing the page.
+
+By default the repo only contains two pages: a home page (`/pages/index.tsx`) and a blog page (`/pages/[blog].md`).
+
+The file `[blog].ts` follows the Next.js convention of using square brackets to indicate a [dynamic route](https://nextjs.org/docs/routing/dynamic-routes).
 
 ## The home page
 
 The home page is intentionally minimal. You can put whatever you want in `index.tsx`; one of our goals in designing Devii was to place no restrictions on the developer. Use your imagination! Your website is the online manifestion of you. You can use whatever npm packages or styling libraries you like.
 
+## Styling
+
+Devii is unopinionated about styling. Because your Devii site is a standard React app under the hood, you can use your favorite library from `npm` to do styling.
+
+Devii provides certain styles by default, notably in the Markdown renderer (`/components/Markdown.tsx`). Those styles are implemented using Next's built-in styling solution `styled-jsx`. Unfortunately it was necessary to make those styles global, since `styled-jsx` [doesn't play nice](https://github.com/vercel/styled-jsx/issues/573) with third-party components (in this case `react-markdown`).
+
+Feel free to re-implemement the built-in styles with your library of choice If you choose to use a separate styling library ([emotion](https://emotion.sh/) is pretty glorious) then you could re-implement the default styles
+
 ## Adding a new blog post
 
-Create a new Markdown file called `foo.md` within the `/md/blog` directory. Add in some basic Markdown content. Then go to `http://localhost:3000/blog/foo`. You should see the new post.
+Just add a Markdown file under `md/blog/` to create a new blog post.
+
+Breakdown:
+
+1. Create a new Markdown file called `foo.md` within the `/md/blog` directory
+2. Add in some basic Markdown content
+3. Then go to `http://localhost:3000/blog/foo`. You should see the new post.
 
 ## Frontmatter support
 
-Every Markdown file can include a "frontmatter block" containing metadata: `title`, `subtitle`, `tags`, `date` (timestamp), `author`, `authorPhoto`, `bannerPhoto`, and `thumbnailPhoto`.
+Every Markdown file can include a "frontmatter block" containing various metadata. This is the frontmatter blog from the sample blog post (`md/blog/test.md`):
 
-You can dynamically load and parse a Markdown file using `loadMarkdownFile`, a utility function implemented in `loader.ts`. It is an async function that returns a `PostData` TypeScript object containing all the metadata keys listed above:
+```
+---
+title: Introducing Devii
+subtitle: Bringing the power of React, TypeScript, and static generation to dev blogs everywhere
+datePublished: 1589064522569
+author: Ben Bitdiddle
+tags:
+  - Devii
+  - Blogs
+authorPhoto: /profile.jpg
+bannerPhoto: /brook.jpg
+thumbnailPhoto: /brook.jpg
+---
+```
+
+This metadata will be loaded and parsed into a TypeScript object with the following type.
 
 ```ts
 type PostData = {
@@ -57,7 +124,7 @@ type PostData = {
   title?: string;
   subtitle?: string;
   content: string;
-  date?: number;
+  datePublished?: number;
   author?: string;
   authorPhoto?: string;
   tags?: string[];
@@ -92,6 +159,32 @@ const test = (arg: string) => {
   return arg.length > 5;
 };
 ```
+
+### Markdown loading
+
+_You don't need to understand all of this to use Devii. Consider this an "advanced guide" you can use if you want to customize the structure of the site._
+
+Markdown posts are loaded during Next.js static build step. Check out the [Data Fetching](https://nextjs.org/docs/basic-features/data-fetching) documentation to learn more about this.
+
+Here's the short version: if export a function called `getStaticProps` from one of your page components, Next.js will execute that function, take the result, and pass the `props` property (which should be another object) into your page as props.
+
+You can dynamically load and parse a Markdown file using `loadMarkdownFile`, a utility function implemented in `loader.ts`. It is an async function that returns a `PostData` TypeScript object containing all the metadata keys listed above:
+
+For an example of this, check out the `getStaticProps` implementation from the homepage. The function calls `loadBlogPosts` - a utilty function that loads _every_ blog posts in the `/md/blog/` directory, parses them, and returns `PostData[]`.
+
+```ts
+export const getStaticProps = async () => {
+  const posts = await loadBlogPosts();
+  return { props: { posts } };
+};
+```
+
+There are a few utility functions in `loader.ts` that Devii uses.
+
+- `loadPost` loads/parses a Markdown file and returns a `PostData`. It takes on argument, the name of a file in the `md/` directory. For instance `loadPost('about.md')` would load `/md/about.md` and `loadPost('blog/test.md'`) would load `/md/blog/test.md`.
+- `loadBlogPosts`: loads/parses all the files in `/md/blog/`. Returns `PostData[]`. Used in `index.tsx` to read a list of all published blog posts.
+- `loadMarkdownFile`: loads a Markdown file but doesn't parse it. Returns the string content. Useful if you want to implement certain parts of a page in Markdown and other parts in React.
+- `loadMarkdownFiles`: accepts a [glob](https://docs.python.org/3/library/glob.html) pattern and loads all the files inside `/md/` whose names match the pattern. Used internally by `loadBlogPosts`.
 
 ## Static generation
 

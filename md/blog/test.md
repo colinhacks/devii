@@ -1,7 +1,7 @@
 ---
 title: Introducing Devii
 subtitle: Bringing the power of React, TypeScript, and static generation to dev blogs everywhere
-date: 1589064522569
+datePublished: 1589064522569
 author: Ben Bitdiddle
 tags:
   - Devii

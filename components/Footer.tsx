@@ -1,4 +1,5 @@
 import React from 'react';
+import { config } from '../globals';
 
 export const Footer: React.FC = () => (
   <div
@@ -16,6 +17,6 @@ export const Footer: React.FC = () => (
       fontSize: '12pt',
     }}
   >
-    {`© Your Name ${new Date().getFullYear()}`}
+    {`© ${config.yourName} ${new Date().getFullYear()}`}
   </div>
 );

@@ -8,14 +8,14 @@ import { PostData } from '../loader';
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
 }) => {
-  const { title, subtitle, date, author, authorPhoto } = post;
+  const { title, subtitle, datePublished, author, authorPhoto } = post;
 
   const authorData = (
     <div>
       <span>{author ? author : ''} </span>
       <br />
       <span style={{ opacity: 0.6 }}>
-        {date ? format(new Date(date), 'MMMM Do, YYYY') : ''}
+        {datePublished ? format(new Date(datePublished), 'MMMM Do, YYYY') : ''}
       </span>
     </div>
   );

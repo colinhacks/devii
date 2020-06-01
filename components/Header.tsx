@@ -1,4 +1,5 @@
 import React from 'react';
+import { config } from '../globals';
 
 export const Header: React.FC = () => (
   <div
@@ -16,7 +17,7 @@ export const Header: React.FC = () => (
     }}
   >
     <a href="/" style={{ textDecoration: 'none' }}>
-      <p style={{ color: 'white' }}>Clever Blog Title</p>
+      <p style={{ color: 'white' }}>{config.siteName}</p>
     </a>
   </div>
 );
