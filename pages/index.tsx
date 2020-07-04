@@ -28,7 +28,7 @@ const Home = (props: { post: string; posts: PostData[] }) => {
         >
           {props.posts.map((post, j) => {
             return (
-              <a href={post.path} target="_blank" key={j}>
+              <a href={`/${post.path}`} target="_blank" key={j}>
                 {post.title}
               </a>
             );

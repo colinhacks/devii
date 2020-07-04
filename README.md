@@ -2,14 +2,17 @@
   <h1 align="center">Devii 😎</h1>
 </p>
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License"></a>
-</p>
-<p align="center">
-if you're happy and you know it, star this repo ⭐
-<br/>
-created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a> 👋
+  A developer blog starter for 2020. Next.js + React + TypeScript + Markdown + syntax highlighting + SEO + RSS generation
 </p>
 
+<p align="center">
+if you're happy and you know it, star this repo
+</p>
+<p align="center">created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a>
+</p>
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License"></a>
+</p>
 <br/>
 <br/>
 <br/>
