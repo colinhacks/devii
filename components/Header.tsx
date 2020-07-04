@@ -11,7 +11,7 @@ export const Header: React.FC = () => (
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: '#4fc2b4',
+      backgroundColor: config.accentColor,
       padding: '30px',
       fontSize: '12pt',
     }}
