@@ -28,7 +28,7 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 ## Get started
 
-To get started, clone the repo and install the dependencies.
+To get started, fork this repo, clone your fork, and get coding!
 
 ```
 git clone git@github.com:vriad/devii.git my-blog
