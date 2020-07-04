@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">Devii 😎</h1>
+  <h1 align="center">Devii</h1>
 </p>
-<p align="center">
+<p align="center" style="max-width:400px;">
   A developer blog starter for 2020. Next.js + React + TypeScript + Markdown + syntax highlighting + SEO + RSS generation
 </p>
 
