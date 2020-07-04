@@ -52,6 +52,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
                   margin: '10px 0px',
                   padding: 0,
                   border: 'none',
+                  fontWeight: 400,
                   opacity: '0.6',
                 }}
               >
