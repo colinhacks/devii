@@ -28,13 +28,15 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 ## Get started
 
-To get started, fork this repo, clone your fork, and get coding!
+To get started:
 
-```
-git clone git@github.com:vriad/devii.git my-blog
-cd my-blog
-yarn
-```
+1. Fork this repo
+2. ```
+    git clone git@github.com:yourusername/devii.git my-blog
+    cd my-blog
+    yarn    
+    ```
+
 
 Then start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
