@@ -2,7 +2,7 @@
   <h1 align="center">Devii</h1>
 </p>
 <p align="center" style="max-width:400px;">
-  A developer blog starter for 2020. Next.js + React + TypeScript + Markdown + syntax highlighting + SEO + RSS generation
+  A developer blog starter for 2020. <br/>Next.js + React + TypeScript + <br/>Markdown + syntax highlighting + SEO + <br/>RSS generation
 </p>
 
 <p align="center">
