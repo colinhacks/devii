@@ -36,9 +36,7 @@ To get started:
     cd my-blog
     yarn    
     ```
-
-
-Then start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
+3. Start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
 ## Powered by Next.js
 
