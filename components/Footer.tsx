@@ -11,12 +11,20 @@ export const Footer: React.FC = () => (
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: '#4fc2b4',
+      backgroundColor: config.accentColor,
       color: 'white',
       padding: '30px',
       fontSize: '12pt',
     }}
   >
-    {`© ${config.yourName} ${new Date().getFullYear()}`}
+    <p>{`© ${config.yourName} ${new Date().getFullYear()}`}</p>
+    <a href="/rss.xml">
+      <img
+        src="/rss-white.svg"
+        alt="RSS Feed"
+        height="30"
+        width="30"
+      />
+    </a>
   </div>
 );

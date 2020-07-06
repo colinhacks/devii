@@ -1,10 +1,13 @@
 import matter from 'gray-matter';
 import glob from 'glob';
+import { config } from './globals';
 export type PostData = {
   path: string;
-  title?: string;
+  title: string;
   subtitle?: string;
   content: string;
+  description?: string;
+  canonicalUrl?: string;
   datePublished?: number;
   author?: string;
   authorPhoto?: string;
@@ -22,13 +25,15 @@ export const loadMarkdownFile = async (path: string): Promise<RawFile> => {
 
 export const mdToPost = (file: RawFile): PostData => {
   const metadata = matter(file.contents);
-
+  const path = file.path.replace('.md', '')
   const post = {
-    path: file.path.replace('.md', ''),
-    title: metadata.data.title || null,
+    path,
+    title: metadata.data.title,
     subtitle: metadata.data.subtitle || null,
     datePublished: metadata.data.datePublished || null,
     tags: metadata.data.tags || null,
+    description: metadata.data.description || null,
+    canonicalUrl: metadata.data.canonicalUrl || `${config.url}/${path}`,
     author: metadata.data.author || null,
     authorPhoto: metadata.data.authorPhoto || null,
     bannerPhoto: metadata.data.bannerPhoto || null,

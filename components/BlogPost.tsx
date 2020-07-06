@@ -1,9 +1,9 @@
-import Head from 'next/head';
 import React from 'react';
 import { format } from 'fecha';
 
 import { Markdown } from './Markdown';
 import { PostData } from '../loader';
+import { PostMeta } from './PostMeta';
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
@@ -22,10 +22,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
 
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PostMeta post={post} />
 
       <div
         style={{
@@ -55,6 +52,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
                   margin: '10px 0px',
                   padding: 0,
                   border: 'none',
+                  fontWeight: 400,
                   opacity: '0.6',
                 }}
               >

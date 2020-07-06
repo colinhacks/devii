@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { PostData, loadBlogPosts } from '../loader';
 import { PostCard } from '../components/PostCard';
+import { generateRSS } from '../rssUtil';
 
 const Home = (props: { post: string; posts: PostData[] }) => {
   return (
@@ -27,7 +28,7 @@ const Home = (props: { post: string; posts: PostData[] }) => {
         >
           {props.posts.map((post, j) => {
             return (
-              <a href={post.path} target="_blank">
+              <a href={`/${post.path}`} target="_blank" key={j}>
                 {post.title}
               </a>
             );
@@ -42,5 +43,10 @@ export default Home;
 
 export const getStaticProps = async () => {
   const posts = await loadBlogPosts();
-  return { props: { posts } };
+  const props = { posts };
+
+  // comment out to 
+  await generateRSS(posts);
+
+  return { props };
 };

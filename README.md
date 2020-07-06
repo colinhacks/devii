@@ -1,15 +1,18 @@
 <p align="center">
-  <h1 align="center">Devii 😎</h1>
+  <h1 align="center">Devii</h1>
+</p>
+<p align="center" style="max-width:400px;">
+  A developer blog starter for 2020. <br/>Next.js + React + TypeScript + <br/>Markdown + syntax highlighting + SEO + <br/>RSS generation
+</p>
+
+<p align="center">
+if you're happy and you know it, star this repo
+</p>
+<p align="center">created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a>
 </p>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License"></a>
 </p>
-<p align="center">
-if you're happy and you know it, star this repo ⭐
-<br/>
-created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a> 👋
-</p>
-
 <br/>
 <br/>
 <br/>
@@ -25,15 +28,15 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 ## Get started
 
-To get started, clone the repo and install the dependencies.
+To get started:
 
-```
-git clone git@github.com:vriad/devii.git my-blog
-cd my-blog
-yarn
-```
-
-Then start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
+1. Fork this repo
+2. ```
+    git clone git@github.com:yourusername/devii.git my-blog
+    cd my-blog
+    yarn    
+    ```
+3. Start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
 ## Powered by Next.js
 
@@ -160,7 +163,7 @@ const test = (arg: string) => {
 };
 ```
 
-### Markdown loading
+## Markdown loading
 
 _You don't need to understand all of this to use Devii. Consider this an "advanced guide" you can use if you want to customize the structure of the site._
 
@@ -191,6 +194,31 @@ There are a few utility functions in `loader.ts` that Devii uses.
 You can generate a fully static version of your site using `yarn build && yarn export`. This step is entirely powered by Next.js. The static site is exported to the `out` directory.
 
 After its generated, use your static file hosting service of choice (Firebase Hosting, Amazon S3, Vercel) to deploy your site.
+
+## Global configs
+
+There is a `globals.ts` file in the project root containing some settings/configuration metadata about your site:
+
+- `yourName`: Your name, used for the copyright tags in the footer and the RSS feed, e.g. Alyssa P. Hacker
+- `siteName`: The title of your blog, e.g. `Alyssa's Cool Blog`;
+- `siteDescription`:  A short description, used in the `meta` description tag, e.g. 'I write about code \'n stuff';
+- `siteCreationDate`:  Used in the generated RSS feed. Use this format: 'March 3, 2020 04:00:00 GMT';
+- `twitterHandle`: The twitter handle for you or your blog/company, used in the Twitter meta tags. Include the @ symbol, e.g. '@alyssaphacker';
+- `email`: Your email, used as the "webMaster" and "managingEditor" field of the generated RSS feed, e.g. `alyssa@example.com`;
+- `url`: The base URL of your website, used to "compute" default canonical links from relative paths, e.g. 'https://alyssaphacker.com';
+- `accentColor`: The header and footer background color, e.g. `#4fc2b4`;
+
+## RSS feed generation
+
+An RSS feed is auto-generated from your blog post feed. This feed is generated using the `rss` module (for converting JSON to RSS format) and `showdown` for converting the markdown files to RSS-compatible HTML.
+
+For RSS generation to work, all your posts must contain a `datePublished` timestamp in their frontmatter metadata. To examine or customize the RSS generation, check out the `rssUtil.ts` file in the root directory.
+
+## SEO
+
+Every blog post page automatically populated meta tags based on the post metadata. This includes a `title` tag, `meta` tags, `og:` tags, Twitter metadata, and a `link` tag containing the canonical URL. 
+
+The default value of the canonical URL is computed by concatenating the value of your `url` config (see Global Configs above) and the relative path of your post. Verify that the canonical URL is exactly equivalent to the URL in the browser when visiting your live site, otherwise your site's SEO may suffer.
 
 ## Insanely customizable
 

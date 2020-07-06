@@ -1,7 +1,7 @@
 {
   "name": "devii",
   "version": "0.0.1",
-  "description": "A dev blog starter for the modern developer",
+  "description": "A Medium inspired dev blog starter for Next.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vriad/devii"
@@ -35,6 +35,8 @@
   "dependencies": {
     "@types/glob": "^7.1.1",
     "@types/react-syntax-highlighter": "^11.0.4",
+    "@types/rss": "^0.0.28",
+    "@types/showdown": "^1.9.3",
     "fecha": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
@@ -43,7 +45,9 @@
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-markdown": "^4.3.1",
-    "react-syntax-highlighter": "^12.2.1"
+    "react-syntax-highlighter": "^12.2.1",
+    "rss": "^1.2.2",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
     "@types/node": "14",
