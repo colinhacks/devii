@@ -83,7 +83,7 @@ const Home = (props: {
 
           <p style={{ textAlign: 'right' }}>
             — Dan Abramov, taken{' '}
-            <a href="https://github.com/vriad/devii" target="_blank">
+            <a href="https://github.com/vriad/devii/issues/2" target="_blank">
               utterly out of context
             </a>
           </p>

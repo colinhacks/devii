@@ -24,7 +24,7 @@ A dev blog starter for 2020.
 - Works as a Markdown static-site generator out of the box
 - Supports static exporting and hot reload (powered by Next.js)
 - Makes it easy to write custom pages/code in React + TypeScript
-- Out of the box support for code blocks with syntax highlighting
+- Support for code blocks with syntax highlighting
 
 Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
