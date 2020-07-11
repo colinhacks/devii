@@ -11,6 +11,7 @@ export type PostData = {
   datePublished?: number;
   author?: string;
   authorPhoto?: string;
+  authorTwitter?: string;
   tags?: string[];
   bannerPhoto?: string;
   thumbnailPhoto?: string;
@@ -36,6 +37,7 @@ export const mdToPost = (file: RawFile): PostData => {
     canonicalUrl: metadata.data.canonicalUrl || `${config.url}/${path}`,
     author: metadata.data.author || null,
     authorPhoto: metadata.data.authorPhoto || null,
+    authorTwitter: metadata.data.authorTwitter || null,
     bannerPhoto: metadata.data.bannerPhoto || null,
     thumbnailPhoto: metadata.data.thumbnailPhoto || null,
     content: metadata.content,

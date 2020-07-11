@@ -44,7 +44,7 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
             width: '100%',
           }}
         >
-          <h2 style={{ margin: '4px 0px' }}>My blog posts</h2>
+          <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
           <p>
             Any new markdown file under <code>/md/blog</code> will automatically
             appear here.
@@ -68,13 +68,13 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
       <div
         style={{
           width: '100%',
-          margin: '100px 0px',
+          padding: '100px 0px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
         }}
       >
-        <h2 style={{ textAlign: 'center' }}>Testimonials</h2>
+        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
         <blockquote
           style={{
             borderLeft: `3px solid ${config.accentColor}`,
@@ -95,7 +95,7 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
       </div>
 
       <div style={{ width: '100%', margin: '100px 0px' }}>
-        <h2 style={{ textAlign: 'center' }}>README.md</h2>
+        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
         <p style={{ textAlign: 'center', maxWidth: '600px', margin: 'auto' }}>
           Below is the README.md for devii. It was imported and rendered using
           Next.js dynamic imports. The rest of this page (including this

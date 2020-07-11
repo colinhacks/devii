@@ -1,5 +1,5 @@
 ---
-title: Introducing Devii
+title: Devii's killer features
 subtitle: Bringing the power of React, TypeScript, and static generation to dev blogs everywhere
 datePublished: 1589064522569
 author: Ben Bitdiddle

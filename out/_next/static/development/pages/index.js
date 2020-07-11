@@ -90,6 +90,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown/with-html */ "./node_modules/react-markdown/with-html.js");
 /* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Code__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Code */ "./components/Code.tsx");
+/* harmony import */ var _globals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../globals */ "./globals.ts");
 var _this = undefined,
     _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/components/Markdown.tsx";
 
@@ -98,16 +99,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 var Markdown = function Markdown(props) {
   return __jsx("div", {
     style: {
       width: '100%'
     },
-    className: "jsx-1526302572" + " " + "devii-markdown",
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3617925899", [_globals__WEBPACK_IMPORTED_MODULE_4__["config"].accentColor]]]) + " " + "devii-markdown",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 5
     }
   }, __jsx(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -120,13 +122,14 @@ var Markdown = function Markdown(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 7
     }
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1526302572",
+    id: "3617925899",
+    dynamic: [_globals__WEBPACK_IMPORTED_MODULE_4__["config"].accentColor],
     __self: _this
-  }, ".devii-markdown p,.devii-markdown li{line-height:1.7;color:#333;}.devii-markdown h1,.devii-markdown h2,.devii-markdown h3,.devii-markdown h4,.devii-markdown h5,.devii-markdown h6{margin:0px;padding:0px;}.devii-markdown h1>a,.devii-markdown h2>a,.devii-markdown h3>a,.devii-markdown h4>a,.devii-markdown h5>a,.devii-markdown h6>a{-webkit-text-decoration:none;text-decoration:none;}.devii-markdown hr{margin:20px 0px;opacity:0.35;}.devii-markdown h1{padding-top:30px;padding-bottom:10px;margin-top:30px;margin-bottom:30px;}.devii-markdown h2{padding-top:25px;padding-bottom:10px;margin-top:25px;margin-bottom:25px;}.devii-markdown h3{padding-top:20px;padding-bottom:10px;margin-top:20px;margin-bottom:20px;}.devii-markdown h4{padding-top:15px;padding-bottom:10px;margin-top:15px;margin-bottom:15px;}.devii-markdown h5{padding-top:10px;padding-bottom:10px;margin-top:10px;margin-bottom:10px;}.devii-markdown h6{padding-top:5px;padding-bottom:10px;margin-top:5px;margin-bottom:5px;}.devii-markdown p{padding:10px 0px;margin:10px 0px;}.devii-markdown li{padding:10px 0px;}.devii-markdown img{width:100%;border-radius:8px;box-shadow:0px 4px 30px #00000040;}.devii-markdown code{background-color:#00000010;padding:3px 3px;border-radius:2px;}.devii-markdown pre{margin:20px 0px !important;}.devii-markdown ol pre{margin:0px 0px !important;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9kZXZpaS9jb21wb25lbnRzL01hcmtkb3duLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFleUIsQUFJMkIsQUFVTCxBQVVVLEFBSUwsQUFLQyxBQU9BLEFBT0EsQUFPQSxBQU9BLEFBT0QsQUFPQyxBQUtBLEFBSU4sQUFNZ0IsQUFNQSxBQUlELFdBckZkLEFBc0VNLEtBaEZQLEFBd0JFLEFBd0NPLENBbkNBLEFBT0EsQUFPQSxBQU9BLEFBT0EsQUFjSixBQUtsQixNQWpFQSxHQXFGQSxDQS9GQSxBQXFGa0IsQUFNbEIsRUFuRUEsQUF3RG9DLElBVHBDLEdBUGlCLENBbkNDLEFBT0EsQUFPQSxBQU9BLEFBT0EsTUE2QkUsT0FuRXBCLENBOENvQixFQW5DQyxBQU9BLEFBT0EsQUFPQSxBQU9BLFFBNkJyQixFQU5BLE1BZkEsR0FuQ0EsQUFPQSxBQU9BLEFBT0EsQUFPQSIsImZpbGUiOiIvVXNlcnMvY29saW5tY2Q5NC9Eb2N1bWVudHMvUHJvamVjdHMvZGV2aWkvY29tcG9uZW50cy9NYXJrZG93bi50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IFJlYWN0TWFya2Rvd24gZnJvbSAncmVhY3QtbWFya2Rvd24vd2l0aC1odG1sJztcbmltcG9ydCBDb2RlIGZyb20gJy4vQ29kZSc7XG5cbmV4cG9ydCBjb25zdCBNYXJrZG93bjogUmVhY3QuRkM8eyBzb3VyY2U6IHN0cmluZyB9PiA9IChwcm9wcykgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJyB9fSBjbGFzc05hbWU9XCJkZXZpaS1tYXJrZG93blwiPlxuICAgICAgPFJlYWN0TWFya2Rvd25cbiAgICAgICAga2V5PVwiY29udGVudFwiXG4gICAgICAgIHNvdXJjZT17cHJvcHMuc291cmNlfVxuICAgICAgICByZW5kZXJlcnM9e3tcbiAgICAgICAgICBjb2RlOiBDb2RlLFxuICAgICAgICB9fVxuICAgICAgICBlc2NhcGVIdG1sPXtmYWxzZX1cbiAgICAgIC8+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGxpIHtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMS43O1xuICAgICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxLFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDIsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMyxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0LFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDUsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNiB7XG4gICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgyID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg1ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2ID4gYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGhyIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4O1xuICAgICAgICAgIG9wYWNpdHk6IDAuMzU7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDEge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAzMHB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDMwcHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMiB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDI1cHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMjVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzIHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMjBweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDQge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAxNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNSB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDEwcHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2IHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgICAgbWFyZ2luOiAxMHB4IDBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBsaSB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaW1nIHtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCAzMHB4ICMwMDAwMDA0MDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBjb2RlIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwMTA7XG4gICAgICAgICAgcGFkZGluZzogM3B4IDNweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcHJlIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gb2wgcHJlIHtcbiAgICAgICAgICBtYXJnaW46IDBweCAwcHggIWltcG9ydGFudDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcbiJdfQ== */\n/*@ sourceURL=/Users/colinmcd94/Documents/Projects/devii/components/Markdown.tsx */"));
+  }, ".devii-markdown p,.devii-markdown li{line-height:1.7;color:#333;}.devii-markdown h1,.devii-markdown h2,.devii-markdown h3,.devii-markdown h4,.devii-markdown h5,.devii-markdown h6{margin:0px;padding:0px;}.devii-markdown h1>a,.devii-markdown h2>a,.devii-markdown h3>a,.devii-markdown h4>a,.devii-markdown h5>a,.devii-markdown h6>a{-webkit-text-decoration:none;text-decoration:none;}.devii-markdown hr{margin:20px 0px;opacity:0.35;}.devii-markdown h1{padding-top:30px;padding-bottom:10px;margin-top:30px;margin-bottom:30px;}.devii-markdown h2{padding-top:25px;padding-bottom:10px;margin-top:25px;margin-bottom:25px;}.devii-markdown h3{padding-top:20px;padding-bottom:10px;margin-top:20px;margin-bottom:20px;}.devii-markdown h4{padding-top:15px;padding-bottom:10px;margin-top:15px;margin-bottom:15px;}.devii-markdown h5{padding-top:10px;padding-bottom:10px;margin-top:10px;margin-bottom:10px;}.devii-markdown h6{padding-top:5px;padding-bottom:10px;margin-top:5px;margin-bottom:5px;}.devii-markdown p{padding:10px 0px;margin:10px 0px;}.devii-markdown li{padding:10px 0px;}.devii-markdown img{width:100%;border-radius:8px;box-shadow:0px 4px 30px #00000040;}.devii-markdown code{background-color:#00000010;padding:3px 3px;border-radius:2px;}.devii-markdown pre{margin:20px 0px !important;}.devii-markdown ol pre,.devii-markdown ol p{margin:0px 0px !important;}.devii-markdown blockquote{border-left:3px solid ".concat(_globals__WEBPACK_IMPORTED_MODULE_4__["config"].accentColor, ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9kZXZpaS9jb21wb25lbnRzL01hcmtkb3duLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQnlCLEFBSTJCLEFBVUwsQUFVVSxBQUlMLEFBS0MsQUFPQSxBQU9BLEFBT0EsQUFPQSxBQU9ELEFBT0MsQUFLQSxBQUlOLEFBTWdCLEFBTUEsQUFLRCxBQUl5QixXQTFGdkMsQUFzRU0sS0FoRlAsQUF3QkUsQUF3Q08sQ0FuQ0EsQUFPQSxBQU9BLEFBT0EsQUFPQSxBQWNKLEFBS2xCLE1BakVBLEdBc0ZBLENBaEdBLEFBcUZrQixBQU1sQixFQW5FQSxBQXdEb0MsSUFUcEMsR0FQaUIsQ0FuQ0MsQUFPQSxBQU9BLEFBT0EsQUFPQSxNQTZCRSxPQW5FcEIsQ0E4Q29CLEFBbUNwQixFQXRFcUIsQUFPQSxBQU9BLEFBT0EsQUFPQSxRQTZCckIsRUFOQSxNQWZBLEdBbkNBLEFBT0EsQUFPQSxBQU9BLEFBT0EiLCJmaWxlIjoiL1VzZXJzL2NvbGlubWNkOTQvRG9jdW1lbnRzL1Byb2plY3RzL2RldmlpL2NvbXBvbmVudHMvTWFya2Rvd24udHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBSZWFjdE1hcmtkb3duIGZyb20gJ3JlYWN0LW1hcmtkb3duL3dpdGgtaHRtbCc7XG5pbXBvcnQgQ29kZSBmcm9tICcuL0NvZGUnO1xuaW1wb3J0IHsgY29uZmlnIH0gZnJvbSAnLi4vZ2xvYmFscyc7XG5cbmV4cG9ydCBjb25zdCBNYXJrZG93bjogUmVhY3QuRkM8eyBzb3VyY2U6IHN0cmluZyB9PiA9IChwcm9wcykgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJyB9fSBjbGFzc05hbWU9XCJkZXZpaS1tYXJrZG93blwiPlxuICAgICAgPFJlYWN0TWFya2Rvd25cbiAgICAgICAga2V5PVwiY29udGVudFwiXG4gICAgICAgIHNvdXJjZT17cHJvcHMuc291cmNlfVxuICAgICAgICByZW5kZXJlcnM9e3tcbiAgICAgICAgICBjb2RlOiBDb2RlLFxuICAgICAgICB9fVxuICAgICAgICBlc2NhcGVIdG1sPXtmYWxzZX1cbiAgICAgIC8+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGxpIHtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMS43O1xuICAgICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxLFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDIsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMyxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0LFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDUsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNiB7XG4gICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgyID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg1ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2ID4gYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGhyIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4O1xuICAgICAgICAgIG9wYWNpdHk6IDAuMzU7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDEge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAzMHB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDMwcHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMiB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDI1cHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMjVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzIHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMjBweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDQge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAxNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNSB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDEwcHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2IHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgICAgbWFyZ2luOiAxMHB4IDBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBsaSB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaW1nIHtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCAzMHB4ICMwMDAwMDA0MDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBjb2RlIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwMTA7XG4gICAgICAgICAgcGFkZGluZzogM3B4IDNweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcHJlIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gb2wgcHJlLFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gb2wgcCB7XG4gICAgICAgICAgbWFyZ2luOiAwcHggMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gYmxvY2txdW90ZSB7XG4gICAgICAgICAgYm9yZGVyLWxlZnQ6IDNweCBzb2xpZCAke2NvbmZpZy5hY2NlbnRDb2xvcn07XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG4iXX0= */\n/*@ sourceURL=/Users/colinmcd94/Documents/Projects/devii/components/Markdown.tsx */")));
 };
 
 /***/ }),
@@ -326,6 +329,7 @@ var config;
   var email = _config.email = "alyssa@example.com";
   var url = _config.url = 'https://alyssaphacker.com';
   var accentColor = _config.accentColor = "#4fc2b4";
+  var googleAnalyticsId = _config.googleAnalyticsId = "";
 })(config || (config = {}));
 
 /***/ }),
@@ -30357,7 +30361,7 @@ exports.EVENTS = {
     They should probably be removed eventually.
 */
 __export(__webpack_require__(/*! ./FeedHandler */ "./node_modules/htmlparser2/lib/FeedHandler.js"));
-__export(__webpack_require__(/*! ./WritableStream */ 1));
+__export(__webpack_require__(/*! ./WritableStream */ 3));
 __export(__webpack_require__(/*! ./CollectingHandler */ "./node_modules/htmlparser2/lib/CollectingHandler.js"));
 var DomUtils = __importStar(__webpack_require__(/*! domutils */ "./node_modules/domutils/lib/index.js"));
 exports.DomUtils = DomUtils;
@@ -68476,13 +68480,73 @@ var Home = function Home(props) {
     }
   })), __jsx("div", {
     style: {
+      maxWidth: '400px',
+      margin: 'auto',
+      padding: '50px 0px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 7
+    }
+  }, __jsx("h3", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, "Welcome to Devii"), __jsx("p", {
+    style: {
+      padding: '10px 0px',
+      color: '#666666'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, "This site is entirely built with Devii! In fact, the", ' ', __jsx("a", {
+    href: "https://github.com/vriad/devii",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 11
+    }
+  }, "Devii repo"), " contains the code for the site your looking at now."), __jsx("p", {
+    style: {
+      padding: '10px 0px',
+      color: '#666666'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, "After you clone/fork it, you can use this code to learn how Devii works. Then you can rip out everything you don't like, customize everything else, and build your own tools and components on top of the foundation Devii provides."), __jsx("p", {
+    style: {
+      padding: '10px 0px',
+      color: '#666666'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, "Your personal website is the online manifestation of you. Devii doesn't really provide much out of the box. It provides some nice Medium-style default styles for your blog posts and some tools for loading/rendering Markdown. But you'll have to implement your own homepage more or less from scratch. And that's the point! Don't settle for some theme. Build something that represents you.")), __jsx("div", {
+    style: {
       width: '100%',
       padding: '100px 10vw'
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 38,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -68495,7 +68559,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 39,
       columnNumber: 9
     }
   }, __jsx("h2", {
@@ -68505,24 +68569,24 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 47,
       columnNumber: 11
     }
   }, "My blog posts"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 48,
       columnNumber: 11
     }
   }, "Any new markdown file under ", __jsx("code", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 49,
       columnNumber: 41
     }
-  }, "/md/blog"), " will automatically appear here."), "\\", __jsx("div", {
+  }, "/md/blog"), " will automatically appear here."), __jsx("div", {
     style: {
       display: 'grid',
       gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))",
@@ -68533,7 +68597,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 52,
       columnNumber: 11
     }
   }, props.posts.map(function (post, j) {
@@ -68543,7 +68607,7 @@ var Home = function Home(props) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 62,
         columnNumber: 22
       }
     });
@@ -68558,7 +68622,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 68,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -68568,7 +68632,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 77,
       columnNumber: 9
     }
   }, "Testimonials"), __jsx("blockquote", {
@@ -68579,43 +68643,43 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 78,
       columnNumber: 9
     }
   }, __jsx("p", {
     style: {
-      fontSize: '16pt'
+      fontSize: '20pt'
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 84,
       columnNumber: 11
     }
   }, __jsx("em", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 85,
       columnNumber: 13
     }
   }, "Seems like it might be useful!")), __jsx("p", {
     style: {
-      fontSize: '14pt',
       textAlign: 'right'
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 88,
       columnNumber: 11
     }
   }, "\u2014 Dan Abramov, taken", ' ', __jsx("a", {
     href: "https://github.com/vriad/devii",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 90,
       columnNumber: 13
     }
   }, "utterly out of context")))), __jsx("div", {
@@ -68626,7 +68690,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 97,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -68636,7 +68700,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 98,
       columnNumber: 9
     }
   }, "README.md"), __jsx("p", {
@@ -68648,7 +68712,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 99,
       columnNumber: 9
     }
   }, "Below is the README.md for devii. It was imported and rendered using Next.js dynamic imports. The rest of this page (including this paragraph) are rendered with React. \uD83C\uDF89")), __jsx("div", {
@@ -68660,7 +68724,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 105,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -68671,7 +68735,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 112,
       columnNumber: 9
     }
   }, __jsx(_components_Markdown__WEBPACK_IMPORTED_MODULE_3__["Markdown"], {
@@ -68679,7 +68743,7 @@ var Home = function Home(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 118,
       columnNumber: 11
     }
   }))));
@@ -68687,17 +68751,6 @@ var Home = function Home(props) {
 
 var __N_SSG = true;
 /* harmony default export */ __webpack_exports__["default"] = (Home);
-
-/***/ }),
-
-/***/ 1:
-/*!**********************************!*\
-  !*** ./WritableStream (ignored) ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -68710,6 +68763,17 @@ var __N_SSG = true;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true!./");
 
+
+/***/ }),
+
+/***/ 3:
+/*!**********************************!*\
+  !*** ./WritableStream (ignored) ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 

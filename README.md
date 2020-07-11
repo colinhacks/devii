@@ -30,6 +30,20 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 ## Get started
 
+This repo contains the code for [https://devii.dev](https://devii.dev).
+
+devii.dev serves as both the documentation AND a working demo of Devii. After you clone/fork it, you can look through the code to learn how Devii
+works. Then you can rip out everything you don't like, customize
+everything else, and build your own tools and components on top of the
+foundation Devii provides!
+
+Your personal website is the online manifestation of you. Devii
+doesn't really provide much out of the box. It provides some nice
+Medium-style default styles for your blog posts and some tools for
+loading/rendering Markdown. But you'll have to implement your own
+homepage more or less from scratch. And that's the point! Don't settle
+for some theme. Build something that represents you.
+
 To get started:
 
 1. Fork this repo

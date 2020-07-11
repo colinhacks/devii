@@ -118,7 +118,9 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
         }
 
         .devii-markdown blockquote {
-          border-left: 3px solid ${config.accentColor};
+          margin: 0px;
+          padding-left: 1em;
+          border-left: 4px solid ${config.accentColor};
         }
       `}</style>
     </div>

@@ -1,24 +1,14 @@
 import React from 'react';
-import { format } from 'fecha';
 
 import { Markdown } from './Markdown';
 import { PostData } from '../loader';
 import { PostMeta } from './PostMeta';
+import { Author } from './Author';
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
 }) => {
-  const { title, subtitle, datePublished, author, authorPhoto } = post;
-
-  const authorData = (
-    <div>
-      <span>{author ? author : ''} </span>
-      <br />
-      <span style={{ opacity: 0.6 }}>
-        {datePublished ? format(new Date(datePublished), 'MMMM Do, YYYY') : ''}
-      </span>
-    </div>
-  );
+  const { title, subtitle } = post;
 
   return (
     <div>
@@ -30,11 +20,22 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
           flexDirection: 'row',
           justifyContent: 'center',
           width: '100%',
-          padding: '0px 4vw',
+          padding: '0px 0px 100px 0px',
         }}
       >
         <div style={{ width: '100%', maxWidth: '600px' }}>
-          <div style={{ margin: '100px 0px 50px 0px' }}>
+          {post.bannerPhoto && (
+            <img
+              style={{
+                width: '100%',
+                // maxHeight: '350px',
+                maxWidth: '100%',
+                margin: '0px 0px 0px 0px',
+              }}
+              src={post.bannerPhoto}
+            />
+          )}
+          <div style={{ margin: '50px 0px 50px 0px' }}>
             {title && (
               <h1
                 style={{
@@ -74,27 +75,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
                 padding: '0px',
               }}
             >
-              <div
-                style={{
-                  margin: '0px',
-                  padding: '0px',
-                  display: 'flex',
-                  flexDirection: 'row',
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                }}
-              >
-                <img
-                  src={authorPhoto}
-                  style={{
-                    width: '50px',
-                    height: '50px',
-                    borderRadius: '25px',
-                    margin: '0px 10px 0px 0px',
-                  }}
-                />
-                {authorData}
-              </div>
+              <Author post={post} />
             </div>
           </div>
 
