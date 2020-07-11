@@ -13,22 +13,28 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p style={{ maxWidth: '400px', margin: 'auto' }}>
-        This site is entirely built with Devii! The{' '}
-        <a href="https://github.com/vriad/devii">Devii repo</a> is actually the
-        code for this site. After you clone/fork it, you can use this code to
-        learn how Devii works. Then you can rip out everything you don't like,
-        customize everything else, and build your own tools and components on
-        top of the foundation Devii provides.
-      </p>
-      <p style={{ maxWidth: '400px', margin: 'auto' }}>
-        Your personal website is the online manifestation of you. Devii doesn't
-        really provide much out of the box. It provides some nice Medium-style
-        default styles for your blog posts and some tools for loading/rendering
-        Markdown. But you'll have to implement your own homepage more or less
-        from scratch. And that's the point! Don't settle for some theme. Build
-        something that represents you.
-      </p>
+      <div style={{ maxWidth: '400px', margin: 'auto', padding: '50px 0px' }}>
+        <h3>Welcome to Devii</h3>
+        <p style={{ padding: '10px 0px', color: '#666666' }}>
+          This site is entirely built with Devii! In fact, the{' '}
+          <a href="https://github.com/vriad/devii">Devii repo</a> contains the
+          code for the site your looking at now.
+        </p>
+        <p style={{ padding: '10px 0px', color: '#666666' }}>
+          After you clone/fork it, you can use this code to learn how Devii
+          works. Then you can rip out everything you don't like, customize
+          everything else, and build your own tools and components on top of the
+          foundation Devii provides.
+        </p>
+        <p style={{ padding: '10px 0px', color: '#666666' }}>
+          Your personal website is the online manifestation of you. Devii
+          doesn't really provide much out of the box. It provides some nice
+          Medium-style default styles for your blog posts and some tools for
+          loading/rendering Markdown. But you'll have to implement your own
+          homepage more or less from scratch. And that's the point! Don't settle
+          for some theme. Build something that represents you.
+        </p>
+      </div>
       <div style={{ width: '100%', padding: '100px 10vw' }}>
         <div
           style={{
@@ -75,13 +81,15 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
             paddingLeft: '20px',
           }}
         >
-          <p style={{ fontSize: '16pt' }}>
+          <p style={{ fontSize: '20pt' }}>
             <em>Seems like it might be useful!</em>
           </p>
 
-          <p style={{ fontSize: '14pt', textAlign: 'right' }}>
+          <p style={{ textAlign: 'right' }}>
             — Dan Abramov, taken{' '}
-            <a href="https://github.com/vriad/devii">utterly out of context</a>
+            <a href="https://github.com/vriad/devii" target="_blank">
+              utterly out of context
+            </a>
           </p>
         </blockquote>
       </div>

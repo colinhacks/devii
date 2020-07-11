@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
 import Code from './Code';
+import { config } from '../globals';
 
 export const Markdown: React.FC<{ source: string }> = (props) => {
   return (
@@ -111,8 +112,13 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
           margin: 20px 0px !important;
         }
 
-        .devii-markdown ol pre {
+        .devii-markdown ol pre,
+        .devii-markdown ol p {
           margin: 0px 0px !important;
+        }
+
+        .devii-markdown blockquote {
+          border-left: 3px solid ${config.accentColor};
         }
       `}</style>
     </div>
