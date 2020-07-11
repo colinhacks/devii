@@ -8,7 +8,7 @@ import { config } from '../globals';
 
 const sectionStyle = {
   width: '100%',
-  padding: '100px 10vw',
+  padding: '100px 3vw',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -28,23 +28,24 @@ const Home = (props: {
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ maxWidth: '500px', margin: 'auto', padding: '50px 0px' }}>
+      <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
         <Markdown source={props.introduction} />
       </div>
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
-        <div style={{ maxWidth: '600px' }}>
+        <div style={{ maxWidth: '550px' }}>
           <Markdown source={props.features} />
         </div>
       </div>
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
-        <p style={{ maxWidth: '600px', paddingBottom: '30px', ...pStyle }}>
+        <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
-          structured TypeScript object and available in the `props.posts` array.
-          These blog post "cards" are implemented in the
-          `/components/PostCard.tsx` component.
+          structured TypeScript object and available in the{' '}
+          <code>props.posts</code> array. These blog post "cards" are
+          implemented in the
+          <code>/components/PostCard.tsx</code> component.
         </p>
         <div
           style={{
@@ -53,6 +54,7 @@ const Home = (props: {
             gridRowGap: '8px',
             gridColumnGap: '8px',
             width: '100%',
+            padding: '0px 7vw',
           }}
         >
           {props.posts.map((post, j) => {
@@ -61,15 +63,7 @@ const Home = (props: {
         </div>
       </div>
 
-      <div
-        style={{
-          width: '100%',
-          padding: '100px 0px',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
+      <div style={{ ...sectionStyle }}>
         <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
         <blockquote
           style={{
@@ -90,7 +84,7 @@ const Home = (props: {
         </blockquote>
       </div>
 
-      <div style={{ width: '100%', margin: '100px 0px' }}>
+      <div style={{ ...sectionStyle }}>
         <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
         <p
           style={{
@@ -114,7 +108,7 @@ const Home = (props: {
         style={{
           width: '100%',
           backgroundColor: '#eeeeee',
-          paddingBottom: '50px',
+          padding: '0px 3vw 50px 3vw',
         }}
       >
         <div

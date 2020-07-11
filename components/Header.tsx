@@ -23,10 +23,7 @@ export const Header: React.FC = () => (
     <a href="https://github.com/vriad/devii" style={{ textDecoration: 'none' }}>
       <p style={{ padding: '0px 1em', color: 'white' }}>GitHub</p>
     </a>
-    <a
-      href="https://devii.dev/blog/the-ultimate-tech-stack/"
-      style={{ textDecoration: 'none' }}
-    >
+    <a href="/blog/the-ultimate-tech-stack" style={{ textDecoration: 'none' }}>
       <p style={{ padding: '0px 1em', color: 'white' }}>Motivation</p>
     </a>
   </div>
