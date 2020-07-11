@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Devii</h1>
 </p>
-<p align="center" style="max-width:400px;">
+<p align="center">
   A developer blog starter for 2020. <br/>Next.js + React + TypeScript + <br/>Markdown + syntax highlighting + SEO + <br/>RSS generation
 </p>
 
@@ -11,7 +11,9 @@ if you're happy and you know it, star this repo
 <p align="center">created by <a href="https://twitter.com/vriad" target="_blank">@vriad</a>
 </p>
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License"></a>
+  <a href="https://opensource.org/licenses/MIT" rel="nofollow">
+  <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
+  </a>
 </p>
 <br/>
 <br/>
@@ -32,10 +34,10 @@ To get started:
 
 1. Fork this repo
 2. ```
-    git clone git@github.com:yourusername/devii.git my-blog
-    cd my-blog
-    yarn    
-    ```
+   git clone git@github.com:yourusername/devii.git my-blog
+   cd my-blog
+   yarn
+   ```
 3. Start the development server with `yarn dev`. This should start a server on `http://localhost:3000`.
 
 ## Powered by Next.js
@@ -92,9 +94,7 @@ Feel free to re-implemement the built-in styles with your library of choice If y
 
 ## Adding a new blog post
 
-Just add a Markdown file under `md/blog/` to create a new blog post.
-
-Breakdown:
+Just add a Markdown file under `md/blog/` to create a new blog post:
 
 1. Create a new Markdown file called `foo.md` within the `/md/blog` directory
 2. Add in some basic Markdown content
@@ -201,8 +201,8 @@ There is a `globals.ts` file in the project root containing some settings/config
 
 - `yourName`: Your name, used for the copyright tags in the footer and the RSS feed, e.g. Alyssa P. Hacker
 - `siteName`: The title of your blog, e.g. `Alyssa's Cool Blog`;
-- `siteDescription`:  A short description, used in the `meta` description tag, e.g. 'I write about code \'n stuff';
-- `siteCreationDate`:  Used in the generated RSS feed. Use this format: 'March 3, 2020 04:00:00 GMT';
+- `siteDescription`: A short description, used in the `meta` description tag, e.g. 'I write about code \'n stuff';
+- `siteCreationDate`: Used in the generated RSS feed. Use this format: 'March 3, 2020 04:00:00 GMT';
 - `twitterHandle`: The twitter handle for you or your blog/company, used in the Twitter meta tags. Include the @ symbol, e.g. '@alyssaphacker';
 - `email`: Your email, used as the "webMaster" and "managingEditor" field of the generated RSS feed, e.g. `alyssa@example.com`;
 - `url`: The base URL of your website, used to "compute" default canonical links from relative paths, e.g. 'https://alyssaphacker.com';
@@ -216,7 +216,7 @@ For RSS generation to work, all your posts must contain a `datePublished` timest
 
 ## SEO
 
-Every blog post page automatically populated meta tags based on the post metadata. This includes a `title` tag, `meta` tags, `og:` tags, Twitter metadata, and a `link` tag containing the canonical URL. 
+Every blog post page automatically populated meta tags based on the post metadata. This includes a `title` tag, `meta` tags, `og:` tags, Twitter metadata, and a `link` tag containing the canonical URL.
 
 The default value of the canonical URL is computed by concatenating the value of your `url` config (see Global Configs above) and the relative path of your post. Verify that the canonical URL is exactly equivalent to the URL in the browser when visiting your live site, otherwise your site's SEO may suffer.
 

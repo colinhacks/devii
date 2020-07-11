@@ -25,7 +25,7 @@ export const loadMarkdownFile = async (path: string): Promise<RawFile> => {
 
 export const mdToPost = (file: RawFile): PostData => {
   const metadata = matter(file.contents);
-  const path = file.path.replace('.md', '')
+  const path = file.path.replace('.md', '');
   const post = {
     path,
     title: metadata.data.title,

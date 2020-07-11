@@ -1,11 +1,12 @@
 import React from 'react';
+import { format } from 'fecha';
 import { PostData } from '../loader';
+import { Tag } from './Tag';
 
 export const PostCard: React.FC<{ post: PostData }> = (props) => {
   const post = props.post;
   return (
     <a
-      className={'postcard'}
       href={`/${post.path}`}
       style={{
         textDecoration: 'inherit',
@@ -19,13 +20,21 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
     >
       <div
         style={{
-          maxWidth: '450px',
+          // flexBasis: '300px',
+          // flex: 1,
+          // minWidth: '200px',
+          // maxWidth: '450px',
+          opacity: 0.92,
+          boxShadow: '0px 2px 10px #00000040',
+          width: '100%',
+          maxWidth: '500px',
           overflow: 'hidden',
           borderRadius: '8px',
-          boxShadow: '0px 2px 10px #00000020',
+          // boxShadow: '0px 2px 10px #00000020',
           display: 'flex',
           flexDirection: 'column',
           height: '100%',
+          // margin: '10px 0px',
         }}
       >
         {post.thumbnailPhoto && (
@@ -33,8 +42,11 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
             style={{
               background: `url(${post.thumbnailPhoto}) no-repeat center center`,
               backgroundSize: 'cover',
+              // backgroundImage: post.thumb_image,
+              // backgroundPosition: 'cover',
               width: '100%',
               flex: 1,
+              // height: '200px',
             }}
           />
         )}
@@ -43,21 +55,24 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
             padding: '15px 10px',
             display: 'flex',
             flexDirection: 'column',
+            borderTop: '1px solid #00000020',
           }}
         >
           {post.title && (
             <h2
               style={{
                 margin: '0px 0px 7px 0px',
-                padding: '2px 0px 2px 0px',
+                // padding: '2px 0px 2px 0px',
                 fontSize: '14pt',
                 fontWeight: 600,
+                padding: '2px 10%',
+                textAlign: 'center',
               }}
             >
               {post.title}
             </h2>
           )}
-          {post.subtitle && (
+          {false && post.subtitle && (
             <p
               style={{
                 margin: '0px',
@@ -69,7 +84,17 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
               {post.subtitle}
             </p>
           )}
+          <p style={{ opacity: 0.6, textAlign: 'center', margin: '0px' }}>
+            {props.post.datePublished
+              ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
+              : ''}
+          </p>
           <div style={{ flex: 1 }}> </div>
+          {false && (
+            <div style={{ marginTop: '7px' }}>
+              {post.tags && (post.tags || []).map((tag) => <Tag tag={tag} />)}
+            </div>
+          )}
         </div>
       </div>
     </a>

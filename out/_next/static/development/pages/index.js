@@ -1,449 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/BasePage.tsx":
-/*!*********************************!*\
-  !*** ./components/BasePage.tsx ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-var _this = undefined,
-    _jsxFileName = "/Users/colinmcd94/Documents/Projects/onepotman/components/BasePage.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-
-var BasePage = function BasePage(_ref) {
-  var children = _ref.children;
-  return __jsx("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 3
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 5
-    }
-  }, __jsx("link", {
-    href: "https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap",
-    rel: "stylesheet",
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }
-  }), __jsx("script", {
-    async: true,
-    src: "https://www.googletagmanager.com/gtag/js?id=UA-166084913-1",
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
-    }
-  }), __jsx("script", {
-    dangerouslySetInnerHTML: {
-      __html: "window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-166084913-1');"
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
-    }
-  })), __jsx("div", {
-    style: {
-      top: 0,
-      width: '100%',
-      height: '50px',
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      backgroundColor: '#4fc2b4',
-      color: 'white',
-      padding: '30px',
-      fontSize: '12pt'
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 5
-    }
-  },  false && false, __jsx("div", {
-    style: {
-      flex: 1
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 7
-    }
-  })), __jsx("div", {
-    style: {
-      maxWidth: '100%',
-      minHeight: "calc(100vh - 200px)"
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 5
-    }
-  }, children), __jsx("div", {
-    style: {
-      bottom: 0,
-      height: '100px',
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#4fc2b4',
-      padding: '50px'
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 5
-    }
-  }, __jsx("p", {
-    style: {
-      color: 'white'
-    },
-    className: "jsx-4203305573",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 7
-    }
-  }, "\xA9 Colin McDonnell 2020")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "4203305573",
-    __self: _this
-  }, "html,body,#__next{min-height:100%;padding:0;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen, Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;}*{box-sizing:border-box;}code{background-color:#00000010;padding:3px 3px;border-radius:2px;}pre{margin:20px 0px !important;}body{font-family:'Montserrat';color:#333;}h1,h2,h3,h4,h5,h6{font-family:'Merriweather';}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9vbmVwb3RtYW4vY29tcG9uZW50cy9CYXNlUGFnZS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBd0V1QixBQUt5QixBQVFNLEFBSUssQUFNQSxBQUlGLEFBU0UsZ0JBOUJqQixNQVFaLEdBY2EsQ0FyQkYsQ0FXTyxBQU1sQixBQWFBLFFBNUJ3RSxDQW9CeEUsT0FWb0Isa0JBQ3BCLDJHQVZBIiwiZmlsZSI6Ii9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9vbmVwb3RtYW4vY29tcG9uZW50cy9CYXNlUGFnZS50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcblxuY29uc3QgQmFzZVBhZ2U6IFJlYWN0LkZ1bmN0aW9uQ29tcG9uZW50ID0gKHsgY2hpbGRyZW4gfSkgPT4gKFxuICA8ZGl2XG4gICAgc3R5bGU9e3tcbiAgICAgIGRpc3BsYXk6ICdmbGV4JyxcbiAgICAgIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLFxuICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLFxuICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gICAgfX1cbiAgPlxuICAgIDxIZWFkPlxuICAgICAgPGxpbmtcbiAgICAgICAgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1NZXJyaXdlYXRoZXJ8TW9udHNlcnJhdCZkaXNwbGF5PXN3YXBcIlxuICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcbiAgICAgID48L2xpbms+XG5cbiAgICAgIDxzY3JpcHRcbiAgICAgICAgYXN5bmNcbiAgICAgICAgc3JjPVwiaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNjYwODQ5MTMtMVwiXG4gICAgICA+PC9zY3JpcHQ+XG4gICAgICA8c2NyaXB0XG4gICAgICAgIGRhbmdlcm91c2x5U2V0SW5uZXJIVE1MPXt7XG4gICAgICAgICAgX19odG1sOiBgd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107XG4gIGZ1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO31cbiAgZ3RhZygnanMnLCBuZXcgRGF0ZSgpKTtcblxuICBndGFnKCdjb25maWcnLCAnVUEtMTY2MDg0OTEzLTEnKTtgLFxuICAgICAgICB9fVxuICAgICAgPjwvc2NyaXB0PlxuICAgIDwvSGVhZD5cbiAgICA8ZGl2XG4gICAgICBzdHlsZT17e1xuICAgICAgICB0b3A6IDAsXG4gICAgICAgIHdpZHRoOiAnMTAwJScsXG4gICAgICAgIGhlaWdodDogJzUwcHgnLFxuICAgICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAgIGZsZXhEaXJlY3Rpb246ICdyb3cnLFxuICAgICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJyxcbiAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJyxcbiAgICAgICAgYmFja2dyb3VuZENvbG9yOiAnIzRmYzJiNCcsXG4gICAgICAgIGNvbG9yOiAnd2hpdGUnLFxuICAgICAgICBwYWRkaW5nOiAnMzBweCcsXG4gICAgICAgIGZvbnRTaXplOiAnMTJwdCcsXG4gICAgICB9fVxuICAgID5cbiAgICAgIHtmYWxzZSAmJiAoXG4gICAgICAgIDxhIGhyZWY9XCIvXCIgc3R5bGU9e3sgdGV4dERlY29yYXRpb246ICdub25lJywgY29sb3I6ICd3aGl0ZScgfX0+XG4gICAgICAgICAgSG9tZVxuICAgICAgICA8L2E+XG4gICAgICApfVxuICAgICAgPGRpdiBzdHlsZT17eyBmbGV4OiAxIH19PjwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgc3R5bGU9e3sgbWF4V2lkdGg6ICcxMDAlJywgbWluSGVpZ2h0OiBgY2FsYygxMDB2aCAtIDIwMHB4KWAgfX0+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9kaXY+XG4gICAgPGRpdlxuICAgICAgc3R5bGU9e3tcbiAgICAgICAgYm90dG9tOiAwLFxuICAgICAgICBoZWlnaHQ6ICcxMDBweCcsXG4gICAgICAgIHdpZHRoOiAnMTAwJScsXG4gICAgICAgIGRpc3BsYXk6ICdmbGV4JyxcbiAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsXG4gICAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJyxcbiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gICAgICAgIGJhY2tncm91bmRDb2xvcjogJyM0ZmMyYjQnLFxuICAgICAgICBwYWRkaW5nOiAnNTBweCcsXG4gICAgICB9fVxuICAgID5cbiAgICAgIDxwIHN0eWxlPXt7IGNvbG9yOiAnd2hpdGUnIH19PsKpIENvbGluIE1jRG9ubmVsbCAyMDIwPC9wPlxuICAgIDwvZGl2PlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBodG1sLFxuICAgICAgYm9keSxcbiAgICAgICNfX25leHQge1xuICAgICAgICBtaW4taGVpZ2h0OiAxMDAlO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLCBSb2JvdG8sIE94eWdlbixcbiAgICAgICAgICBVYnVudHUsIENhbnRhcmVsbCwgRmlyYSBTYW5zLCBEcm9pZCBTYW5zLCBIZWx2ZXRpY2EgTmV1ZSwgc2Fucy1zZXJpZjtcbiAgICAgIH1cblxuICAgICAgKiB7XG4gICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICB9XG5cbiAgICAgIGNvZGUge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwMTA7XG4gICAgICAgIHBhZGRpbmc6IDNweCAzcHg7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDJweDtcbiAgICAgIH1cblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAyMHB4IDBweCAhaW1wb3J0YW50O1xuICAgICAgfVxuXG4gICAgICBib2R5IHtcbiAgICAgICAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0JztcbiAgICAgICAgY29sb3I6ICMzMzM7XG4gICAgICB9XG4gICAgICBoMSxcbiAgICAgIGgyLFxuICAgICAgaDMsXG4gICAgICBoNCxcbiAgICAgIGg1LFxuICAgICAgaDYge1xuICAgICAgICBmb250LWZhbWlseTogJ01lcnJpd2VhdGhlcic7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEJhc2VQYWdlO1xuIl19 */\n/*@ sourceURL=/Users/colinmcd94/Documents/Projects/onepotman/components/BasePage.tsx */"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (BasePage);
-
-/***/ }),
-
-/***/ "./components/BlogPage.tsx":
-/*!*********************************!*\
-  !*** ./components/BlogPage.tsx ***!
-  \*********************************/
-/*! exports provided: BlogPost, MarkdownPage, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogPost", function() { return BlogPost; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MarkdownPage", function() { return MarkdownPage; });
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var fecha__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! fecha */ "./node_modules/fecha/lib/fecha.js");
-/* harmony import */ var _BasePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./BasePage */ "./components/BasePage.tsx");
-/* harmony import */ var _Markdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Markdown */ "./components/Markdown.tsx");
-var _this = undefined,
-    _jsxFileName = "/Users/colinmcd94/Documents/Projects/onepotman/components/BlogPage.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-
-
-
-
-var BlogPage = function BlogPage(_ref) {
-  var post = _ref.post;
-  return __jsx(_BasePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 5
-    }
-  }, __jsx(BlogPost, {
-    post: post,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }
-  }));
-};
-
-var BlogPost = function BlogPost(_ref2) {
-  var post = _ref2.post;
-  var title = post.title,
-      subtitle = post.subtitle,
-      published = post.published,
-      author = post.author,
-      authorPhoto = post.authorPhoto;
-
-  var authorData = __jsx("div", {
-    style: {
-      opacity: 0.6
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 5
-    }
-  }, __jsx("span", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 7
-    }
-  }, author ? author : '', " "), __jsx("span", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 7
-    }
-  }, published ? Object(fecha__WEBPACK_IMPORTED_MODULE_3__["format"])(new Date(published), 'MMMM Do, YYYY') : ''));
-
-  return __jsx("div", {
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 9
-    }
-  }, title), __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico",
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  })), __jsx("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'center',
-      width: '100%',
-      padding: '0px 4vw'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    style: {
-      width: '100%',
-      maxWidth: '600px'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    style: {
-      margin: '100px 0px 50px 0px'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 11
-    }
-  }, __jsx("h1", {
-    style: {
-      margin: '10px 0px 10px 0px',
-      padding: 0,
-      border: 'none'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 13
-    }
-  }, title), subtitle && __jsx("h2", {
-    style: {
-      margin: '10px 0px',
-      padding: 0,
-      border: 'none',
-      opacity: '0.6'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 15
-    }
-  }, subtitle), __jsx("hr", {
-    style: {
-      height: '1px',
-      color: '#eee',
-      opacity: 0.2,
-      margin: '15px 0px'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 13
-    }
-  }), __jsx("div", {
-    style: {
-      // opacity: 0.6,
-      margin: '0px',
-      padding: '0px' // display: 'flex',
-      // flexDirection: 'column',
-      // justifyContent: 'space-between',
-      // alignItems: 'flex-start',
-
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    style: {
-      // opacity: 0.6,
-      margin: '0px',
-      padding: '0px',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'flex-start',
-      alignItems: 'center'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92,
-      columnNumber: 15
-    }
-  }, __jsx("img", {
-    src: authorPhoto,
-    style: {
-      width: '50px',
-      height: '50px',
-      borderRadius: '25px',
-      margin: '0px 10px 0px 0px'
-    },
-    className: "jsx-2424488547",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 17
-    }
-  }), authorData))), __jsx(_Markdown__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    source: post.content,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117,
-      columnNumber: 11
-    }
-  }))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2424488547",
-    __self: _this
-  }, "p,li{line-height:1.7;}h1,h2{margin-top:40px;padding-bottom:7px;border-bottom:1px solid #eee;}h1,h2,,h3,h4,h5,h6{margin:0px;padding:0px;}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{-webkit-text-decoration:none;text-decoration:none;}hr{margin:20px 0px;opacity:0.35;}h1{padding-top:30px;padding-bottom:10px;margin-top:30px;margin-bottom:30px;}h2{padding-top:25px;padding-bottom:10px;margin-top:25px;margin-bottom:25px;}h3{padding-top:20px;padding-bottom:10px;margin-top:20px;margin-bottom:20px;}h4{padding-top:15px;padding-bottom:10px;margin-top:15px;margin-bottom:15px;}h5{padding-top:10px;padding-bottom:10px;margin-top:10px;margin-bottom:10px;}h6{padding-top:5px;padding-bottom:10px;margin-top:5px;margin-bottom:5px;}p{padding:10px 0px;margin:10px 0px;}li{margin:0px 0px;}img{width:100%;border-radius:8px;box-shadow:0px 4px 30px #00000040;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9vbmVwb3RtYW4vY29tcG9uZW50cy9CbG9nUGFnZS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBd0h5QixBQUkyQixBQUtBLEFBV0wsQUFTVSxBQUdMLEFBSUMsQUFNQSxBQU1BLEFBTUEsQUFNQSxBQU1ELEFBTUMsQUFJRixBQUdKLFdBMURDLEFBMkRNLElBSHBCLENBeEVBLEFBS3FCLEFBdUJOLEFBa0NPLENBOUJBLEFBTUEsQUFNQSxBQU1BLEFBTUEsQUFZSixNQW5EbEIsTUFZQSxBQStDb0MsSUFQcEMsRUEvRCtCLENBeURkLENBOUJDLEFBTUEsQUFNQSxBQU1BLEFBTUEsYUFoQ2xCLENBdUNvQixFQTlCQyxBQU1BLEFBTUEsQUFNQSxBQU1BLFVBbUJyQixDQXRFQSxLQTBEQSxHQTlCQSxBQU1BLEFBTUEsQUFNQSxBQU1BIiwiZmlsZSI6Ii9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9vbmVwb3RtYW4vY29tcG9uZW50cy9CbG9nUGFnZS50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGZvcm1hdCB9IGZyb20gJ2ZlY2hhJztcblxuaW1wb3J0IEJhc2VQYWdlIGZyb20gJy4vQmFzZVBhZ2UnO1xuaW1wb3J0IE1hcmtkb3duIGZyb20gJy4vTWFya2Rvd24nO1xuaW1wb3J0IHsgUG9zdERhdGEgfSBmcm9tICcuLi9sb2FkZXInO1xuXG5jb25zdCBCbG9nUGFnZTogUmVhY3QuRnVuY3Rpb25Db21wb25lbnQ8e1xuICBwb3N0OiBQb3N0RGF0YTtcbn0+ID0gKHsgcG9zdCB9KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPEJhc2VQYWdlPlxuICAgICAgPEJsb2dQb3N0IHBvc3Q9e3Bvc3R9IC8+XG4gICAgPC9CYXNlUGFnZT5cbiAgKTtcbn07XG5cbmV4cG9ydCBjb25zdCBCbG9nUG9zdDogUmVhY3QuRnVuY3Rpb25Db21wb25lbnQ8eyBwb3N0OiBQb3N0RGF0YSB9PiA9ICh7XG4gIHBvc3QsXG59KSA9PiB7XG4gIGNvbnN0IHsgdGl0bGUsIHN1YnRpdGxlLCBwdWJsaXNoZWQsIGF1dGhvciwgYXV0aG9yUGhvdG8gfSA9IHBvc3Q7XG5cbiAgY29uc3QgYXV0aG9yRGF0YSA9IChcbiAgICA8ZGl2IHN0eWxlPXt7IG9wYWNpdHk6IDAuNiB9fT5cbiAgICAgIDxzcGFuPnthdXRob3IgPyBhdXRob3IgOiAnJ30gPC9zcGFuPlxuICAgICAgPHNwYW4+XG4gICAgICAgIHtwdWJsaXNoZWQgPyBmb3JtYXQobmV3IERhdGUocHVibGlzaGVkKSwgJ01NTU0gRG8sIFlZWVknKSA6ICcnfVxuICAgICAgPC9zcGFuPlxuICAgIDwvZGl2PlxuICApO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8dGl0bGU+e3RpdGxlfTwvdGl0bGU+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiBocmVmPVwiL2Zhdmljb24uaWNvXCIgLz5cbiAgICAgIDwvSGVhZD5cblxuICAgICAgPGRpdlxuICAgICAgICBzdHlsZT17e1xuICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JyxcbiAgICAgICAgICBmbGV4RGlyZWN0aW9uOiAncm93JyxcbiAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsXG4gICAgICAgICAgd2lkdGg6ICcxMDAlJyxcbiAgICAgICAgICBwYWRkaW5nOiAnMHB4IDR2dycsXG4gICAgICAgIH19XG4gICAgICA+XG4gICAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJywgbWF4V2lkdGg6ICc2MDBweCcgfX0+XG4gICAgICAgICAgPGRpdiBzdHlsZT17eyBtYXJnaW46ICcxMDBweCAwcHggNTBweCAwcHgnIH19PlxuICAgICAgICAgICAgPGgxXG4gICAgICAgICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgICAgICAgbWFyZ2luOiAnMTBweCAwcHggMTBweCAwcHgnLFxuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDAsXG4gICAgICAgICAgICAgICAgYm9yZGVyOiAnbm9uZScsXG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIHt0aXRsZX1cbiAgICAgICAgICAgIDwvaDE+XG4gICAgICAgICAgICB7c3VidGl0bGUgJiYgKFxuICAgICAgICAgICAgICA8aDJcbiAgICAgICAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgICAgICAgbWFyZ2luOiAnMTBweCAwcHgnLFxuICAgICAgICAgICAgICAgICAgcGFkZGluZzogMCxcbiAgICAgICAgICAgICAgICAgIGJvcmRlcjogJ25vbmUnLFxuICAgICAgICAgICAgICAgICAgb3BhY2l0eTogJzAuNicsXG4gICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIHtzdWJ0aXRsZX1cbiAgICAgICAgICAgICAgPC9oMj5cbiAgICAgICAgICAgICl9XG4gICAgICAgICAgICA8aHJcbiAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICBoZWlnaHQ6ICcxcHgnLFxuICAgICAgICAgICAgICAgIGNvbG9yOiAnI2VlZScsXG4gICAgICAgICAgICAgICAgb3BhY2l0eTogMC4yLFxuICAgICAgICAgICAgICAgIG1hcmdpbjogJzE1cHggMHB4JyxcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG5cbiAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICAvLyBvcGFjaXR5OiAwLjYsXG4gICAgICAgICAgICAgICAgbWFyZ2luOiAnMHB4JyxcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiAnMHB4JyxcbiAgICAgICAgICAgICAgICAvLyBkaXNwbGF5OiAnZmxleCcsXG4gICAgICAgICAgICAgICAgLy8gZmxleERpcmVjdGlvbjogJ2NvbHVtbicsXG4gICAgICAgICAgICAgICAgLy8ganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJyxcbiAgICAgICAgICAgICAgICAvLyBhbGlnbkl0ZW1zOiAnZmxleC1zdGFydCcsXG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgICAgICAgLy8gb3BhY2l0eTogMC42LFxuICAgICAgICAgICAgICAgICAgbWFyZ2luOiAnMHB4JyxcbiAgICAgICAgICAgICAgICAgIHBhZGRpbmc6ICcwcHgnLFxuICAgICAgICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLFxuICAgICAgICAgICAgICAgICAgZmxleERpcmVjdGlvbjogJ3JvdycsXG4gICAgICAgICAgICAgICAgICBqdXN0aWZ5Q29udGVudDogJ2ZsZXgtc3RhcnQnLFxuICAgICAgICAgICAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxpbWdcbiAgICAgICAgICAgICAgICAgIHNyYz17YXV0aG9yUGhvdG99XG4gICAgICAgICAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogJzUwcHgnLFxuICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6ICc1MHB4JyxcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnMjVweCcsXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogJzBweCAxMHB4IDBweCAwcHgnLFxuICAgICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgIHthdXRob3JEYXRhfVxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgPE1hcmtkb3duIHNvdXJjZT17cG9zdC5jb250ZW50fSAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBwLFxuICAgICAgICBsaSB7XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNztcbiAgICAgICAgfVxuXG4gICAgICAgIGgxLFxuICAgICAgICBoMiB7XG4gICAgICAgICAgbWFyZ2luLXRvcDogNDBweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xuICAgICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZWVlO1xuICAgICAgICB9XG4gICAgICAgIGgxLFxuICAgICAgICBoMixcbiAgICAgICAgLFxuICAgICAgICBoMyxcbiAgICAgICAgaDQsXG4gICAgICAgIGg1LFxuICAgICAgICBoNiB7XG4gICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICB9XG4gICAgICAgIGgxID4gYSxcbiAgICAgICAgaDIgPiBhLFxuICAgICAgICBoMyA+IGEsXG4gICAgICAgIGg0ID4gYSxcbiAgICAgICAgaDUgPiBhLFxuICAgICAgICBoNiA+IGEge1xuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgfVxuICAgICAgICBociB7XG4gICAgICAgICAgbWFyZ2luOiAyMHB4IDBweDtcbiAgICAgICAgICBvcGFjaXR5OiAwLjM1O1xuICAgICAgICB9XG4gICAgICAgIGgxIHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMzBweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAzMHB4O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDMwcHg7XG4gICAgICAgIH1cbiAgICAgICAgaDIge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAyNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDI1cHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMjVweDtcbiAgICAgICAgfVxuICAgICAgICBoMyB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDIwcHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgICAgICB9XG4gICAgICAgIGg0IHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMTVweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAxNXB4O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDE1cHg7XG4gICAgICAgIH1cbiAgICAgICAgaDUge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAxMHB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMTBweDtcbiAgICAgICAgfVxuICAgICAgICBoNiB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDVweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiA1cHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICAgICAgICB9XG4gICAgICAgIHAge1xuICAgICAgICAgIHBhZGRpbmc6IDEwcHggMHB4O1xuICAgICAgICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgICAgIH1cbiAgICAgICAgbGkge1xuICAgICAgICAgIG1hcmdpbjogMHB4IDBweDtcbiAgICAgICAgfVxuICAgICAgICBpbWcge1xuICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgICBib3gtc2hhZG93OiAwcHggNHB4IDMwcHggIzAwMDAwMDQwO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgY29uc3QgTWFya2Rvd25QYWdlOiBSZWFjdC5GdW5jdGlvbkNvbXBvbmVudDx7IHBvc3Q6IFBvc3REYXRhIH0+ID0gKHtcbiAgcG9zdCxcbn0pID0+IHtcbiAgcmV0dXJuIChcbiAgICA8QmxvZ1BhZ2UgcG9zdD17cG9zdH0+XG4gICAgICA8TWFya2Rvd24gc291cmNlPXtwb3N0LmNvbnRlbnQgfHwgJyMjIDQwNCBOb3QgRm91bmQnfSAvPlxuICAgIDwvQmxvZ1BhZ2U+XG4gICk7XG59O1xuZXhwb3J0IGRlZmF1bHQgQmxvZ1BhZ2U7XG4iXX0= */\n/*@ sourceURL=/Users/colinmcd94/Documents/Projects/onepotman/components/BlogPage.tsx */"));
-};
-var MarkdownPage = function MarkdownPage(_ref3) {
-  var post = _ref3.post;
-  return __jsx(BlogPage, {
-    post: post,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 212,
-      columnNumber: 5
-    }
-  }, __jsx(_Markdown__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    source: post.content || '## 404 Not Found',
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 213,
-      columnNumber: 7
-    }
-  }));
-};
-/* harmony default export */ __webpack_exports__["default"] = (BlogPage);
-
-/***/ }),
-
 /***/ "./components/Code.tsx":
 /*!*****************************!*\
   !*** ./components/Code.tsx ***!
@@ -469,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/colinmcd94/Documents/Projects/onepotman/components/Code.tsx";
+var _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/components/Code.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
@@ -521,71 +77,256 @@ var Code = /*#__PURE__*/function (_React$PureComponent) {
 /*!*********************************!*\
   !*** ./components/Markdown.tsx ***!
   \*********************************/
-/*! exports provided: default */
+/*! exports provided: Markdown */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-markdown/with-html */ "./node_modules/react-markdown/with-html.js");
-/* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Code__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Code */ "./components/Code.tsx");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Markdown", function() { return Markdown; });
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown/with-html */ "./node_modules/react-markdown/with-html.js");
+/* harmony import */ var react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Code__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Code */ "./components/Code.tsx");
+var _this = undefined,
+    _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/components/Markdown.tsx";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-
-var _jsxFileName = "/Users/colinmcd94/Documents/Projects/onepotman/components/Markdown.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-
-var Markdown = /*#__PURE__*/function (_React$PureComponent) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(Markdown, _React$PureComponent);
-
-  var _super = _createSuper(Markdown);
-
-  function Markdown() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Markdown);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Markdown, [{
-    key: "render",
-    value: function render() {
-      return __jsx(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        source: this.props.source,
-        renderers: {
-          code: _Code__WEBPACK_IMPORTED_MODULE_7__["default"]
-        },
-        escapeHtml: false,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 7
-        }
-      });
+var Markdown = function Markdown(props) {
+  return __jsx("div", {
+    style: {
+      width: '100%'
+    },
+    className: "jsx-1526302572" + " " + "devii-markdown",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 5
     }
-  }]);
+  }, __jsx(react_markdown_with_html__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    key: "content",
+    source: props.source,
+    renderers: {
+      code: _Code__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    escapeHtml: false,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1526302572",
+    __self: _this
+  }, ".devii-markdown p,.devii-markdown li{line-height:1.7;color:#333;}.devii-markdown h1,.devii-markdown h2,.devii-markdown h3,.devii-markdown h4,.devii-markdown h5,.devii-markdown h6{margin:0px;padding:0px;}.devii-markdown h1>a,.devii-markdown h2>a,.devii-markdown h3>a,.devii-markdown h4>a,.devii-markdown h5>a,.devii-markdown h6>a{-webkit-text-decoration:none;text-decoration:none;}.devii-markdown hr{margin:20px 0px;opacity:0.35;}.devii-markdown h1{padding-top:30px;padding-bottom:10px;margin-top:30px;margin-bottom:30px;}.devii-markdown h2{padding-top:25px;padding-bottom:10px;margin-top:25px;margin-bottom:25px;}.devii-markdown h3{padding-top:20px;padding-bottom:10px;margin-top:20px;margin-bottom:20px;}.devii-markdown h4{padding-top:15px;padding-bottom:10px;margin-top:15px;margin-bottom:15px;}.devii-markdown h5{padding-top:10px;padding-bottom:10px;margin-top:10px;margin-bottom:10px;}.devii-markdown h6{padding-top:5px;padding-bottom:10px;margin-top:5px;margin-bottom:5px;}.devii-markdown p{padding:10px 0px;margin:10px 0px;}.devii-markdown li{padding:10px 0px;}.devii-markdown img{width:100%;border-radius:8px;box-shadow:0px 4px 30px #00000040;}.devii-markdown code{background-color:#00000010;padding:3px 3px;border-radius:2px;}.devii-markdown pre{margin:20px 0px !important;}.devii-markdown ol pre{margin:0px 0px !important;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jb2xpbm1jZDk0L0RvY3VtZW50cy9Qcm9qZWN0cy9kZXZpaS9jb21wb25lbnRzL01hcmtkb3duLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFleUIsQUFJMkIsQUFVTCxBQVVVLEFBSUwsQUFLQyxBQU9BLEFBT0EsQUFPQSxBQU9BLEFBT0QsQUFPQyxBQUtBLEFBSU4sQUFNZ0IsQUFNQSxBQUlELFdBckZkLEFBc0VNLEtBaEZQLEFBd0JFLEFBd0NPLENBbkNBLEFBT0EsQUFPQSxBQU9BLEFBT0EsQUFjSixBQUtsQixNQWpFQSxHQXFGQSxDQS9GQSxBQXFGa0IsQUFNbEIsRUFuRUEsQUF3RG9DLElBVHBDLEdBUGlCLENBbkNDLEFBT0EsQUFPQSxBQU9BLEFBT0EsTUE2QkUsT0FuRXBCLENBOENvQixFQW5DQyxBQU9BLEFBT0EsQUFPQSxBQU9BLFFBNkJyQixFQU5BLE1BZkEsR0FuQ0EsQUFPQSxBQU9BLEFBT0EsQUFPQSIsImZpbGUiOiIvVXNlcnMvY29saW5tY2Q5NC9Eb2N1bWVudHMvUHJvamVjdHMvZGV2aWkvY29tcG9uZW50cy9NYXJrZG93bi50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IFJlYWN0TWFya2Rvd24gZnJvbSAncmVhY3QtbWFya2Rvd24vd2l0aC1odG1sJztcbmltcG9ydCBDb2RlIGZyb20gJy4vQ29kZSc7XG5cbmV4cG9ydCBjb25zdCBNYXJrZG93bjogUmVhY3QuRkM8eyBzb3VyY2U6IHN0cmluZyB9PiA9IChwcm9wcykgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJyB9fSBjbGFzc05hbWU9XCJkZXZpaS1tYXJrZG93blwiPlxuICAgICAgPFJlYWN0TWFya2Rvd25cbiAgICAgICAga2V5PVwiY29udGVudFwiXG4gICAgICAgIHNvdXJjZT17cHJvcHMuc291cmNlfVxuICAgICAgICByZW5kZXJlcnM9e3tcbiAgICAgICAgICBjb2RlOiBDb2RlLFxuICAgICAgICB9fVxuICAgICAgICBlc2NhcGVIdG1sPXtmYWxzZX1cbiAgICAgIC8+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGxpIHtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMS43O1xuICAgICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxLFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDIsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMyxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0LFxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDUsXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNiB7XG4gICAgICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgxID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgyID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg0ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg1ID4gYSxcbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2ID4gYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGhyIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4O1xuICAgICAgICAgIG9wYWNpdHk6IDAuMzU7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDEge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAzMHB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDMwcHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoMiB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDI1cHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMjVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGgzIHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMjBweDtcbiAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaDQge1xuICAgICAgICAgIHBhZGRpbmctdG9wOiAxNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgICAgICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBoNSB7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDEwcHg7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgICAgICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLmRldmlpLW1hcmtkb3duIGg2IHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcCB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgICAgbWFyZ2luOiAxMHB4IDBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBsaSB7XG4gICAgICAgICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gaW1nIHtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgICAgICAgYm94LXNoYWRvdzogMHB4IDRweCAzMHB4ICMwMDAwMDA0MDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5kZXZpaS1tYXJrZG93biBjb2RlIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwMTA7XG4gICAgICAgICAgcGFkZGluZzogM3B4IDNweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gcHJlIHtcbiAgICAgICAgICBtYXJnaW46IDIwcHggMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cblxuICAgICAgICAuZGV2aWktbWFya2Rvd24gb2wgcHJlIHtcbiAgICAgICAgICBtYXJnaW46IDBweCAwcHggIWltcG9ydGFudDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcbiJdfQ== */\n/*@ sourceURL=/Users/colinmcd94/Documents/Projects/devii/components/Markdown.tsx */"));
+};
 
-  return Markdown;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.PureComponent);
+/***/ }),
 
-/* harmony default export */ __webpack_exports__["default"] = (Markdown);
+/***/ "./components/PostCard.tsx":
+/*!*********************************!*\
+  !*** ./components/PostCard.tsx ***!
+  \*********************************/
+/*! exports provided: PostCard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostCard", function() { return PostCard; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var fecha__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fecha */ "./node_modules/fecha/lib/fecha.js");
+/* harmony import */ var _Tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tag */ "./components/Tag.tsx");
+var _this = undefined,
+    _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/components/PostCard.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var PostCard = function PostCard(props) {
+  var post = props.post;
+  return __jsx("a", {
+    href: "/".concat(post.path),
+    style: {
+      textDecoration: 'inherit',
+      color: 'inherit',
+      margin: '10px',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      height: '300px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    style: {
+      // flexBasis: '300px',
+      // flex: 1,
+      // minWidth: '200px',
+      // maxWidth: '450px',
+      opacity: 0.92,
+      boxShadow: '0px 2px 10px #00000040',
+      width: '100%',
+      maxWidth: '500px',
+      overflow: 'hidden',
+      borderRadius: '8px',
+      // boxShadow: '0px 2px 10px #00000020',
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%' // margin: '10px 0px',
+
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, post.thumbnailPhoto && __jsx("div", {
+    style: {
+      background: "url(".concat(post.thumbnailPhoto, ") no-repeat center center"),
+      backgroundSize: 'cover',
+      // backgroundImage: post.thumb_image,
+      // backgroundPosition: 'cover',
+      width: '100%',
+      flex: 1 // height: '200px',
+
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 11
+    }
+  }), __jsx("div", {
+    style: {
+      padding: '15px 10px',
+      display: 'flex',
+      flexDirection: 'column',
+      borderTop: '1px solid #00000020'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 9
+    }
+  }, post.title && __jsx("h2", {
+    style: {
+      margin: '0px 0px 7px 0px',
+      // padding: '2px 0px 2px 0px',
+      fontSize: '14pt',
+      fontWeight: 600,
+      padding: '2px 10%',
+      textAlign: 'center'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 13
+    }
+  }, post.title),  false && false, __jsx("p", {
+    style: {
+      opacity: 0.6,
+      textAlign: 'center',
+      margin: '0px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 11
+    }
+  }, props.post.datePublished ? Object(fecha__WEBPACK_IMPORTED_MODULE_1__["format"])(new Date(props.post.datePublished), 'MMMM Do, YYYY') : ''), __jsx("div", {
+    style: {
+      flex: 1
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92,
+      columnNumber: 11
+    }
+  }, " "),  false && false)));
+};
+
+/***/ }),
+
+/***/ "./components/Tag.tsx":
+/*!****************************!*\
+  !*** ./components/Tag.tsx ***!
+  \****************************/
+/*! exports provided: Tag */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Tag", function() { return Tag; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _this = undefined,
+    _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/components/Tag.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var Tag = function Tag(props) {
+  return __jsx("div", {
+    style: {
+      display: 'inline-block',
+      padding: '3px 12px',
+      borderRadius: '20px',
+      backgroundColor: '#dddddd',
+      color: '#333333',
+      marginRight: '7px',
+      boxShadow: '0px 1px 1px #00000030'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 5
+    }
+  }, props.tag);
+};
+
+/***/ }),
+
+/***/ "./globals.ts":
+/*!********************!*\
+  !*** ./globals.ts ***!
+  \********************/
+/*! exports provided: config */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+var config;
+
+(function (_config) {
+  var yourName = _config.yourName = 'Alyssa P. Hacker';
+  var siteName = _config.siteName = "My Awesome Blog";
+  var siteDescription = _config.siteDescription = "I write about code 'n stuff";
+  var siteCreationDate = _config.siteCreationDate = 'March 3, 2020 04:00:00 GMT';
+  var twitterHandle = _config.twitterHandle = '@alyssaphacker';
+  var email = _config.email = "alyssa@example.com";
+  var url = _config.url = 'https://alyssaphacker.com';
+  var accentColor = _config.accentColor = "#4fc2b4";
+})(config || (config = {}));
 
 /***/ }),
 
@@ -30616,7 +30357,7 @@ exports.EVENTS = {
     They should probably be removed eventually.
 */
 __export(__webpack_require__(/*! ./FeedHandler */ "./node_modules/htmlparser2/lib/FeedHandler.js"));
-__export(__webpack_require__(/*! ./WritableStream */ 2));
+__export(__webpack_require__(/*! ./WritableStream */ 1));
 __export(__webpack_require__(/*! ./CollectingHandler */ "./node_modules/htmlparser2/lib/CollectingHandler.js"));
 var DomUtils = __importStar(__webpack_require__(/*! domutils */ "./node_modules/domutils/lib/index.js"));
 exports.DomUtils = DomUtils;
@@ -32618,10 +32359,10 @@ module.exports = (__webpack_require__(/*! dll-reference dll_0fb095e325d7ebf261c3
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fonepotman%2Fpages%2Findex.tsx&hotRouterUpdates=true!./":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fonepotman%2Fpages%2Findex.tsx&hotRouterUpdates=true ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true!./":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true ***!
+  \***********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -66230,36 +65971,6 @@ function repeat(str, num) {
 
 /***/ }),
 
-/***/ "./node_modules/replace-ext/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/replace-ext/index.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var path = __webpack_require__(/*! path */ "./node_modules/path-browserify/index.js");
-
-function replaceExt(npath, ext) {
-  if (typeof npath !== 'string') {
-    return npath;
-  }
-
-  if (npath.length === 0) {
-    return npath;
-  }
-
-  var nFileName = path.basename(npath, path.extname(npath)) + ext;
-  return path.join(path.dirname(npath), nFileName);
-}
-
-module.exports = replaceExt;
-
-
-/***/ }),
-
 /***/ "./node_modules/space-separated-tokens/index.js":
 /*!******************************************************!*\
   !*** ./node_modules/space-separated-tokens/index.js ***!
@@ -68357,7 +68068,7 @@ function parseOrigin(origin) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var path = __webpack_require__(/*! path */ "./node_modules/path-browserify/index.js");
-var replace = __webpack_require__(/*! replace-ext */ "./node_modules/replace-ext/index.js");
+var replace = __webpack_require__(/*! replace-ext */ "./node_modules/vfile/node_modules/replace-ext/index.js");
 var buffer = __webpack_require__(/*! is-buffer */ "./node_modules/is-buffer/index.js");
 
 module.exports = VFile;
@@ -68593,6 +68304,36 @@ function info() {
 
 /***/ }),
 
+/***/ "./node_modules/vfile/node_modules/replace-ext/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/vfile/node_modules/replace-ext/index.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var path = __webpack_require__(/*! path */ "./node_modules/path-browserify/index.js");
+
+function replaceExt(npath, ext) {
+  if (typeof npath !== 'string') {
+    return npath;
+  }
+
+  if (npath.length === 0) {
+    return npath;
+  }
+
+  var nFileName = path.basename(npath, path.extname(npath)) + ext;
+  return path.join(path.dirname(npath), nFileName);
+}
+
+module.exports = replaceExt;
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -68686,10 +68427,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_BasePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/BasePage */ "./components/BasePage.tsx");
-/* harmony import */ var _components_BlogPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/BlogPage */ "./components/BlogPage.tsx");
+/* harmony import */ var _components_PostCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PostCard */ "./components/PostCard.tsx");
+/* harmony import */ var _components_Markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Markdown */ "./components/Markdown.tsx");
+/* harmony import */ var _globals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../globals */ "./globals.ts");
 var _this = undefined,
-    _jsxFileName = "/Users/colinmcd94/Documents/Projects/onepotman/pages/index.tsx";
+    _jsxFileName = "/Users/colinmcd94/Documents/Projects/devii/pages/index.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -68697,61 +68439,250 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Home = function Home(props) {
-  var post = props.post;
-  return __jsx(_components_BasePage__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx("div", {
+    style: {
+      width: '100%'
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 9
     }
-  }, "Combinatorial Cooking"), __jsx("link", {
+  }, "Introducing Devii"), __jsx("link", {
     rel: "icon",
     href: "/favicon.ico",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 9
     }
-  })), __jsx(_components_BlogPage__WEBPACK_IMPORTED_MODULE_3__["BlogPost"], {
-    post: post,
+  })), __jsx("div", {
+    style: {
+      width: '100%',
+      padding: '100px 10vw'
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 17,
       columnNumber: 7
     }
-  }), __jsx("br", {
+  }, __jsx("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      width: '100%'
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
+      lineNumber: 18,
+      columnNumber: 9
     }
-  }), __jsx("br", {
+  }, __jsx("h2", {
+    style: {
+      margin: '4px 0px'
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, "My blog posts"), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 11
+    }
+  }, "Any new markdown file under ", __jsx("code", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 41
+    }
+  }, "/md/blog"), " will automatically appear here."), "\\", __jsx("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))",
+      gridRowGap: '8px',
+      gridColumnGap: '8px',
+      width: '100%'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  }, props.posts.map(function (post, j) {
+    return __jsx(_components_PostCard__WEBPACK_IMPORTED_MODULE_2__["PostCard"], {
+      post: post,
+      key: j,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 22
+      }
+    });
+  })))), __jsx("div", {
+    style: {
+      width: '100%',
+      margin: '100px 0px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
       columnNumber: 7
     }
-  }));
+  }, __jsx("h2", {
+    style: {
+      textAlign: 'center'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 9
+    }
+  }, "Testimonials"), __jsx("blockquote", {
+    style: {
+      borderLeft: "3px solid ".concat(_globals__WEBPACK_IMPORTED_MODULE_4__["config"].accentColor),
+      paddingLeft: '20px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 9
+    }
+  }, __jsx("p", {
+    style: {
+      fontSize: '16pt'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 11
+    }
+  }, __jsx("em", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 13
+    }
+  }, "Seems like it might be useful!")), __jsx("p", {
+    style: {
+      fontSize: '14pt',
+      textAlign: 'right'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 11
+    }
+  }, "\u2014 Dan Abramov, taken", ' ', __jsx("a", {
+    href: "https://github.com/vriad/devii",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 13
+    }
+  }, "utterly out of context")))), __jsx("div", {
+    style: {
+      width: '100%',
+      margin: '100px 0px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 7
+    }
+  }, __jsx("h2", {
+    style: {
+      textAlign: 'center'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 9
+    }
+  }, "README.md"), __jsx("p", {
+    style: {
+      textAlign: 'center',
+      maxWidth: '600px',
+      margin: 'auto'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 9
+    }
+  }, "Below is the README.md for devii. It was imported and rendered using Next.js dynamic imports. The rest of this page (including this paragraph) are rendered with React. \uD83C\uDF89")), __jsx("div", {
+    style: {
+      width: '100%',
+      backgroundColor: '#eeeeee',
+      paddingBottom: '50px'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    style: {
+      maxWidth: '600px',
+      margin: 'auto'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 9
+    }
+  }, __jsx(_components_Markdown__WEBPACK_IMPORTED_MODULE_3__["Markdown"], {
+    source: props.readme,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 11
+    }
+  }))));
 };
 
 var __N_SSG = true;
@@ -68760,18 +68691,6 @@ var __N_SSG = true;
 /***/ }),
 
 /***/ 1:
-/*!*******************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fonepotman%2Fpages%2Findex.tsx&hotRouterUpdates=true ***!
-  \*******************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fonepotman%2Fpages%2Findex.tsx&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fonepotman%2Fpages%2Findex.tsx&hotRouterUpdates=true!./");
-
-
-/***/ }),
-
-/***/ 2:
 /*!**********************************!*\
   !*** ./WritableStream (ignored) ***!
   \**********************************/
@@ -68779,6 +68698,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+
+/***/ 2:
+/*!***************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true ***!
+  \***************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fcolinmcd94%2FDocuments%2FProjects%2Fdevii%2Fpages%2Findex.tsx&hotRouterUpdates=true!./");
+
 
 /***/ }),
 
@@ -68793,5 +68724,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

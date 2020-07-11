@@ -110,6 +110,10 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
         .devii-markdown pre {
           margin: 20px 0px !important;
         }
+
+        .devii-markdown ol pre {
+          margin: 0px 0px !important;
+        }
       `}</style>
     </div>
   );
