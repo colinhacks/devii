@@ -2,9 +2,9 @@ import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { config } from '../globals';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
-  const googleAnalyticsId = ''; // e.g. 'UA-999999999-1';
   return (
     <div
       style={{
@@ -16,13 +16,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       }}
     >
       <Head>
-        {googleAnalyticsId && (
+        {config.googleAnalyticsId && (
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsId}`}
           ></script>
         )}
-        {googleAnalyticsId && (
+        {config.googleAnalyticsId && (
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -30,7 +30,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '${googleAnalyticsId}');
+            gtag('config', '${config.googleAnalyticsId}');
             `,
             }}
           ></script>

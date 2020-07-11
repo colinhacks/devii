@@ -13,7 +13,22 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <p style={{ maxWidth: '400px', margin: 'auto' }}>
+        This site is entirely built with Devii! The{' '}
+        <a href="https://github.com/vriad/devii">Devii repo</a> is actually the
+        code for this site. After you clone/fork it, you can use this code to
+        learn how Devii works. Then you can rip out everything you don't like,
+        customize everything else, and build your own tools and components on
+        top of the foundation Devii provides.
+      </p>
+      <p style={{ maxWidth: '400px', margin: 'auto' }}>
+        Your personal website is the online manifestation of you. Devii doesn't
+        really provide much out of the box. It provides some nice Medium-style
+        default styles for your blog posts and some tools for loading/rendering
+        Markdown. But you'll have to implement your own homepage more or less
+        from scratch. And that's the point! Don't settle for some theme. Build
+        something that represents you.
+      </p>
       <div style={{ width: '100%', padding: '100px 10vw' }}>
         <div
           style={{
@@ -28,7 +43,6 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
             Any new markdown file under <code>/md/blog</code> will automatically
             appear here.
           </p>
-
           <div
             style={{
               display: 'grid',
