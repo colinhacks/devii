@@ -18,7 +18,7 @@ const Home = (props: { readme: string; posts: PostData[] }) => {
         <p style={{ padding: '10px 0px', color: '#666666' }}>
           This site is entirely built with Devii! In fact, the{' '}
           <a href="https://github.com/vriad/devii">Devii repo</a> contains the
-          code for the site your looking at now.
+          code for the site you're looking at now.
         </p>
         <p style={{ padding: '10px 0px', color: '#666666' }}>
           After you clone/fork it, you can use this code to learn how Devii
