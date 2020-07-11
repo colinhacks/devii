@@ -8,6 +8,7 @@ export type PostData = {
   content: string;
   description?: string;
   canonicalUrl?: string;
+  published: boolean;
   datePublished?: number;
   author?: string;
   authorPhoto?: string;
@@ -31,6 +32,7 @@ export const mdToPost = (file: RawFile): PostData => {
     path,
     title: metadata.data.title,
     subtitle: metadata.data.subtitle || null,
+    published: metadata.data.published || false,
     datePublished: metadata.data.datePublished || null,
     tags: metadata.data.tags || null,
     description: metadata.data.description || null,

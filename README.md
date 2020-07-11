@@ -116,11 +116,30 @@ Just add a Markdown file under `md/blog/` to create a new blog post:
 
 ## Google Analytics
 
-Just add your Google Analytics ID (e.g. e.g. 'UA-999999999-1' ) to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
+Just add your Google Analytics ID (e.g. 'UA-999999999-1') to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
 
 ## Frontmatter support
 
-Every Markdown file can include a "frontmatter block" containing various metadata. This is the frontmatter blog from the sample blog post (`md/blog/test.md`):
+Every Markdown file can include a "frontmatter block" containing various metadata. Devii provides a `loadPost` utility that loads a Markdown file, parses it's frontmatter metadata, and returns a structured `PostData` object:
+
+```ts
+type PostData = {
+  path: string;
+  title?: string;
+  subtitle?: string;
+  description?: string; // used for SEO
+  canonicalUrl?: string; // used for SEO
+  datePublished?: number; // Unix timestamp
+  author?: string;
+  authorPhoto?: string;
+  authorHandle?: string; // twitter handle
+  tags?: string[];
+  bannerPhoto?: string;
+  thumbnailPhoto?: string;
+};
+```
+
+For example, here is the frontmatter blog from the sample blog post (`md/blog/the-ultimate-tech-stack.md`):
 
 ```
 ---
@@ -135,23 +154,6 @@ authorPhoto: /profile.jpg
 bannerPhoto: /brook.jpg
 thumbnailPhoto: /brook.jpg
 ---
-```
-
-This metadata will be loaded and parsed into a TypeScript object with the following type.
-
-```ts
-type PostData = {
-  path: string;
-  title?: string;
-  subtitle?: string;
-  content: string;
-  datePublished?: number;
-  author?: string;
-  authorPhoto?: string;
-  tags?: string[];
-  bannerPhoto?: string;
-  thumbnailPhoto?: string;
-};
 ```
 
 View `/loader.ts` to see how this works.
@@ -204,18 +206,18 @@ export const getStaticProps = async () => {
 };
 ```
 
-There are a few utility functions in `loader.ts` that Devii uses.
+There are a few utility functions in `loader.ts` that Devii uses. All functions are _async_! All functions accept a _relative_ path which is expected to be \_relative to the `md/` directory. For instance `loadPost('blog/test.md'`) would load `/md/blog/test.md`.
 
-- `loadPost` loads/parses a Markdown file and returns a `PostData`. It takes on argument, the name of a file in the `md/` directory. For instance `loadPost('about.md')` would load `/md/about.md` and `loadPost('blog/test.md'`) would load `/md/blog/test.md`.
-- `loadBlogPosts`: loads/parses all the files in `/md/blog/`. Returns `PostData[]`. Used in `index.tsx` to read a list of all published blog posts.
-- `loadMarkdownFile`: loads a Markdown file but doesn't parse it. Returns the string content. Useful if you want to implement certain parts of a page in Markdown and other parts in React.
-- `loadMarkdownFiles`: accepts a [glob](https://docs.python.org/3/library/glob.html) pattern and loads all the files inside `/md/` whose names match the pattern. Used internally by `loadBlogPosts`.
+- `loadPost` loads/parses a Markdown file and returns a `PostData`
+- `loadBlogPosts`: loads/parses all the files in `/md/blog/`. Returns `PostData[]`. Used in `index.tsx` to load/render a list of all published blog posts
+- `loadMarkdownFile`: loads a Markdown file but doesn't parse it. Returns the string content. Useful if you want to implement some parts of a page in Markdown and other parts in React
+- `loadMarkdownFiles`: accepts a [glob](https://docs.python.org/3/library/glob.html) pattern and loads all the files inside `/md/` whose names match the pattern. Used internally by `loadBlogPosts`
 
 ## Static generation
 
 You can generate a fully static version of your site using `yarn build && yarn export`. This step is entirely powered by Next.js. The static site is exported to the `out` directory.
 
-After its generated, use your static file hosting service of choice (Firebase Hosting, Amazon S3, Vercel) to deploy your site.
+After it's generated, use your static file hosting service of choice (Vercel, Netlify, Firebase Hosting, Amazon S3) to deploy your site.
 
 ## Global configs
 
