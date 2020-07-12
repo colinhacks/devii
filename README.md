@@ -21,10 +21,13 @@ if you're happy and you know it, star this repo
 
 A dev blog starter for 2020.
 
-- Works as a Markdown static-site generator out of the box
-- Supports static exporting and hot reload (powered by Next.js)
+- Works as a Markdown-based static-site generator out of the box: just add new blog posts to `/md/blog`
+- Supports exporting to fully static assets (powered by Next.js)
+- Hot reload (powered by Next.js)
 - Makes it easy to write custom pages/code in React + TypeScript
-- Support for code blocks with syntax highlighting
+- Provides a `Markdown.tsx` component with support for GitHub-style syntax highlighting
+- Automatic RSS feed generation
+- SEO best practices (title tag, meta tags, canonical URLs)
 
 Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
@@ -32,17 +35,9 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 This repo contains the code for [https://devii.dev](https://devii.dev).
 
-devii.dev serves as both the documentation AND a working demo of Devii. After you clone/fork it, you can look through the code to learn how Devii
-works. Then you can rip out everything you don't like, customize
-everything else, and build your own tools and components on top of the
-foundation Devii provides!
+devii.dev serves as both the documentation AND a working demo of Devii. After you clone/fork it, you can look through the code to learn how Devii works. Then you can rip out everything you don't like, customize everything else, and build your own tools and components on top of the foundation Devii provides!
 
-Your personal website is the online manifestation of you. Devii
-doesn't really provide much out of the box. It provides some nice
-Medium-style default styles for your blog posts and some tools for
-loading/rendering Markdown. But you'll have to implement your own
-homepage more or less from scratch. And that's the point! Don't settle
-for some theme. Build something that represents you.
+Your personal website is the online manifestation of you. Devii doesn't really provide much out of the box. It provides some nice Medium-style default styles for your blog posts and some tools for loading/rendering Markdown. But you'll have to implement your own homepage more or less from scratch. And that's the point! Don't settle for some theme. Build something that represents you.
 
 To get started:
 
@@ -57,8 +52,6 @@ To get started:
 ## Powered by Next.js
 
 The core of this repo is [Next.js](https://https://nextjs.org). We chose Next.js because it's the simplest, most elegant way to generate a static version of a React-based website. The documentation is excellent; read it first: [Next.js Documentation](https://nextjs.org/docs).
-
-The important con
 
 ## Project structure
 
