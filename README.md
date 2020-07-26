@@ -34,7 +34,7 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 Big thanks to this week's Devii sponsor! Do us a favor and see what they have to offer.
 
-<a href="https://tracking.gitads.io/?repo=zod"><img src="https://images.gitads.io/zod" alt="GitAds"/></a>
+<a href="https://tracking.gitads.io/?repo=devii"><img src="https://images.gitads.io/devii" alt="GitAds"/></a>
 
 # Get started
 
