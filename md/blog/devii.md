@@ -10,6 +10,7 @@ tags:
 authorPhoto: /profile.jpg
 bannerPhoto: /brook.jpg
 thumbnailPhoto: /brook.jpg
+canonicalUrl: https://devii.dev/blog/devii
 ---
 
 This page is built with Devii! Check out the source code for this under `/md/blog/test.md`.

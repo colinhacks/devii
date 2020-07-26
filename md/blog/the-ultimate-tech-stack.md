@@ -1,11 +1,14 @@
 ---
 title: Choosing a tech stack for my personal dev blog in 2020
-date: 1590463136775
 published: true
+datePublished: 1590463136775
 author: Colin McDonnell
 authorTwitter: vriad
 authorPhoto: https://vriad.com/colin_square_small.jpg
-tags: Static Site Generators,  React,  Next.js
+tags: 
+  - Static Site Generators
+  - React
+  - Next.js
 thumbnailPhoto: https://vriad.com/pancakes_thumb.jpeg
 bannerPhoto: https://vriad.com/pancakes.jpeg
 canonicalUrl: https://vriad.com/essays/devii

@@ -8,6 +8,7 @@ tags:
 authorPhoto: /profile.jpg
 bannerPhoto: /danabramov.png
 thumbnailPhoto: /danabramov_thumb.png
+canonicalUrl: https://devii.dev/blog/dan-abramov
 ---
 
 Dan Abramov knows about Devii!

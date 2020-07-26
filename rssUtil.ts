@@ -9,6 +9,11 @@ import { PostData } from './loader';
 // import glob from 'glob';
 
 export const generateRSS = async (posts: PostData[]) => {
+
+  posts.map((post) => {
+    if (!post.canonicalUrl) throw new Error('Missing canonicalUrl. A canonical URL is required for RSS feed generation. If you don\'t care about RSS, uncomment `generateRSS(posts)` at the bottom of index.tsx.');
+    return post;
+  })
   const feed = new RSS({
     title: config.siteName,
     description: config.siteDescription,

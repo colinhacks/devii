@@ -4,7 +4,6 @@
 <p align="center">
   A developer blog starter for 2020. <br/>Next.js + React + TypeScript + <br/>Markdown + syntax highlighting + SEO + <br/>RSS generation
 </p>
-
 <p align="center">
 if you're happy and you know it, star this repo
 </p>
@@ -31,7 +30,13 @@ A dev blog starter for 2020.
 
 Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
-## Get started
+# Sponsor
+
+Big thanks to this week's Devii sponsor! Do us a favor and see what they have to offer.
+
+<a href="https://tracking.gitads.io/?repo=zod"><img src="https://images.gitads.io/zod" alt="GitAds"/></a>
+
+# Get started
 
 This repo contains the code for [https://devii.dev](https://devii.dev).
 
@@ -245,7 +250,7 @@ To get started customizing, check out the source code of `index.tsx` (the home p
 
 Head to the GitHub repo to get started: [https://github.com/vriad/devii](https://github.com/vriad/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎
 
-## CLI
+# CLI
 
 ### `yarn dev`
 
@@ -258,3 +263,10 @@ Creates an optimized build of your site. Equivalent to `next build`.
 ### `yarn export`
 
 Exports your site to static files. All files are written to `/out`. Use your static file hosting service of choice (Firebase Hosting, Amazon S3, Vercel) to deploy your site. Equivalent to `next export`.
+
+# Sponsorship
+
+Devii is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial:
+<a href="https://tracking.gitads.io/?repo=devii">
+<img src="https://images.gitads.io/devii" alt="GitAds"/>
+</a>

@@ -9,7 +9,7 @@ export type PostData = {
   description?: string;
   canonicalUrl?: string;
   published: boolean;
-  datePublished?: number;
+  datePublished: number;
   author?: string;
   authorPhoto?: string;
   authorTwitter?: string;
@@ -45,8 +45,9 @@ export const mdToPost = (file: RawFile): PostData => {
     content: metadata.content,
   };
 
-  if (!post.title) throw new Error(`Missing: title.`);
-  if (!post.content) throw new Error(`Missing: content.`);
+  if (!post.title) throw new Error(`Missing required field: title.`);
+  if (!post.content) throw new Error(`Missing required field: content.`);
+  if (!post.datePublished) throw new Error(`Missing required field: datePublished.`);
 
   return post as PostData;
 };
@@ -68,5 +69,7 @@ export const loadPost = async (path: string): Promise<PostData> => {
 };
 
 export const loadBlogPosts = async (): Promise<PostData[]> => {
-  return await (await loadMarkdownFiles(`blog/*.md`)).map(mdToPost);
+  return await (await loadMarkdownFiles(`blog/*.md`)).map(mdToPost)
+    .filter((p) => p.published)
+    .sort((a, b) => (b.datePublished || 0) - (a.datePublished || 0));;
 };
