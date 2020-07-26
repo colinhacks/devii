@@ -32,9 +32,11 @@ Read more about the motivation + design behind Devii at [https://vriad.com/blog/
 
 # Sponsor
 
-Big thanks to this week's Devii sponsor! Do us a favor and see what they have to offer.
+Big thanks to this week's Devii sponsor! Check out what they have to offer.
 
-<a href="https://tracking.gitads.io/?repo=devii"><img src="https://images.gitads.io/devii" alt="GitAds"/></a>
+<a href="https://tracking.gitads.io/?repo=devii">
+<img src="https://images.gitads.io/devii" alt="GitAds"/>
+</a>
 
 # Get started
 
@@ -263,10 +265,3 @@ Creates an optimized build of your site. Equivalent to `next build`.
 ### `yarn export`
 
 Exports your site to static files. All files are written to `/out`. Use your static file hosting service of choice (Firebase Hosting, Amazon S3, Vercel) to deploy your site. Equivalent to `next export`.
-
-# Sponsorship
-
-Devii is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial:
-<a href="https://tracking.gitads.io/?repo=devii">
-<img src="https://images.gitads.io/devii" alt="GitAds"/>
-</a>
