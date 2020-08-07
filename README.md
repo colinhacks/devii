@@ -30,13 +30,13 @@ A dev blog starter for 2020.
 
 Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
-# Sponsor
+<!-- # Sponsor
 
 Big thanks to this week's Devii sponsor! Check out what they have to offer.
 
 <a href="https://tracking.gitads.io/?repo=devii">
 <img src="https://images.gitads.io/devii" alt="GitAds"/>
-</a>
+</a> -->
 
 # Get started
 
