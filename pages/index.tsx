@@ -17,35 +17,20 @@ const sectionStyle = {
 const pStyle = { lineHeight: 1.7 };
 
 const Home = (props: {
-  introduction: string;
-  features: string;
+  // features: string;
   readme: string;
   posts: PostData[];
 }) => {
   return (
     <div style={{ width: '100%' }}>
       <Head>
-        <title>Introducing Devii</title>
+        <title>Testy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
-        <Markdown source={props.introduction} />
-      </div>
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
-        <div style={{ maxWidth: '550px' }}>
-          <Markdown source={props.features} />
-        </div>
-      </div>
-      <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
+        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>James Calingo</h2>
         <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
-          This section demonstrates the power of dynamic imports. Every Markdown
-          file under <code>/md/blog</code> is automatically parsed into a
-          structured TypeScript object and available in the{' '}
-          <code>props.posts</code> array. These blog post "cards" are
-          implemented in the
-          <code>/components/PostCard.tsx</code> component.
+          The thoughts of a fullstack developer, musician, video and board game enthusiast, and not a GPT bot.
         </p>
         <div
           style={{
