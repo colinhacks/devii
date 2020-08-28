@@ -20,11 +20,11 @@ export const Header: React.FC = () => (
       <p style={{ color: 'white' }}>{config.siteName}</p>
     </a>
     <div style={{ flex: 1 }} />
-    <a href="https://github.com/vriad/devii" style={{ textDecoration: 'none' }}>
-      <p style={{ padding: '0px 1em', color: 'white' }}>GitHub</p>
+    <a href="https://jamescalingo.com/#/portfolio" style={{ textDecoration: 'none' }}>
+      <p style={{ padding: '0px 1em', color: 'white' }}>Portfolio</p>
     </a>
-    <a href="/blog/the-ultimate-tech-stack" style={{ textDecoration: 'none' }}>
-      <p style={{ padding: '0px 1em', color: 'white' }}>Motivation</p>
+    <a href="https://jamescalingo.wordpress.com/" target="blank" style={{ textDecoration: 'none' }}>
+      <p style={{ padding: '0px 1em', color: 'white' }}>Older Blog Archives</p>
     </a>
   </div>
 );
