@@ -1,8 +1,9 @@
 ---
 title: Test Post
+subtitle: Just checking some stuff out for now...
 published: true
 datePublished: 1599000000000
-author: James Calingo
+author: 
 tags:
   - test posting
 authorPhoto: 
