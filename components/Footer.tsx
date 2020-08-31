@@ -18,7 +18,7 @@ export const Footer: React.FC = () => (
     }}
   >
     <p>{`© ${config.yourName} ${new Date().getFullYear()}`}</p>
-    <p>Powered by <a href="https://github.com/vriad/devii">Devii</a></p>
+    <p><a href="https://github.com/vriad/devii">Blog template</a></p>
     <a href="/rss.xml">
       <img
         src="/rss-white.svg"
