@@ -1,8 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Lemme think about this first]]></title><description><![CDATA[A blog about...stuff]]></description><link>https://jamescalingo.com</link><image><url>https://jamescalingo.com/icon.png</url><title>Lemme think about this first</title><link>https://jamescalingo.com</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 31 Aug 2020 16:07:05 GMT</lastBuildDate><atom:link href="https://jamescalingo.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2020 James Calingo]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[james.calingo@gmail.com]]></managingEditor><webMaster><![CDATA[james.calingo@gmail.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Test Post]]></title><description><![CDATA[<p>Will this work?</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Lemme think about this first]]></title><description><![CDATA[A blog about...stuff]]></description><link>https://jamescalingo.com</link><image><url>https://jamescalingo.com/icon.png</url><title>Lemme think about this first</title><link>https://jamescalingo.com</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 31 Aug 2020 16:38:14 GMT</lastBuildDate><atom:link href="https://jamescalingo.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2020 James Calingo]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[james.calingo@gmail.com]]></managingEditor><webMaster><![CDATA[james.calingo@gmail.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Test Post]]></title><description><![CDATA[<p>Will this work?</p>
 <p>Who knows?</p>
 <p>And if it does, should I leave it up?</p>
 <p>Well, judging by the fact that someone (who is not me) is reading this right now, then…yes.</p>
-<p>So anyway…welcome!</p>]]></description><link>https://vriad.com/blog/post1</link><guid isPermaLink="true">https://vriad.com/blog/post1</guid><category><![CDATA[test posting]]></category><dc:creator><![CDATA[James Calingo]]></dc:creator><pubDate>Tue, 01 Sep 2020 22:40:00 GMT</pubDate></item><item><title><![CDATA[Dan Abramov knows about Devii]]></title><description><![CDATA[<p>Dan Abramov knows about Devii!</p>
+<p>So anyway…welcome!</p>
+<p>The hardest part was figuring out how to get the time posting accurate. For those who don't know (which is probably a lot of you), I'ma let you in on a little secret:</p>
+<p>This is some pertinent information for this post:</p>
+<pre><code>title: Test Post
+published: true
+datePublished: 1599000000000
+author: James Calingo
+</code></pre>
+<p>You'll probably notice that ridiculous number next to the "datePublished" field and wonder "What does that have to do with today's date?"</p>
+<p>Well, it's the number of milliseconds that have passed since December 31, 1969.</p>
+<p>Why that date?</p>
+<h1 id="becausewhynot">Because why not?</h1>
+<p>Okay, let me actually regail you for a bit:</p>
+<p>It's related to how the Unix timestamp, which is how the publish dates are generated for this blog. For whatever reason, they chose midnight on January 1, 1970 UTC as point 0 for their system (I'm in U.S. Eastern time, which is 4-5 hours behind UTC depending on daylight savings).</p>
+<p>Before I found a website to get the actual Unix timestamp for today, I was just messing with the numbers to try and get something closeish to today, and I ended up settling on that timestamp!</p>
+<p>Truth be told, this is being written a day in advance, but with the timestamp spitting out September 1, that feels like a good day to start, does it not? Also, of course, I had to figure out how to get this all up and running, so that kinda helped move things along.</p>
+<p>Anyway, I've been rambling for a while now, and unless you're someone I know, you're probably wondering</p>
+<ul>
+<li>Who is writing this?</li>
+<li>Why are they doing this?</li>
+<li>Why are they like this?</li>
+</ul>
+<p>To which I answer:</p>
+<p>You'll have to give me a day or so.</p>
+<p>(P.S.: If you wanna have some fun with Unix timestamps, <a href="https://www.unixtimestamp.com/" target="blank">here's</a> the site I used to convert them. I don't wanna think about how I'll have to change this system in 18 years though…)</p>]]></description><link>https://vriad.com/blog/post1</link><guid isPermaLink="true">https://vriad.com/blog/post1</guid><category><![CDATA[test posting]]></category><dc:creator><![CDATA[James Calingo]]></dc:creator><pubDate>Tue, 01 Sep 2020 22:40:00 GMT</pubDate></item><item><title><![CDATA[Dan Abramov knows about Devii]]></title><description><![CDATA[<p>Dan Abramov knows about Devii!</p>
 <blockquote>
   <p>Seems like it might be useful!
   — Dan Abramov, taken entirely out of context</p>

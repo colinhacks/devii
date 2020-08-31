@@ -57,3 +57,5 @@ Anyway, I've been rambling for a while now, and unless you're someone I know, yo
 To which I answer:
 
 You'll have to give me a day or so.
+
+(P.S.: If you wanna have some fun with Unix timestamps, <a href="https://www.unixtimestamp.com/" target="blank">here's</a> the site I used to convert them. I don't wanna think about how I'll have to change this system in 18 years though...)
