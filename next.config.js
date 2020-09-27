@@ -1,5 +1,5 @@
 module.exports = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   webpack: function (config) {
     config.module.rules.push({
       test: /\.md$/,

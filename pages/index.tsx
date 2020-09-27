@@ -4,7 +4,7 @@ import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import { PostCard } from '../components/PostCard';
 import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
-import { config } from '../globals';
+import { globals } from '../globals';
 
 const sectionStyle = {
   width: '100%',
@@ -67,7 +67,7 @@ const Home = (props: {
         <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
         <blockquote
           style={{
-            borderLeft: `3px solid ${config.accentColor}`,
+            borderLeft: `3px solid ${globals.accentColor}`,
             paddingLeft: '20px',
           }}
         >
@@ -129,7 +129,7 @@ const Home = (props: {
         <button
           style={{
             padding: '10px 30px',
-            backgroundColor: config.accentColor,
+            backgroundColor: globals.accentColor,
             color: 'white',
             fontSize: '14pt',
             border: 'none',
@@ -156,6 +156,11 @@ export const getStaticProps = async () => {
   // during build step.
   await generateRSS(posts);
 
-  const props = { introduction, features, readme, posts };
+  const props = {
+    introduction: introduction.contents,
+    features: features.contents,
+    readme: readme,
+    posts,
+  };
   return { props };
 };

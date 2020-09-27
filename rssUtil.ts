@@ -2,29 +2,31 @@ import RSS from 'rss';
 import fs from 'fs';
 import showdown from 'showdown';
 
-import { config } from './globals';
+import { globals } from './globals';
 import { PostData } from './loader';
 
-// import { exportPathMap } from './next.config';
+// import { exportPathMap } from './next.globals';
 // import glob from 'glob';
 
 export const generateRSS = async (posts: PostData[]) => {
-
   posts.map((post) => {
-    if (!post.canonicalUrl) throw new Error('Missing canonicalUrl. A canonical URL is required for RSS feed generation. If you don\'t care about RSS, uncomment `generateRSS(posts)` at the bottom of index.tsx.');
+    if (!post.canonicalUrl)
+      throw new Error(
+        "Missing canonicalUrl. A canonical URL is required for RSS feed generation. If you don't care about RSS, uncomment `generateRSS(posts)` at the bottom of index.tsx."
+      );
     return post;
-  })
+  });
   const feed = new RSS({
-    title: config.siteName,
-    description: config.siteDescription,
-    feed_url: `${config.url}/rss.xml`,
-    site_url: config.url,
-    image_url: `${config.url}/icon.png`,
-    managingEditor: config.email,
-    webMaster: config.email,
-    copyright: `${new Date().getFullYear()} ${config.yourName}`,
+    title: globals.siteName,
+    description: globals.siteDescription,
+    feed_url: `${globals.url}/rss.xml`,
+    site_url: globals.url,
+    image_url: `${globals.url}/icon.png`,
+    managingEditor: globals.email,
+    webMaster: globals.email,
+    copyright: `${new Date().getFullYear()} ${globals.yourName}`,
     language: 'en',
-    pubDate: config.siteCreationDate,
+    pubDate: globals.siteCreationDate,
     ttl: 60,
   });
 
@@ -34,8 +36,10 @@ export const generateRSS = async (posts: PostData[]) => {
     const html = converter.makeHtml(post.content);
     if (!post.datePublished) {
       isValid = false;
-      console.warn("All posts must have a publishedDate timestamp when generating RSS feed.")
-      console.warn("Not generating rss.xml.");
+      console.warn(
+        'All posts must have a publishedDate timestamp when generating RSS feed.'
+      );
+      console.warn('Not generating rss.xml.');
     }
     feed.item({
       title: post.title,

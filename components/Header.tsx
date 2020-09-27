@@ -1,5 +1,5 @@
 import React from 'react';
-import { config } from '../globals';
+import { globals } from '../globals';
 
 export const Header: React.FC = () => (
   <div
@@ -11,13 +11,13 @@ export const Header: React.FC = () => (
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: config.accentColor,
+      backgroundColor: globals.accentColor,
       padding: '30px',
       fontSize: '12pt',
     }}
   >
     <a href="/" style={{ textDecoration: 'none' }}>
-      <p style={{ color: 'white' }}>{config.siteName}</p>
+      <p style={{ color: 'white' }}>{globals.siteName}</p>
     </a>
     <div style={{ flex: 1 }} />
     <a href="https://github.com/vriad/devii" style={{ textDecoration: 'none' }}>

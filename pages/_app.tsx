@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { config } from '../globals';
+import { globals } from '../globals';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
@@ -16,13 +16,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       }}
     >
       <Head>
-        {config.googleAnalyticsId && (
+        {globals.googleAnalyticsId && (
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsId}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
           ></script>
         )}
-        {config.googleAnalyticsId && (
+        {globals.googleAnalyticsId && (
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -30,7 +30,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '${config.googleAnalyticsId}');
+            gtag('globals', '${globals.googleAnalyticsId}');
             `,
             }}
           ></script>

@@ -3,7 +3,7 @@ import React from 'react';
 import { format } from 'fecha';
 
 import { PostData } from '../loader';
-import { config } from '../globals';
+import { globals } from '../globals';
 
 export const FollowButton = () => {
   return (
@@ -11,10 +11,10 @@ export const FollowButton = () => {
       <div
         style={{
           display: 'inline-block',
-          border: `1px solid ${config.accentColor}`,
+          border: `1px solid ${globals.accentColor}`,
           borderRadius: '4px',
           padding: '2px 10px',
-          color: config.accentColor,
+          color: globals.accentColor,
           fontSize: '10pt',
           marginBottom: '2px',
           marginLeft: '4px',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { config } from '../globals';
+import { globals } from '../globals';
 
 export const Footer: React.FC = () => (
   <div
@@ -11,20 +11,15 @@ export const Footer: React.FC = () => (
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: config.accentColor,
+      backgroundColor: globals.accentColor,
       color: 'white',
       padding: '30px',
       fontSize: '12pt',
     }}
   >
-    <p>{`© ${config.yourName} ${new Date().getFullYear()}`}</p>
+    <p>{`© ${globals.yourName} ${new Date().getFullYear()}`}</p>
     <a href="/rss.xml">
-      <img
-        src="/rss-white.svg"
-        alt="RSS Feed"
-        height="30"
-        width="30"
-      />
+      <img src="/rss-white.svg" alt="RSS Feed" height="30" width="30" />
     </a>
   </div>
 );
