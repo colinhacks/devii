@@ -67,7 +67,9 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
   return (
     <div>
       <p style={{ ...lineStyle }}>
-        {props.post.author ? props.post.author : ''}
+        {props.post.author
+          ? props.post.author
+          : ''}
       </p>
       <p style={{ opacity: 0.6, ...lineStyle }}>
         {props.post.datePublished

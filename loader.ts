@@ -45,8 +45,12 @@ export const mdToPost = (file: RawFile): PostData => {
     content: metadata.content,
   };
 
-  if (!post.title) throw new Error(`Missing required field: title.`);
-  if (!post.content) throw new Error(`Missing required field: content.`);
+  if (!post.title)
+    throw new Error(`Missing required field: title.`);
+
+  if (!post.content)
+    throw new Error(`Missing required field: content.`);
+
   if (!post.datePublished)
     throw new Error(`Missing required field: datePublished.`);
 
