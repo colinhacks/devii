@@ -1,6 +1,5 @@
 import React from 'react';
 import glob from 'glob';
-
 import { BlogPost } from '../../components/BlogPost';
 import { loadPost } from '../../loader';
 

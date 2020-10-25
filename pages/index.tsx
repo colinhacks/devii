@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import { PostCard } from '../components/PostCard';
 import { generateRSS } from '../rssUtil';
@@ -31,12 +30,14 @@ const Home = (props: {
       <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
         <Markdown source={props.introduction} />
       </div>
+
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
         <div style={{ maxWidth: '550px' }}>
           <Markdown source={props.features} />
         </div>
       </div>
+
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
         <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
@@ -104,6 +105,7 @@ const Home = (props: {
           .
         </p>
       </div>
+
       <div
         style={{
           width: '100%',
@@ -120,6 +122,7 @@ const Home = (props: {
           <Markdown source={props.readme} />
         </div>
       </div>
+
       <div style={sectionStyle}>
         <h2
           style={{ margin: '4px 0px', fontSize: '22pt', paddingBottom: '30px' }}
@@ -142,6 +145,7 @@ const Home = (props: {
     </div>
   );
 };
+
 export default Home;
 
 export const getStaticProps = async () => {
@@ -149,11 +153,9 @@ export const getStaticProps = async () => {
   const features = await loadMarkdownFile('features.md');
   const readmeFile = await import(`../${'README.md'}`);
   const readme = readmeFile.default;
-
   const posts = await loadBlogPosts();
 
-  // comment out to turn off RSS generation
-  // during build step.
+  // comment out to turn off RSS generation during build step.
   await generateRSS(posts);
 
   const props = {
@@ -162,5 +164,6 @@ export const getStaticProps = async () => {
     readme: readme,
     posts,
   };
+
   return { props };
 };

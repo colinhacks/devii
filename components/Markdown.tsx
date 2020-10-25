@@ -4,7 +4,6 @@ import Code from './Code';
 import { globals } from '../globals';
 
 export const Markdown: React.FC<{ source: string }> = (props) => {
-  // console.log(props.source);
   return (
     <div style={{ width: '100%' }} className="devii-markdown">
       <ReactMarkdown

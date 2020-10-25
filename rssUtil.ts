@@ -1,12 +1,8 @@
 import RSS from 'rss';
 import fs from 'fs';
 import showdown from 'showdown';
-
 import { globals } from './globals';
 import { PostData } from './loader';
-
-// import { exportPathMap } from './next.globals';
-// import glob from 'glob';
 
 export const generateRSS = async (posts: PostData[]) => {
   posts.map((post) => {
@@ -16,6 +12,7 @@ export const generateRSS = async (posts: PostData[]) => {
       );
     return post;
   });
+
   const feed = new RSS({
     title: globals.siteName,
     description: globals.siteDescription,
@@ -50,6 +47,7 @@ export const generateRSS = async (posts: PostData[]) => {
       date: new Date(post.datePublished || 0).toISOString(),
     });
   }
+
   if (!isValid) return;
 
   // writes RSS.xml to public directory

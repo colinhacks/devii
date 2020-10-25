@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Markdown } from './Markdown';
 import { PostData } from '../loader';
 import { PostMeta } from './PostMeta';
@@ -9,7 +8,6 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
 }) => {
   const { title, subtitle } = post;
-
   return (
     <div
       style={{
@@ -26,7 +24,6 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
           <img
             style={{
               width: '100%',
-              // maxHeight: '350px',
               maxWidth: '100%',
               margin: '0px',
             }}
@@ -66,7 +63,6 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
               margin: '25px 0px',
             }}
           />
-
           <Author post={post} />
         </div>
 
