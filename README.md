@@ -78,10 +78,12 @@ Here's is an abbreviated version of the project structure. Certain config files 
 |       ├── devii.md // this page!
         ├── whatever.md // every MD file in this directory becomes a blog post
 ├── components
+|   ├── BlogPost.tsx
 |   ├── Code.tsx
+|   ├── Footer.tsx
+|   ├── Header.tsx
 |   ├── Markdown.tsx
-|   ├── Header.tsx
-|   ├── Header.tsx
+|   ├── Meta.tsx
 |   ├── <various>
 ├── loader.ts // contains utility functions for loading/parsing Markdown
 ├── node_modules
