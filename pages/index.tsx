@@ -13,8 +13,6 @@ const sectionStyle = {
   alignItems: 'center',
 } as const;
 
-const pStyle = { lineHeight: 1.7 };
-
 const Home = (props: {
   introduction: string;
   features: string;
@@ -57,7 +55,7 @@ const Home = (props: {
         <p style={{
           maxWidth: '550px',
           paddingBottom: '30px',
-          ...pStyle
+          lineHeight: 1.7
         }}>
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
@@ -122,7 +120,7 @@ const Home = (props: {
             textAlign: 'center',
             maxWidth: '600px',
             margin: 'auto',
-            ...pStyle,
+            lineHeight: 1.7
           }}
         >
           Below is the README.md for devii. It was imported and rendered using
