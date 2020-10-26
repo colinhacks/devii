@@ -115,10 +115,6 @@ Just add a Markdown file under `md/blog/` to create a new blog post:
 2. Add in some basic Markdown content
 3. Then go to `http://localhost:3000/blog/foo`. You should see the new post.
 
-## Google Analytics
-
-Just add your Google Analytics ID (e.g. 'UA-999999999-1') to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
-
 ## Frontmatter support
 
 Every Markdown file can include a "frontmatter block" containing various metadata. Devii provides a `loadPost` utility that loads a Markdown file, parses it's frontmatter metadata, and returns a structured `PostData` object:
@@ -158,6 +154,10 @@ thumbnailPhoto: /brook.jpg
 ```
 
 View `/loader.ts` to see how this works.
+
+## Google Analytics
+
+Just add your Google Analytics ID (e.g. 'UA-999999999-1') to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
 
 ## Medium-inspired design
 
