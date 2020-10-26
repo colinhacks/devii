@@ -22,25 +22,43 @@ const Home = (props: {
   posts: PostData[];
 }) => {
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{
+      width: '100%'
+    }}>
       <Head>
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
+      <div style={{
+        maxWidth: '550px',
+        margin: 'auto',
+        padding: '50px 3vw'
+      }}>
         <Markdown source={props.introduction} />
       </div>
 
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
-        <div style={{ maxWidth: '550px' }}>
+        <h2 style={{
+          margin: '4px 0px',
+          fontSize: '34pt'
+        }}>Features</h2>
+        <div style={{
+          maxWidth: '550px'
+        }}>
           <Markdown source={props.features} />
         </div>
       </div>
 
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
-        <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
+        <h2 style={{
+          margin: '4px 0px',
+          fontSize: '34pt'
+        }}>My blog posts</h2>
+        <p style={{
+          maxWidth: '550px',
+          paddingBottom: '30px',
+          ...pStyle
+        }}>
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
           structured TypeScript object and available in the{' '}
@@ -65,7 +83,12 @@ const Home = (props: {
       </div>
 
       <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
+        <h2 style={{
+          textAlign: 'center',
+          fontSize: '34pt'
+        }}>
+          Testimonials
+        </h2>
         <blockquote
           style={{
             borderLeft: `3px solid ${globals.accentColor}`,
@@ -86,7 +109,14 @@ const Home = (props: {
       </div>
 
       <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
+        <h2
+          style={{
+            textAlign: 'center',
+            fontSize: '34pt'
+          }}
+        >
+          README.md
+        </h2>
         <p
           style={{
             textAlign: 'center',
@@ -125,7 +155,10 @@ const Home = (props: {
 
       <div style={sectionStyle}>
         <h2
-          style={{ margin: '4px 0px', fontSize: '22pt', paddingBottom: '30px' }}
+          style={{
+            margin: '4px 0px',
+            fontSize: '22pt',
+            paddingBottom: '30px' }}
         >
           Get started
         </h2>
