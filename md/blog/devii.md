@@ -7,9 +7,9 @@ author: Ben Bitdiddle
 tags:
   - Devii
   - Blogs
-authorPhoto: /profile.jpg
-bannerPhoto: /brook.jpg
-thumbnailPhoto: /brook.jpg
+authorPhoto: /img/profile.jpg
+bannerPhoto: /img/brook.jpg
+thumbnailPhoto: /img/brook.jpg
 canonicalUrl: https://devii.dev/blog/devii
 ---
 

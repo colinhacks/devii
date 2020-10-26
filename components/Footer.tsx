@@ -19,7 +19,7 @@ export const Footer: React.FC = () => (
   >
     <p>{`© ${globals.yourName} ${new Date().getFullYear()}`}</p>
     <a href="/rss.xml">
-      <img src="/rss-white.svg" alt="RSS Feed" height="30" width="30" />
+      <img src="/img/rss-white.svg" alt="RSS Feed" height="30" width="30" />
     </a>
   </div>
 );

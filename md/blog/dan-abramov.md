@@ -5,9 +5,9 @@ datePublished: 1594425078471
 author: Colin McDonnell
 tags:
   - Dan Abramov
-authorPhoto: /profile.jpg
-bannerPhoto: /danabramov.png
-thumbnailPhoto: /danabramov_thumb.png
+authorPhoto: /img/profile.jpg
+bannerPhoto: /img/danabramov.png
+thumbnailPhoto: /img/danabramov_thumb.png
 canonicalUrl: https://devii.dev/blog/dan-abramov
 ---
 
