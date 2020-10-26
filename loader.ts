@@ -1,6 +1,7 @@
 import matter from 'gray-matter';
 import glob from 'glob';
 import { globals } from './globals';
+
 export type PostData = {
   path: string;
   title: string;

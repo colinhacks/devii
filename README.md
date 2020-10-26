@@ -7,12 +7,12 @@
 <p align="center">
 if you're happy and you know it, star this repo
 </p>
-</p>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" rel="nofollow">
-  <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
+    <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
   </a>
 </p>
+
 <br/>
 <br/>
 <br/>
