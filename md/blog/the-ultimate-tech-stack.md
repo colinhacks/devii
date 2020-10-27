@@ -4,13 +4,13 @@ published: true
 datePublished: 1590463136775
 author: Colin McDonnell
 authorTwitter: vriad
-authorPhoto: https://vriad.com/colin_square_small.jpg
-tags: 
+authorPhoto: /profile.jpg
+tags:
   - Static Site Generators
   - React
   - Next.js
-thumbnailPhoto: https://vriad.com/pancakes_thumb.jpeg
-bannerPhoto: https://vriad.com/pancakes.jpeg
+thumbnailPhoto: /pancakes_thumb.jpeg
+bannerPhoto: /pancakes.jpeg
 canonicalUrl: https://vriad.com/essays/devii
 ---
 

@@ -20,43 +20,59 @@ const Home = (props: {
   posts: PostData[];
 }) => {
   return (
-    <div style={{
-      width: '100%'
-    }}>
+    <div
+      style={{
+        width: '100%',
+      }}
+    >
       <Head>
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{
-        maxWidth: '550px',
-        margin: 'auto',
-        padding: '50px 3vw'
-      }}>
+      <div
+        style={{
+          maxWidth: '550px',
+          margin: 'auto',
+          padding: '50px 3vw',
+        }}
+      >
         <Markdown source={props.introduction} />
       </div>
 
       <div style={sectionStyle}>
-        <h2 style={{
-          margin: '4px 0px',
-          fontSize: '34pt'
-        }}>Features</h2>
-        <div style={{
-          maxWidth: '550px'
-        }}>
+        <h2
+          style={{
+            margin: '4px 0px',
+            fontSize: '34pt',
+          }}
+        >
+          Features
+        </h2>
+        <div
+          style={{
+            maxWidth: '550px',
+          }}
+        >
           <Markdown source={props.features} />
         </div>
       </div>
 
       <div style={sectionStyle}>
-        <h2 style={{
-          margin: '4px 0px',
-          fontSize: '34pt'
-        }}>My blog posts</h2>
-        <p style={{
-          maxWidth: '550px',
-          paddingBottom: '30px',
-          lineHeight: 1.7
-        }}>
+        <h2
+          style={{
+            margin: '4px 0px',
+            fontSize: '34pt',
+          }}
+        >
+          My blog posts
+        </h2>
+        <p
+          style={{
+            maxWidth: '550px',
+            paddingBottom: '30px',
+            lineHeight: 1.7,
+          }}
+        >
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
           structured TypeScript object and available in the{' '}
@@ -81,10 +97,12 @@ const Home = (props: {
       </div>
 
       <div style={{ ...sectionStyle }}>
-        <h2 style={{
-          textAlign: 'center',
-          fontSize: '34pt'
-        }}>
+        <h2
+          style={{
+            textAlign: 'center',
+            fontSize: '34pt',
+          }}
+        >
           Testimonials
         </h2>
         <blockquote
@@ -110,7 +128,7 @@ const Home = (props: {
         <h2
           style={{
             textAlign: 'center',
-            fontSize: '34pt'
+            fontSize: '34pt',
           }}
         >
           README.md
@@ -120,7 +138,7 @@ const Home = (props: {
             textAlign: 'center',
             maxWidth: '600px',
             margin: 'auto',
-            lineHeight: 1.7
+            lineHeight: 1.7,
           }}
         >
           Below is the README.md for devii. It was imported and rendered using
@@ -156,7 +174,8 @@ const Home = (props: {
           style={{
             margin: '4px 0px',
             fontSize: '22pt',
-            paddingBottom: '30px' }}
+            paddingBottom: '30px',
+          }}
         >
           Get started
         </h2>
@@ -168,6 +187,7 @@ const Home = (props: {
             fontSize: '14pt',
             border: 'none',
             borderRadius: '10px',
+            cursor: 'pointer',
           }}
         >
           Fork Devii on GitHub
