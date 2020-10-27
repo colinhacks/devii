@@ -250,6 +250,7 @@ hr {
 
 .blog-post-image {
   width: 100%;
+  max-width: 1100px;
 }
 
 .blog-post-title {
