@@ -6,82 +6,29 @@ import { Tag } from './Tag';
 export const PostCard: React.FC<{ post: PostData }> = (props) => {
   const post = props.post;
   return (
-    <a
-      href={`/${post.path}`}
-      style={{
-        textDecoration: 'inherit',
-        color: 'inherit',
-        margin: '10px',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        height: '300px',
-      }}
-    >
-      <div
-        style={{
-          opacity: 0.92,
-          boxShadow: '0px 2px 10px #00000040',
-          width: '100%',
-          maxWidth: '500px',
-          overflow: 'hidden',
-          borderRadius: '8px',
-          display: 'flex',
-          flexDirection: 'column',
-          height: '100%',
-        }}
-      >
+    <a className="post-card" href={`/${post.path}`}>
+      <div className="post-card-inner">
         {post.thumbnailPhoto && (
           <div
-            style={{
-              background: `url(${post.thumbnailPhoto}) no-repeat center center`,
-              backgroundSize: 'cover',
-              width: '100%',
-              flex: 1,
-            }}
+            className="post-card-thumbnail"
+            style={{ "background-image": `url(${post.thumbnailPhoto})`}}
           />
         )}
-        <div
-          style={{
-            padding: '15px 10px',
-            display: 'flex',
-            flexDirection: 'column',
-            borderTop: '1px solid #00000020',
-          }}
-        >
+        <div className="post-card-title">
           {post.title && (
-            <h2
-              style={{
-                margin: '0px 0px 7px 0px',
-                fontSize: '14pt',
-                fontWeight: 600,
-                padding: '2px 10%',
-                textAlign: 'center',
-              }}
-            >
-              {post.title}
-            </h2>
+            <h2>{post.title}</h2>
           )}
           {false && post.subtitle && (
-            <p
-              style={{
-                margin: '0px',
-                padding: '0px',
-                fontSize: '12pt',
-                color: '#333333',
-              }}
-            >
-              {post.subtitle}
-            </p>
+            <p>{post.subtitle}</p>
           )}
-          <p style={{ opacity: 0.6, textAlign: 'center', margin: '0px' }}>
+          <p>
             {props.post.datePublished
               ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
               : ''}
           </p>
-          <div style={{ flex: 1 }}> </div>
+          <div className="flex-spacer"> </div>
           {false && (
-            <div style={{ marginTop: '7px' }}>
+            <div className="tag-container">
               {post.tags && (post.tags || []).map((tag) => <Tag tag={tag} />)}
             </div>
           )}
