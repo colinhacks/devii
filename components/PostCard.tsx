@@ -20,21 +20,15 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
     >
       <div
         style={{
-          // flexBasis: '300px',
-          // flex: 1,
-          // minWidth: '200px',
-          // maxWidth: '450px',
           opacity: 0.92,
           boxShadow: '0px 2px 10px #00000040',
           width: '100%',
           maxWidth: '500px',
           overflow: 'hidden',
           borderRadius: '8px',
-          // boxShadow: '0px 2px 10px #00000020',
           display: 'flex',
           flexDirection: 'column',
           height: '100%',
-          // margin: '10px 0px',
         }}
       >
         {post.thumbnailPhoto && (
@@ -42,11 +36,8 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
             style={{
               background: `url(${post.thumbnailPhoto}) no-repeat center center`,
               backgroundSize: 'cover',
-              // backgroundImage: post.thumb_image,
-              // backgroundPosition: 'cover',
               width: '100%',
               flex: 1,
-              // height: '200px',
             }}
           />
         )}
@@ -62,7 +53,6 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
             <h2
               style={{
                 margin: '0px 0px 7px 0px',
-                // padding: '2px 0px 2px 0px',
                 fontSize: '14pt',
                 fontWeight: 600,
                 padding: '2px 10%',

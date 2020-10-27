@@ -10,5 +10,5 @@ module.exports = {
       '~': __dirname,
     };
     return config;
-  },
+  }
 };

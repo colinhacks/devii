@@ -1,6 +1,7 @@
 import matter from 'gray-matter';
 import glob from 'glob';
 import { globals } from './globals';
+
 export type PostData = {
   path: string;
   title: string;
@@ -45,8 +46,12 @@ export const mdToPost = (file: RawFile): PostData => {
     content: metadata.content,
   };
 
-  if (!post.title) throw new Error(`Missing required field: title.`);
-  if (!post.content) throw new Error(`Missing required field: content.`);
+  if (!post.title)
+    throw new Error(`Missing required field: title.`);
+
+  if (!post.content)
+    throw new Error(`Missing required field: content.`);
+
   if (!post.datePublished)
     throw new Error(`Missing required field: datePublished.`);
 

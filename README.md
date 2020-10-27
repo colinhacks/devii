@@ -7,12 +7,12 @@
 <p align="center">
 if you're happy and you know it, star this repo
 </p>
-</p>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" rel="nofollow">
-  <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
+    <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
   </a>
 </p>
+
 <br/>
 <br/>
 <br/>
@@ -29,13 +29,15 @@ A dev blog starter for 2020.
 
 Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
 
-<!-- # Sponsor
+<!--
 
+# Sponsor
 Big thanks to this week's Devii sponsor! Check out what they have to offer.
-
 <a href="https://tracking.gitads.io/?repo=devii">
 <img src="https://images.gitads.io/devii" alt="GitAds"/>
-</a> -->
+</a>
+
+-->
 
 # Get started
 
@@ -76,10 +78,12 @@ Here's is an abbreviated version of the project structure. Certain config files 
 |       ├── devii.md // this page!
         ├── whatever.md // every MD file in this directory becomes a blog post
 ├── components
+|   ├── BlogPost.tsx
 |   ├── Code.tsx
+|   ├── Footer.tsx
+|   ├── Header.tsx
 |   ├── Markdown.tsx
-|   ├── Header.tsx
-|   ├── Header.tsx
+|   ├── Meta.tsx
 |   ├── <various>
 ├── loader.ts // contains utility functions for loading/parsing Markdown
 ├── node_modules
@@ -112,10 +116,6 @@ Just add a Markdown file under `md/blog/` to create a new blog post:
 1. Create a new Markdown file called `foo.md` within the `/md/blog` directory
 2. Add in some basic Markdown content
 3. Then go to `http://localhost:3000/blog/foo`. You should see the new post.
-
-## Google Analytics
-
-Just add your Google Analytics ID (e.g. 'UA-999999999-1') to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
 
 ## Frontmatter support
 
@@ -156,6 +156,10 @@ thumbnailPhoto: /brook.jpg
 ```
 
 View `/loader.ts` to see how this works.
+
+## Google Analytics
+
+Just add your Google Analytics ID (e.g. 'UA-999999999-1') to `globals.ts` and Devii will automatically add the appropriate Google Analytics snippet to your site. Go to `/pages/_app.ts` to see how this works or customize this behavior.
 
 ## Medium-inspired design
 

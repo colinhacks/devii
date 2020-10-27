@@ -1,7 +1,5 @@
 import React from 'react';
-// import { gwen } from 'gwen';
 import { format } from 'fecha';
-
 import { PostData } from '../loader';
 import { globals } from '../globals';
 
@@ -69,22 +67,21 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
   return (
     <div>
       <p style={{ ...lineStyle }}>
-        {props.post.author ? props.post.author : ''}
+        {props.post.author
+          ? props.post.author
+          : ''}
       </p>
-
       <p style={{ opacity: 0.6, ...lineStyle }}>
         {props.post.datePublished
           ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
           : ''}
       </p>
-
       <p style={{ ...lineStyle }}>
         {props.post.authorTwitter && (
           <a
             style={{
               textDecoration: 'none',
               color: '#3b9488',
-              // fontSize: '110%',
             }}
             href={`https://twitter.com/${props.post.authorTwitter}`}
           >{`@${props.post.authorTwitter}`}</a>

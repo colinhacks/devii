@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import { PostCard } from '../components/PostCard';
 import { generateRSS } from '../rssUtil';
@@ -14,8 +13,6 @@ const sectionStyle = {
   alignItems: 'center',
 } as const;
 
-const pStyle = { lineHeight: 1.7 };
-
 const Home = (props: {
   introduction: string;
   features: string;
@@ -23,23 +20,59 @@ const Home = (props: {
   posts: PostData[];
 }) => {
   return (
-    <div style={{ width: '100%' }}>
+    <div
+      style={{
+        width: '100%',
+      }}
+    >
       <Head>
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
+      <div
+        style={{
+          maxWidth: '550px',
+          margin: 'auto',
+          padding: '50px 3vw',
+        }}
+      >
         <Markdown source={props.introduction} />
       </div>
+
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
-        <div style={{ maxWidth: '550px' }}>
+        <h2
+          style={{
+            margin: '4px 0px',
+            fontSize: '34pt',
+          }}
+        >
+          Features
+        </h2>
+        <div
+          style={{
+            maxWidth: '550px',
+          }}
+        >
           <Markdown source={props.features} />
         </div>
       </div>
+
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
-        <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
+        <h2
+          style={{
+            margin: '4px 0px',
+            fontSize: '34pt',
+          }}
+        >
+          My blog posts
+        </h2>
+        <p
+          style={{
+            maxWidth: '550px',
+            paddingBottom: '30px',
+            lineHeight: 1.7,
+          }}
+        >
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
           structured TypeScript object and available in the{' '}
@@ -50,7 +83,7 @@ const Home = (props: {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: `repeat(auto-fit, minmax(300px,1fr))`,
+            gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
             gridRowGap: '8px',
             gridColumnGap: '8px',
             width: '100%',
@@ -64,7 +97,14 @@ const Home = (props: {
       </div>
 
       <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
+        <h2
+          style={{
+            textAlign: 'center',
+            fontSize: '34pt',
+          }}
+        >
+          Testimonials
+        </h2>
         <blockquote
           style={{
             borderLeft: `3px solid ${globals.accentColor}`,
@@ -85,13 +125,20 @@ const Home = (props: {
       </div>
 
       <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
+        <h2
+          style={{
+            textAlign: 'center',
+            fontSize: '34pt',
+          }}
+        >
+          README.md
+        </h2>
         <p
           style={{
             textAlign: 'center',
             maxWidth: '600px',
             margin: 'auto',
-            ...pStyle,
+            lineHeight: 1.7,
           }}
         >
           Below is the README.md for devii. It was imported and rendered using
@@ -104,6 +151,7 @@ const Home = (props: {
           .
         </p>
       </div>
+
       <div
         style={{
           width: '100%',
@@ -120,9 +168,14 @@ const Home = (props: {
           <Markdown source={props.readme} />
         </div>
       </div>
+
       <div style={sectionStyle}>
         <h2
-          style={{ margin: '4px 0px', fontSize: '22pt', paddingBottom: '30px' }}
+          style={{
+            margin: '4px 0px',
+            fontSize: '22pt',
+            paddingBottom: '30px',
+          }}
         >
           Get started
         </h2>
@@ -145,6 +198,7 @@ const Home = (props: {
     </div>
   );
 };
+
 export default Home;
 
 export const getStaticProps = async () => {
@@ -152,11 +206,9 @@ export const getStaticProps = async () => {
   const features = await loadMarkdownFile('features.md');
   const readmeFile = await import(`../${'README.md'}`);
   const readme = readmeFile.default;
-
   const posts = await loadBlogPosts();
 
-  // comment out to turn off RSS generation
-  // during build step.
+  // comment out to turn off RSS generation during build step.
   await generateRSS(posts);
 
   const props = {
@@ -165,5 +217,6 @@ export const getStaticProps = async () => {
     readme: readme,
     posts,
   };
+
   return { props };
 };

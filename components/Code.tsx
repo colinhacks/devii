@@ -8,10 +8,11 @@ export default class Code extends React.PureComponent<{
 }> {
   render() {
     const { language, value } = this.props;
-
     return (
       <SyntaxHighlighter
-        language={(language === 'ts' ? 'typescript' : language) || 'typescript'}
+        language={(language === 'ts'
+          ? 'typescript'
+          : language) || 'typescript'}
         style={darcula}
       >
         {value}
