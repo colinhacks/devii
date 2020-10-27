@@ -1,7 +1,6 @@
 import React from 'react';
 import { format } from 'fecha';
 import { PostData } from '../loader';
-import { globals } from '../globals';
 
 export const FollowButton = () => {
   return (

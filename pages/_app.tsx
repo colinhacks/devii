@@ -1,8 +1,9 @@
-import Head from 'next/head';
 import React from 'react';
-import { Header } from '../components/Header';
+import Head from 'next/head';
 import { Footer } from '../components/Footer';
 import { globals } from '../globals';
+import { Header } from '../components/Header';
+import '../styles/base.css';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (

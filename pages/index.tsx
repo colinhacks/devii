@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
-import { PostCard } from '../components/PostCard';
 import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
-import { globals } from '../globals';
 
 const sectionStyle = {
   width: '100%',
