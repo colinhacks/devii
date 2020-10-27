@@ -126,18 +126,21 @@ const Home = (props: {
         >
           Get started
         </h2>
-        <button
-          style={{
-            padding: '10px 30px',
-            backgroundColor: globals.accentColor,
-            color: 'white',
-            fontSize: '14pt',
-            border: 'none',
-            borderRadius: '10px',
-          }}
-        >
-          Fork Devii on GitHub
-        </button>
+        <a href="https://github.com/vriad/devii" style={{ cursor: 'pointer' }}>
+          <button
+            style={{
+              padding: '10px 30px',
+              backgroundColor: globals.accentColor,
+              color: 'white',
+              fontSize: '14pt',
+              border: 'none',
+              borderRadius: '10px',
+              cursor: 'pointer',
+            }}
+          >
+            Fork Devii on GitHub
+          </button>
+        </a>
       </div>
     </div>
   );
