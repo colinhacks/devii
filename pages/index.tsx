@@ -71,7 +71,7 @@ const Home = (props: {
       </div>
 
       <div className="section">
-        <h2>Get started</h2>
+        <h2 class="centered">Get started</h2>
         <button className="fork-button">Fork Devii on GitHub</button>
       </div>
 
