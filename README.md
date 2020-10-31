@@ -1,6 +1,4 @@
-<p align="center">
-  <h1 align="center">Devii</h1>
-</p>
+<p align="center"><h1 align="center" style="text-align:center;">Devii</h1></p>
 <p align="center">
   A developer blog starter for 2020. <br/>Next.js<br/>React<br/>TypeScript<br/>Markdown<br/>syntax highlighting<br/>SEO<br/>RSS generation
 </p>
@@ -17,7 +15,7 @@ if you're happy and you know it, star this repo
 <br/>
 <br/>
 
-A dev blog starter for 2020.
+### A dev blog starter for 2020.
 
 - Works as a Markdown-based static-site generator out of the box: just add new blog posts to `/md/blog`
 - Supports exporting to fully static assets (powered by Next.js)

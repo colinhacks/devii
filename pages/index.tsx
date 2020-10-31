@@ -39,7 +39,7 @@ const Home = (props: {
           implemented in the
           <code>/components/PostCard.tsx</code> component.
         </p>
-        <div className="postcard-container">
+        <div className="post-card-container">
           {props.posts.map((post, j) => {
             return <PostCard post={post} key={j} />;
           })}
@@ -49,32 +49,43 @@ const Home = (props: {
       <div className="section">
         <h2>Testimonials</h2>
         <blockquote>
-          <p><em>Seems like it might be useful!</em></p>
-          <p>— Dan Abramov, taken <a href="https://github.com/vriad/devii/issues/2" target="_blank"> utterly out of context</a></p>
+          <p>
+            <em>Seems like it might be useful!</em>
+          </p>
+          <p>
+            — Dan Abramov, taken{' '}
+            <a href="https://github.com/vriad/devii/issues/2" target="_blank">
+              {' '}
+              utterly out of context
+            </a>
+          </p>
         </blockquote>
       </div>
 
-      <div className="section">
+      {/* <div className="section">
         <h2>README.md</h2>
         <p>
           Below is the README.md for devii. It was imported and rendered using
           Next.js dynamic imports. The rest of this page (including this
           paragraph) are rendered with React. You can also read the README on
-          GitHub at <a href="https://github.com/vriad/devii">https://github.com/vriad/devii</a>.
+          GitHub at{' '}
+          <a href="https://github.com/vriad/devii">
+            https://github.com/vriad/devii
+          </a>
+          .
         </p>
-      </div>
+      </div> */}
 
-      <div className="section alternate">
+      {/* <div className="section alternate">
         <div className="narrow">
           <Markdown source={props.readme} />
         </div>
-      </div>
+      </div> */}
 
-      <div className="section">
-        <h2 class="centered">Get started</h2>
+      <div className="section alternate">
+        <h2 className="centered">Get started</h2>
         <button className="fork-button">Fork Devii on GitHub</button>
       </div>
-
     </div>
   );
 };

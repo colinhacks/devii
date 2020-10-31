@@ -30,7 +30,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
     "fecha": "^4.2.0",

@@ -11,16 +11,12 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
         {post.thumbnailPhoto && (
           <div
             className="post-card-thumbnail"
-            style={{ "background-image": `url(${post.thumbnailPhoto})`}}
+            style={{ backgroundImage: `url(${post.thumbnailPhoto})` }}
           />
         )}
         <div className="post-card-title">
-          {post.title && (
-            <h2>{post.title}</h2>
-          )}
-          {false && post.subtitle && (
-            <p>{post.subtitle}</p>
-          )}
+          {post.title && <h2>{post.title}</h2>}
+          {false && post.subtitle && <p>{post.subtitle}</p>}
           <p>
             {props.post.datePublished
               ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')

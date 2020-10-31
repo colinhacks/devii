@@ -27,19 +27,21 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
   return (
     <div>
       <p className="author-line">
-        {props.post.author
-          ? props.post.author
-          : ''}
+        {props.post.author && <span>{props.post.author}</span>}
+
+        {props.post.authorTwitter && (
+          <span>
+            {' '}
+            <a
+              href={`https://twitter.com/${props.post.authorTwitter}`}
+            >{`@${props.post.authorTwitter}`}</a>{' '}
+          </span>
+        )}
       </p>
       <p className="author-line subtle">
         {props.post.datePublished
           ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
           : ''}
-      </p>
-      <p className="author-line">
-        {props.post.authorTwitter && (
-          <a href={`https://twitter.com/${props.post.authorTwitter}`}>{`@${props.post.authorTwitter}`}</a>
-        )}
       </p>
     </div>
   );
