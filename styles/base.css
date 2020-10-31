@@ -172,6 +172,10 @@ hr {
 }
 
 /* utilities */
+.centered {
+  text-align: center;
+}
+
 .alternate {
   background-color: #eee;
 }
