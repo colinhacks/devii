@@ -33,4 +33,4 @@ Devii is a starter kit for building a personal website with the best tools 2020 
 
 - **Utterly customizable**: We provide a minimal interface to get you started, but you can customize every aspect of the rendering and styling by just modifying `index.tsx` (the home page), `BlogPost.tsx` (the blog post template), and `Markdown.tsx` (the Markdown renderer). And of course you can add entirely new pages as well!
 
-Head to the GitHub repo to get started: [https://github.com/vriad/devii](https://github.com/vriad/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎
+Head to the GitHub repo to get started: [https://github.com/colinhacks/devii](https://github.com/colinhacks/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎

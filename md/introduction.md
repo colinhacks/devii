@@ -1,6 +1,6 @@
 Devii is a starter kit for building your personal developer website. Powered by the best technologies 2020 has to offer.
 
-It's not a a framework or a library, it's a just a simple project that contains some useful utilities and patterns that'll help you hit the ground running. In fact, the [GitHub repo for Devii](https://github.com/vriad/devii) contains the code for the site you're currently reading!
+It's not a a framework or a library, it's a just a simple project that contains some useful utilities and patterns that'll help you hit the ground running. In fact, the [GitHub repo for Devii](https://github.com/colinhacks/devii) contains the code for the site you're currently reading!
 
 Devii doesn't try to be a fully functional blog out of the box. After cloning/forking the repo, you'll need to delete the contents of `index.tsx` (the page you're reading now!) and implement your own homepage. Devii makes it easier — for instance, you can access a list of all your blog posts in `props.posts` — but you still have to build the site you're imagining in your mind's eye.
 

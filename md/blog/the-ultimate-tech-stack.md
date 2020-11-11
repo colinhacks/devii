@@ -3,7 +3,7 @@ title: Choosing a tech stack for my personal dev blog in 2020
 published: true
 datePublished: 1590463136775
 author: Colin McDonnell
-authorTwitter: vriad
+authorTwitter: colinhacks
 authorPhoto: /img/profile.jpg
 tags:
   - Static Site Generators
@@ -11,10 +11,10 @@ tags:
   - Next.js
 thumbnailPhoto: /img/pancakes_thumb.jpeg
 bannerPhoto: /img/pancakes.jpeg
-canonicalUrl: https://vriad.com/essays/devii
+canonicalUrl: https://colinhacks.com/essays/devii
 ---
 
-> Originally published at [https://vriad.com/essays/devii](https://vriad.com/essays/devii). Check out the HN <del>roast</del> discussion <a href="https://news.ycombinator.com/item?id=23309002">here</a>! 🤗
+> Originally published at [https://colinhacks.com/essays/devii](https://colinhacks.com/essays/devii). Check out the HN <del>roast</del> discussion <a href="https://news.ycombinator.com/item?id=23309002">here</a>! 🤗
 
 I recently set out to build my personal website — the one you're reading now, as it happens!
 
@@ -22,7 +22,7 @@ Surprisingly, it was much harder than expected to put together a "tech stack" th
 
 Given the lack of a decent out-of-the-box solution, I worry that many developers are settling for static-site generators that place limits on the interactivity and flexibility of your website. We can do better.
 
-> Clone the repo here to get started with this setup: https://github.com/vriad/devii
+> Clone the repo here to get started with this setup: https://github.com/colinhacks/devii
 
 Let's quickly run through my list of design goals:
 
@@ -32,7 +32,7 @@ I want to build the site with React and TypeScript. I love them both wholehearte
 
 I don't want limitations on what my personal website can be/become. Sure, at present my site consists of two simple, static blog posts. But down the road, I may want to build a page that contains an interactive visualization, a filterable table, or a demo of a React component I'm open-sourcing. Even something simple (like the email newsletter signup form at the bottom of this page) was much more pleasant to implement in React; how did we use to build forms again?
 
-Plus: I want access to the npm ecosystem and all my favorite UI, animation, and styling libraries. I sincerely hope I never write another line of raw CSS ever again; CSS-in-JS 4 lyfe baby. If you want to start a Twitter feud with me about this, by all means [at me](https://twitter.com/vriad).
+Plus: I want access to the npm ecosystem and all my favorite UI, animation, and styling libraries. I sincerely hope I never write another line of raw CSS ever again; CSS-in-JS 4 lyfe baby. If you want to start a Twitter feud with me about this, by all means [at me](https://twitter.com/colinhacks).
 
 ### Good authoring experience
 
@@ -50,7 +50,7 @@ Instead I want every page of my site to be pre-rendered to a set of fully static
 
 ## My solution
 
-I describe my final architecture design below, along with my rationale for each choice. I distilled this setup into a website starter/boilerplate available here: https://github.com/vriad/devii. Below, I allude to certain files/functions I implemented; to see the source code of these, just clone the repo `git clone git@github.com:vriad/devii.git`
+I describe my final architecture design below, along with my rationale for each choice. I distilled this setup into a website starter/boilerplate available here: https://github.com/colinhacks/devii. Below, I allude to certain files/functions I implemented; to see the source code of these, just clone the repo `git clone git@github.com:colinhacks/devii.git`
 
 ### Next.js
 
@@ -170,12 +170,12 @@ To start customizing, modify `index.tsx` (the home page), `Essay.tsx` (the blog 
 
 ## Get started
 
-Head to the GitHub repo to get started: [https://github.com/vriad/devii](https://github.com/vriad/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii! 😎
+Head to the GitHub repo to get started: [https://github.com/colinhacks/devii](https://github.com/colinhacks/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii! 😎
 
 To jump straight into the code, clone the repo and start the development server like so:
 
 ```sh
-git clone git@github.com:vriad/devii.git mysite
+git clone git@github.com:colinhacks/devii.git mysite
 cd mysite
 yarn
 yarn dev

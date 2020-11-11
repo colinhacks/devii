@@ -4,14 +4,14 @@
   "description": "A Medium inspired dev blog starter for Next.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vriad/devii"
+    "url": "https://github.com/colinhacks/devii"
   },
-  "author": "Colin McDonnell <colin@vriad.com>",
+  "author": "Colin McDonnell <colin@colinhacks.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vriad/devii/issues"
+    "url": "https://github.com/colinhacks/devii/issues"
   },
-  "homepage": "https://github.com/vriad/devii",
+  "homepage": "https://github.com/colinhacks/devii",
   "tags": [
     "blog template",
     "react",

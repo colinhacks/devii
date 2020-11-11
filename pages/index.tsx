@@ -54,7 +54,10 @@ const Home = (props: {
           </p>
           <p>
             — Dan Abramov, taken{' '}
-            <a href="https://github.com/vriad/devii/issues/2" target="_blank">
+            <a
+              href="https://github.com/colinhacks/devii/issues/2"
+              target="_blank"
+            >
               {' '}
               utterly out of context
             </a>
@@ -69,8 +72,8 @@ const Home = (props: {
           Next.js dynamic imports. The rest of this page (including this
           paragraph) are rendered with React. You can also read the README on
           GitHub at{' '}
-          <a href="https://github.com/vriad/devii">
-            https://github.com/vriad/devii
+          <a href="https://github.com/colinhacks/devii">
+            https://github.com/colinhacks/devii
           </a>
           .
         </p>
@@ -84,7 +87,7 @@ const Home = (props: {
 
       <div className="section alternate">
         <h2 className="centered">Get started</h2>
-        <a href="https://github.com/vriad/devii">
+        <a href="https://github.com/colinhacks/devii">
           <button className="fork-button">Go to README</button>
         </a>
       </div>

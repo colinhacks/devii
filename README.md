@@ -7,7 +7,7 @@ if you're happy and you know it, star this repo
 </p>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" rel="nofollow">
-    <img src="https://img.shields.io/github/license/vriad/devii?alt" alt="License" style="width:100px;">
+    <img src="https://img.shields.io/github/license/colinhacks/devii?alt" alt="License" style="width:100px;">
   </a>
 </p>
 
@@ -25,7 +25,7 @@ if you're happy and you know it, star this repo
 - Automatic RSS feed generation
 - SEO best practices (title tag, meta tags, canonical URLs)
 
-Read more about the motivation + design behind Devii at [https://vriad.com/blog/devii](https://vriad.com/blog/devii).
+Read more about the motivation + design behind Devii at [https://colinhacks.com/blog/devii](https://colinhacks.com/blog/devii).
 
 <!--
 
@@ -251,7 +251,7 @@ There's nothing "under the hood" here. You can view and modify all the files tha
 
 To get started customizing, check out the source code of `index.tsx` (the home page), `BlogPost.tsx` (the blog post template), and `Markdown.tsx` (the Markdown renderer).
 
-Head to the GitHub repo to get started: [https://github.com/vriad/devii](https://github.com/vriad/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎
+Head to the GitHub repo to get started: [https://github.com/colinhacks/devii](https://github.com/colinhacks/devii). If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎
 
 # CLI
 
