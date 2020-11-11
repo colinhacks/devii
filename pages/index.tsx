@@ -84,7 +84,9 @@ const Home = (props: {
 
       <div className="section alternate">
         <h2 className="centered">Get started</h2>
-        <button className="fork-button">Fork Devii on GitHub</button>
+        <a href="https://github.com/vriad/devii">
+          <button className="fork-button">Go to README</button>
+        </a>
       </div>
     </div>
   );
