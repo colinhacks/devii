@@ -70,7 +70,7 @@ Here's is an abbreviated version of the project structure. Certain config files 
 ├── pages // every .tsx component in this dir becomes a page of the final site
 |   ├── index.tsx // the home page (which has access to the list of all blog posts)
 |   ├── blog
-|       ├── [blog].md // a template component that renders the blog posts under `/md/blog`
+|       ├── [blog].tsx // a template component that renders the blog posts under `/md/blog`
 ├── md
 |   ├── blog
 |       ├── devii.md // this page!
