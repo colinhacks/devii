@@ -1,5 +1,5 @@
 import React from 'react';
-import { darcula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import darcula from 'react-syntax-highlighter/dist/cjs/styles/prism/darcula';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 export default class Code extends React.PureComponent<{
