@@ -174,7 +174,7 @@ Head to the GitHub repo to get started: [https://github.com/colinhacks/devii](ht
 
 To jump straight into the code, clone the repo and start the development server like so:
 
-```sh
+```bash
 git clone git@github.com:colinhacks/devii.git mysite
 cd mysite
 yarn
