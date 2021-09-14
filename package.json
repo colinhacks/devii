@@ -31,7 +31,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "next build && next export && firebase deploy --only hosting"
+    "deploy": "next build && next export && firebase deploy --only hosting",
+    "format": "prettier --write \"*.ts\""
   },
   "dependencies": {
     "fecha": "^4.2.0",

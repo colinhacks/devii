@@ -1,6 +1,6 @@
-import matter from 'gray-matter';
-import glob from 'glob';
-import { globals } from './globals';
+import glob from "glob";
+import matter from "gray-matter";
+import { globals } from "./globals";
 
 export type PostData = {
   path: string;
@@ -21,14 +21,14 @@ export type PostData = {
 
 type RawFile = { path: string; contents: string };
 
-export const loadMarkdownFile = async (path: string): Promise<RawFile> => {
+export async function loadMarkdownFile(path: string): Promise<RawFile> {
   const mdFile = await import(`./md/${path}`);
   return { path, contents: mdFile.default };
-};
+}
 
-export const mdToPost = (file: RawFile): PostData => {
+export function mdToPost(file: RawFile): PostData {
   const metadata = matter(file.contents);
-  const path = file.path.replace('.md', '');
+  const path = file.path.replace(".md", "");
   const post = {
     path,
     title: metadata.data.title,
@@ -46,37 +46,33 @@ export const mdToPost = (file: RawFile): PostData => {
     content: metadata.content,
   };
 
-  if (!post.title)
-    throw new Error(`Missing required field: title.`);
+  if (!post.title) throw new Error(`Missing required field: title.`);
 
-  if (!post.content)
-    throw new Error(`Missing required field: content.`);
+  if (!post.content) throw new Error(`Missing required field: content.`);
 
-  if (!post.datePublished)
-    throw new Error(`Missing required field: datePublished.`);
+  if (!post.datePublished) throw new Error(`Missing required field: datePublished.`);
 
   return post as PostData;
-};
+}
 
-export const loadMarkdownFiles = async (path: string) => {
+export async function loadMarkdownFiles(path: string) {
   const blogPaths = glob.sync(`./md/${path}`);
-  const postDataList = await Promise.all(
-    blogPaths.map((blogPath) => {
+  return await Promise.all(
+    blogPaths.map(blogPath => {
       const modPath = blogPath.slice(blogPath.indexOf(`md/`) + 3);
       return loadMarkdownFile(`${modPath}`);
-    })
+    }),
   );
-  return postDataList;
-};
+}
 
-export const loadPost = async (path: string): Promise<PostData> => {
+export async function loadPost(path: string): Promise<PostData> {
   const file = await loadMarkdownFile(path);
   return mdToPost(file);
-};
+}
 
-export const loadBlogPosts = async (): Promise<PostData[]> => {
-  return await (await loadMarkdownFiles(`blog/*.md`))
+export async function loadBlogPosts(): Promise<PostData[]> {
+  return (await loadMarkdownFiles(`blog/*.md`))
     .map(mdToPost)
-    .filter((p) => p.published)
+    .filter(p => p.published)
     .sort((a, b) => (b.datePublished || 0) - (a.datePublished || 0));
-};
+}
