@@ -1,8 +1,8 @@
-import React from 'react';
-import { PostData } from '../loader';
-import { Meta } from './Meta';
+import React from "react"
+import { PostData } from "../loader"
+import { Meta } from "./Meta"
 
-export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
+export function PostMeta({ post }: { post: PostData }) {
   return (
     <Meta
       meta={{
@@ -12,5 +12,5 @@ export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
         image: post.bannerPhoto,
       }}
     />
-  );
-};
+  )
+}
