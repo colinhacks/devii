@@ -37,7 +37,7 @@
     "fecha": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
-    "next": "9.5",
+    "next": "11.1",
     "raw-loader": "^4.0.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
