@@ -34,7 +34,6 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^1.6.2",
     "@emotion/react": "11",
     "@emotion/styled": "11",
