@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Awesome Blog]]></title><description><![CDATA[I write about code 'n stuff]]></description><link>https://alyssaphacker.com</link><image><url>https://alyssaphacker.com/icon.png</url><title>My Awesome Blog</title><link>https://alyssaphacker.com</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 11 Nov 2020 16:27:25 GMT</lastBuildDate><atom:link href="https://alyssaphacker.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2020 Alyssa P. Hacker]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[alyssa@example.com]]></managingEditor><webMaster><![CDATA[alyssa@example.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Dan Abramov knows about Devii]]></title><description><![CDATA[<p>Dan Abramov knows about Devii!</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Awesome Blog]]></title><description><![CDATA[I write about code 'n stuff]]></description><link>https://alyssaphacker.com</link><image><url>https://alyssaphacker.com/icon.png</url><title>My Awesome Blog</title><link>https://alyssaphacker.com</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Aug 2022 15:09:15 GMT</lastBuildDate><atom:link href="https://alyssaphacker.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2022 Alyssa P. Hacker]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[alyssa@example.com]]></managingEditor><webMaster><![CDATA[alyssa@example.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Dan Abramov knows about Devii]]></title><description><![CDATA[<p>Dan Abramov knows about Devii!</p>
 <blockquote>
   <p>Seems like it might be useful!
   — Dan Abramov, taken entirely out of context</p>
@@ -106,7 +106,7 @@ const test = (arg: string) =&gt; {
 <h2 id="getstarted">Get started</h2>
 <p>Head to the GitHub repo to get started: <a href="https://github.com/colinhacks/devii">https://github.com/colinhacks/devii</a>. If you like this project, leave a ⭐️star⭐️ to help more people find Devii! 😎</p>
 <p>To jump straight into the code, clone the repo and start the development server like so:</p>
-<pre><code class="sh language-sh">git clone git@github.com:colinhacks/devii.git mysite
+<pre><code class="bash language-bash">git clone git@github.com:colinhacks/devii.git mysite
 cd mysite
 yarn
 yarn dev
