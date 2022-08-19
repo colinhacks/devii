@@ -1,13 +1,34 @@
 import React from "react";
 
-import { Center, Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import { IconLink } from "./IconLink";
+import { Book, File, Home, Mail, Server, User } from 'react-feather';
+import { ToggleColorMode } from "./ToggleColorMode";
 export const Navbar: React.FC = () => {
     return (
         <React.Fragment>
-            <Flex bg={"radial-gradient( circle farthest-corner at 1.3% 2.8%, rgb(255, 255, 255,.5) 0%, rgb(237, 237 ,237,.5) 100.2%)"} justifyContent={"center"} flexDirection={"column"} width={'100px'} position={"fixed"} left={"0"} bottom={0} top={0} alignItems={"center"}>
-                <IconLink label={"home"} />
-
+            <Flex justifyContent={"center"} flexDirection={"column"} width={'100px'} position={"fixed"} left={"0"} bottom={0} top={0} alignItems={"center"}>
+                <Box mt='auto'>
+                    <IconLink label={"home"} >
+                        <Home size={20} />
+                    </IconLink>
+                    <IconLink label={"home"} >
+                        <User size={20} />
+                    </IconLink>
+                    <IconLink label={"home"} >
+                        <File size={20} />
+                    </IconLink>
+                    <IconLink label={"home"} >
+                        <Book size={20} />
+                    </IconLink>
+                    <IconLink label={"home"} >
+                        <Server size={20} />
+                    </IconLink>
+                    <IconLink label={"home"} >
+                        <Mail size={20} />
+                    </IconLink>
+                </Box>
+                <ToggleColorMode />
 
             </Flex>
         </React.Fragment>
