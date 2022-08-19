@@ -7,7 +7,7 @@ import { ToggleColorMode } from "./ToggleColorMode";
 export const Navbar: React.FC = () => {
     return (
         <React.Fragment>
-            <Flex justifyContent={"center"} flexDirection={"column"} width={'100px'} position={"fixed"} left={"0"} bottom={0} top={0} alignItems={"center"}>
+            <Flex justifyContent={"center"} flexDirection={"column"} width={['55px', '55px', '55px', '100px']} position={"fixed"} left={"0"} minH="100vh" alignItems={"center"}>
                 <Box mt='auto'>
                     <IconLink label={"home"} >
                         <Home size={20} />

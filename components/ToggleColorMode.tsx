@@ -3,13 +3,9 @@ import React, { useState } from "react"
 
 export const ToggleColorMode: React.FC = () => {
     const { colorMode, toggleColorMode } = useColorMode();
-    const [color, setColor] = useState(true);
-    const toggleDarkLight = () => {
-        console.log("Clicked")
-    }
 
     return (
-        <Flex position='relative' mt="auto">
+        <Flex position='relative' mt="auto" mb='2.5'>
             <Box
                 as='button'
                 position='absolute'
