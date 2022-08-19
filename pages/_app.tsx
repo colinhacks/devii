@@ -1,14 +1,17 @@
 import React from 'react';
+
+import ProgressBar from 'react-progressbar-on-scroll'
 import Head from 'next/head';
 import '../styles/base.css';
 import { Navbar } from "../components/Navbar";
-import { Box, ChakraProvider, Container, Divider } from '@chakra-ui/react';
+import { Box, ChakraProvider, Divider } from '@chakra-ui/react';
 import { ColorModeScript } from "@chakra-ui/color-mode"
 import theme from "../theme"
 import { Header } from '../components/Header';
 import { HeaderMain } from '../components/HeaderMain';
 import { BlockMain } from '../components/BlocMain';
-const App: React.FC = ({ Component, pageProps }: any) => {
+import { Article } from '../components/Article';
+const App: React.FC = ({ }: any) => {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
