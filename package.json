@@ -34,7 +34,7 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.2",
+    "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "11",
     "@emotion/styled": "11",
     "fecha": "^4.2.0",
@@ -45,6 +45,7 @@
     "raw-loader": "^4.0.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
+    "react-feather": "^2.0.10",
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^12.2.1",
     "rss": "^1.2.2",
