@@ -25,6 +25,8 @@ const App: React.FC = ({ }: any) => {
         <Divider orientation='horizontal' />
         <HeaderMain name="A propos" />
         <BlockMain />
+        <HeaderMain name="Article" />
+        <Article />
       </Box>
     </ChakraProvider>
   );
