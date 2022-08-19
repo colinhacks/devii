@@ -5,7 +5,7 @@ type IconLinkProps = {
     label: String;
 }
 
-export const IconLink: React.FC<IconLinkProps> = ({ label, children }) => {
+export const IconLink: React.FC<IconLinkProps> = ({ children }) => {
     return (
         <Flex
             color='white'

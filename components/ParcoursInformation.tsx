@@ -36,7 +36,7 @@ export const ParcourInformation: React.FC<ParcourInformationType> = ({ year, con
                 </Box>
             </Flex>)}
 
-            <Divider />
+            <Divider mb='4' mt='2' />
         </React.Fragment>
     );
 }

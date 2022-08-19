@@ -1,6 +1,4 @@
 import { Flex, Box, Switch, useColorMode } from "@chakra-ui/react";
-import React, { useState } from "react"
-
 export const ToggleColorMode: React.FC = () => {
     const { colorMode, toggleColorMode } = useColorMode();
 
