@@ -13,22 +13,26 @@ import { BlockMain } from '../components/BlocMain';
 import { Article } from '../components/Article';
 const App: React.FC = ({ }: any) => {
   return (
-    <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <Head>
-        <title>Tsiory Ramanantoanina | Portofolio</title>
-      </Head>
-      <Navbar>
-      </Navbar>\
-      <Box as='div' mx={['12', '28', '36', '64']}>
-        <Header name="Ramanantoanina Safidy Tsioriniaina" />
-        <Divider orientation='horizontal' />
-        <HeaderMain name="A propos" />
-        <BlockMain />
-        <HeaderMain name="Article" />
-        <Article />
-      </Box>
-    </ChakraProvider>
+    <React.Fragment>
+      <ProgressBar />
+      <ChakraProvider theme={theme}>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <Head>
+          <title>Tsiory Ramanantoanina | Portofolio</title>
+        </Head>
+        <Navbar>
+        </Navbar>\
+        <Box as='div' mx={['12', '28', '36', '64']}>
+          <Header name="Ramanantoanina Safidy Tsioriniaina" />
+          <Divider orientation='horizontal' />
+          <HeaderMain name="A propos" />
+          <BlockMain />
+          <HeaderMain name="Article" />
+          <Article />
+        </Box>
+      </ChakraProvider>
+    </React.Fragment>
+
   );
 };
 
