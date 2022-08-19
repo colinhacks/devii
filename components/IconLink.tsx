@@ -8,19 +8,18 @@ type IconLinkProps = {
 export const IconLink: React.FC<IconLinkProps> = ({ label, children }) => {
     return (
         <Flex
-            py='4'
             color='white'
             bg='blue.500'
-            w='14' h='14'
+            w={['8', '10', '12', '14']} h={['8', '10', '12', '14']}
             borderRadius='full'
             justify='center'
             alignItems='center'
-            my='1'>
+            my='1' >
 
             <Box mx='auto' as='div'>
                 {children}
             </Box>
-        </Flex>
+        </Flex >
 
     );
 }

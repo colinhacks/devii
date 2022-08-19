@@ -6404,6 +6404,11 @@ react-syntax-highlighter@^12.2.1:
     prismjs "^1.8.4"
     refractor "^2.4.1"
 
+react-type-animation@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/react-type-animation/-/react-type-animation-2.0.9.tgz#7933eb122f2b92dc88cac1ffc8652924053629a1"
+  integrity sha512-x0qLgPYGAL3SkrjnBcGGk2Ro0Bp52u7qa/iRY+7m8wigTrqj6USqT0HV/pG4/OA4X0mvRhezWYLtNlsI/0ZmOQ==
+
 react@16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
