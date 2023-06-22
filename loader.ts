@@ -17,6 +17,7 @@ export type PostData = {
   tags?: string[];
   bannerPhoto?: string;
   thumbnailPhoto?: string;
+  readingTime?: string;
 };
 
 type RawFile = { path: string; contents: string };

@@ -1,9 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Awesome Blog]]></title><description><![CDATA[I write about code 'n stuff]]></description><link>https://alyssaphacker.com</link><image><url>https://alyssaphacker.com/icon.png</url><title>My Awesome Blog</title><link>https://alyssaphacker.com</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 11 Nov 2020 16:27:25 GMT</lastBuildDate><atom:link href="https://alyssaphacker.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2020 Alyssa P. Hacker]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[alyssa@example.com]]></managingEditor><webMaster><![CDATA[alyssa@example.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Dan Abramov knows about Devii]]></title><description><![CDATA[<p>Dan Abramov knows about Devii!</p>
-<blockquote>
-  <p>Seems like it might be useful!
-  — Dan Abramov, taken entirely out of context</p>
-</blockquote>
-<p>I don't want to brag, but Devii is kind of a big deal.</p>]]></description><link>https://alyssaphacker.com/blog/dan-abramov</link><guid isPermaLink="true">https://alyssaphacker.com/blog/dan-abramov</guid><category><![CDATA[Dan Abramov]]></category><dc:creator><![CDATA[Colin McDonnell]]></dc:creator><pubDate>Fri, 10 Jul 2020 23:51:18 GMT</pubDate></item><item><title><![CDATA[Choosing a tech stack for my personal dev blog in 2020]]></title><description><![CDATA[<blockquote>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SabioLog]]></title><description><![CDATA[SabioLog offers the latest insights in web and software development. Explore tutorials, coding best practices, and expert opinions.]]></description><link>https://sabiolog.dev</link><image><url>https://sabiolog.dev/icon.png</url><title>SabioLog</title><link>https://sabiolog.dev</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 19 Jun 2023 21:27:20 GMT</lastBuildDate><atom:link href="https://sabiolog.dev/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 08 Jun 2023 17:00:00 GMT</pubDate><copyright><![CDATA[2023 Michael Sage]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[michael.sage@sabiosol.com]]></managingEditor><webMaster><![CDATA[michael.sage@sabiosol.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[Exploring Deno: A Modern JavaScript Runtime]]></title><description><![CDATA[<h1 id="whatisdeno">What is Deno?</h1>
+<p>Deno is a modern JavaScript runtime built on the V8 JavaScript engine, the same engine that powers Google Chrome. It was created by Ryan Dahl, the original creator of Node.js, with the goal of addressing some of the limitations and design choices of Node.js. Deno provides a secure and efficient environment for running JavaScript and TypeScript applications.</p>
+<h1 id="whatarethestandoutcharacteristicsofdeno">What are the stand-out characteristics of Deno?</h1>
+<p>Deno comes with several stand-out characteristics that differentiate it from other JavaScript runtimes:</p>
+<ol>
+<li><p><strong>Security:</strong> Deno focuses on providing a secure runtime environment by default. It implements a permission-based model where access to resources like the file system, network, and environment variables needs to be explicitly granted. This approach enhances the security of applications and reduces the risk of potential vulnerabilities.</p></li>
+<li><p><strong>TypeScript support:</strong> Deno has built-in support for TypeScript, a statically typed superset of JavaScript. This allows developers to write and run TypeScript code directly without the need for additional transpilation steps. Deno also includes a TypeScript compiler, making it seamless to work with TypeScript projects.</p></li>
+<li><p><strong>Module management:</strong> Deno offers a decentralized module system. Modules can be imported directly from URLs, enabling easy sharing and referencing of remote dependencies without relying on a centralized package manager like npm. This approach simplifies dependency management and reduces the complexity of project setups.</p></li>
+<li><p><strong>Built-in tools:</strong> Deno includes several built-in tools that facilitate development, testing, and debugging. It comes with a built-in runtime inspector, a test runner, and a code formatter. These tools enhance productivity and provide a seamless development experience.</p></li>
+</ol>
+<h1 id="whenshouldiconsiderdeno">When should I consider Deno?</h1>
+<p>Deno can be a suitable choice in several scenarios:</p>
+<ul>
+<li><p><strong>Greenfield projects:</strong> If you're starting a new project and have the flexibility to choose a JavaScript runtime, Deno can be a compelling option. Its modern features, security focus, and TypeScript support make it a good fit for building robust and secure applications from scratch.</p></li>
+<li><p><strong>TypeScript projects:</strong> If you're already working with TypeScript, Deno provides a seamless development experience. Its built-in TypeScript support eliminates the need for additional tooling and simplifies the development workflow.</p></li>
+<li><p><strong>Security-conscious applications:</strong> If security is a top priority for your application, Deno's default security model and permission-based approach can offer peace of mind. It provides granular control over access to resources, reducing the risk of security vulnerabilities.</p></li>
+<li><p><strong>Microservices and serverless architectures:</strong> Deno's module system, built-in tools, and lightweight nature make it well-suited for microservices and serverless architectures. Its decentralized module management simplifies dependency management in distributed systems.</p></li>
+</ul>
+<h1 id="differencesindenonodeandbun">Differences in Deno, Node, and Bun</h1>
+<p>Deno, Node.js, and Bun are all JavaScript runtimes, but they differ in several aspects. Here's a comparison of the key differences between these technologies:</p>
+<p>|                      | Deno                                  | Node.js                             | Bun                                   |
+|----------------------|---------------------------------------|------------------------------------|----------------------------------------|
+| Security Model       | Permission-based security model       | No built-in security model        | No built-in security model             |
+| TypeScript Support   | Built-in TypeScript support            | Requires transpilation for TypeScript code | No built-in TypeScript support |
+| Module Management    | Decentralized module system            | Centralized package manager (npm) | Centralized package manager (npm)       |
+| Built-in Tools       | Includes built-in tools (runtime inspector, test runner, code formatter) | Limited built-in tools        | Limited built-in tools                  |</p>
+<p>It's important to assess your project's specific requirements and considerations when choosing between Deno, Node.js, and Bun. Each technology has its strengths and use cases, and selecting the right one depends on factors such as security needs, existing codebase, and ecosystem compatibility.</p>
+<p>By understanding the characteristics and differences of Deno, Node.js, and Bun, you can make an informed decision regarding their suitability for your specific project requirements.</p>
+<hr />
+<p>I hope you find this blog post informative and engaging. If you have any further questions, please refer to the FAQ section below.</p>
+<h2 id="frequentlyaskedquestionsfaqs">Frequently Asked Questions (FAQs)</h2>
+<p><strong>Q1. Can I run Node.js code in Deno?</strong>
+A: Deno is not compatible with Node.js modules out of the box. However, there are third-party tools and libraries available that allow you to run Node.js code within the Deno runtime.</p>
+<p><strong>Q2. Is Deno backward compatible with Node.js?</strong>
+A: Deno is not backward compatible with Node.js due to several design differences and architectural choices. Porting existing Node.js applications to Deno may require code modifications and adjustments.</p>
+<p><strong>Q3. Does Deno have a package manager like npm?</strong>
+A: Deno has a decentralized module system that allows you to import modules directly from URLs. It does not rely on a centralized package manager like npm. However, there are third-party tools like "deno.land/x" that provide a centralized repository for Deno modules.</p>
+<p><strong>Q4. Can I use Deno for production applications?</strong>
+A: Yes, Deno can be used for production applications. It has matured significantly since its initial release and is being adopted by companies and developers worldwide. However, as with any technology, it's important to evaluate your specific use case, requirements, and ecosystem support before making a decision.</p>
+<p><strong>Q5. What are some notable companies using Deno?</strong>
+A: Several notable companies and projects are using Deno in their tech stacks. Some examples include Oak, a middleware framework for Deno; Drash, a REST API framework for Deno; and Fossil, a distributed version control system. These projects showcase the growing adoption and potential of Deno in real-world applications.</p>]]></description><link>https://sabiolog.dev/blog/exploring-deno-a-modern-javascript-runtime</link><guid isPermaLink="true">https://sabiolog.dev/blog/exploring-deno-a-modern-javascript-runtime</guid><category><![CDATA[Deno]]></category><category><![CDATA[JavaScript]]></category><category><![CDATA[Node.js]]></category><dc:creator><![CDATA[Michael Sage]]></dc:creator><pubDate>Thu, 08 Jun 2023 19:46:43 GMT</pubDate></item><item><title><![CDATA[Devii's killer features]]></title><description><![CDATA[<p>This page is built with Devii! Check out the source code for this under <code>/md/blog/test.md</code>.</p>
+<p>Devii is a starter kit for building a personal website with the best tools 2020 has to offer.</p>
+<ul>
+<li><strong>Markdown-based</strong>: Just add a Markdown file to <code>/md/blog</code> to add a new post to your blog!</li>
+<li><strong>TypeScript + React</strong>: aside from the parts that are rendered Markdown, everything else is fully built with TypeScript and functional React components. Implementing any sort of interactive widget is often hard using existing Markdown-centric static-site generators, but Devii makes it easy to mix Markdown and React on the same page.</li>
+<li><strong>Frontmatter support</strong>: Every post can include a frontmatter block containing metadata: <code>title</code>, <code>subtitle</code>, <code>datePublished</code> (timestamp), <code>author</code>, <code>authorPhoto</code>, and <code>bannerPhoto</code>.</li>
+<li><strong>Medium-inspired styles</strong>: The Markdown renderer (<code>Markdown.tsx</code>) contains default styles inspired by Medium.</li>
+<li><strong>Static generation</strong>: you can generate a fully static version of your site using <code>yarn build &amp;&amp; yarn export</code>. Powered by Next.js.</li>
+<li><strong>GitHub-style code blocks</strong>: with syntax highlighting powered by <a href="https://github.com/conorhastings/react-syntax-highlighter">react-syntax-highlighter</a>. Works out-of-the-box for all programming languages. Just use Markdown's triple backtick syntax with a "language identifier", <a href="https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks">just like GitHub</a>.</li>
+</ul>
+<pre><code class="ts language-ts">  // pretty neat huh?
+  const test: (arg: string) =&gt; boolean = (arg) =&gt; {
+    return arg.length &gt; 5;
+  };
+</code></pre>
+<ul>
+<li><strong>Utterly customizable</strong>: We provide a minimal interface to get you started, but you can customize every aspect of the rendering and styling by just modifying <code>index.tsx</code> (the home page), <code>BlogPost.tsx</code> (the blog post template), and <code>Markdown.tsx</code> (the Markdown renderer). And of course you can add entirely new pages as well!</li>
+</ul>
+<p>Head to the GitHub repo to get started: <a href="https://github.com/colinhacks/devii">https://github.com/colinhacks/devii</a>. If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎</p>]]></description><link>https://sabiolog.dev/blog/devii</link><guid isPermaLink="true">https://sabiolog.dev/blog/devii</guid><category><![CDATA[Devii]]></category><category><![CDATA[Blogs]]></category><dc:creator><![CDATA[Ben Bitdiddle]]></dc:creator><pubDate>Sat, 09 May 2020 22:48:42 GMT</pubDate></item><item><title><![CDATA[Using Tailwind CSS: Empowering Web Design with Utility-First Framework]]></title><description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Tailwind CSS has gained significant popularity in the web development community as a utility-first CSS framework. In this article, we will explore the potential of Tailwind CSS, when it is the preferred choice over other libraries, popular examples of its usage, and a comparison between Tailwind CSS, Bootstrap, Material UI, and Styled Components.</p>
+<h2 id="whatistailwindcss">What is Tailwind CSS?</h2>
+<p>Tailwind CSS is a utility-first CSS framework that provides a comprehensive set of utility classes for building user interfaces. Unlike traditional frameworks that come with pre-designed components, Tailwind CSS focuses on providing a range of atomic utility classes that can be combined to create custom designs. It offers a flexible and efficient approach to styling web applications, giving developers full control over the design without writing custom CSS.</p>
+<h2 id="whenshouldiusetailwindcssinsteadofanotherlibrary">When should I use Tailwind CSS instead of another library?</h2>
+<p>Tailwind CSS is a suitable choice in several scenarios:</p>
+<ol>
+<li><p>Custom Design Requirements: If you have specific design requirements that don't align with the pre-built components of other libraries, Tailwind CSS allows you to create unique designs by composing utility classes.</p></li>
+<li><p>Rapid Prototyping: Tailwind CSS's utility-first approach enables quick prototyping. It provides a wide range of pre-defined utility classes that can be easily applied to elements, making it ideal for rapidly iterating on designs.</p></li>
+<li><p>Highly Customizable Design Systems: When you need to create a highly customizable design system, Tailwind CSS shines. Its utility classes allow for easy modifications, making it easier to maintain consistency throughout the project.</p></li>
+<li><p>Small Bundle Size: Tailwind CSS's modular approach ensures that only the CSS classes you use are included in the final build, resulting in a smaller bundle size compared to frameworks with predefined components.</p></li>
+</ol>
+<h2 id="whataresomepopularexamplesofusingtailwindcss">What are some popular examples of using Tailwind CSS?</h2>
+<p>Tailwind CSS has been adopted by numerous companies and projects for its flexibility and ease of use. Here are a few popular examples:</p>
+<ol>
+<li><p>Laravel: The Laravel PHP framework's official documentation and starter kits utilize Tailwind CSS for its utility-first approach, enabling developers to rapidly build interfaces.</p></li>
+<li><p>Vercel: Vercel, a leading platform for deploying frontend applications, embraces Tailwind CSS in their design system. It showcases the power of Tailwind CSS in creating a consistent and scalable UI across their products.</p></li>
+<li><p>PostHog: PostHog, an open-source product analytics platform, employs Tailwind CSS to craft its user interface. The framework's flexibility allows for seamless customization and accelerates development.</p></li>
+</ol>
+<p>These examples demonstrate the versatility and adoption of Tailwind CSS across a range of projects and industries.</p>
+<h2 id="differencesintailwindcssbootstrapmaterialuiandstyledcomponents">Differences in Tailwind CSS, Bootstrap, Material UI, and Styled Components</h2>
+<p>Here's a comparison between Tailwind CSS, Bootstrap, Material UI, and Styled Components, highlighting their distinctive features:</p>
+<p>| Framework             | Tailwind CSS                 | Bootstrap                    | Material UI                  | Styled Components            |
+| --------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| Approach              | Utility-First                | Component-Based              | Component-Based              | CSS-in-JS                    |
+| Design Flexibility    | High                         | Medium                       | Medium                       | High                         |
+| Learning Curve        | Moderate                     | Moderate                     | Moderate                     | Moderate                     |
+| Customization         | Extensive                    | Limited                      | Extensive                    | Extensive                    |
+| Bundle Size           | Smaller                      | Larger                       | Larger                       | Larger                       |
+| Ecosystem Support     | Growing                      | Mature                       | Growing                      | Growing                      |</p>
+<p>Each framework has its strengths and areas of focus. Tailwind CSS offers unparalleled flexibility and customization, while Bootstrap and Material UI provide a wide range of pre-designed components. Styled Components, on the other hand, embraces CSS-in-JS, offering a seamless integration of styles within component files.</p>
+<p>When choosing a framework, consider your project requirements, design preferences, and development workflow to select the most suitable option.</p>]]></description><link>https://sabiolog.dev/blog/using-tailwind-css</link><guid isPermaLink="true">https://sabiolog.dev/blog/using-tailwind-css</guid><category><![CDATA[Tailwind CSS]]></category><category><![CDATA[Web Development]]></category><category><![CDATA[CSS Framework]]></category><dc:creator><![CDATA[Michael Sage]]></dc:creator><pubDate>Tue, 20 Jan 1970 09:55:31 GMT</pubDate></item><item><title><![CDATA[Choosing a tech stack for my personal dev blog in 2020]]></title><description><![CDATA[<blockquote>
   <p>Originally published at <a href="https://colinhacks.com/essays/devii">https://colinhacks.com/essays/devii</a>. Check out the HN <del>roast</del> discussion <a href="https://news.ycombinator.com/item?id=23309002">here</a>! 🤗</p>
 </blockquote>
 <p>I recently set out to build my personal website — the one you're reading now, as it happens!</p>
@@ -106,26 +190,8 @@ const test = (arg: string) =&gt; {
 <h2 id="getstarted">Get started</h2>
 <p>Head to the GitHub repo to get started: <a href="https://github.com/colinhacks/devii">https://github.com/colinhacks/devii</a>. If you like this project, leave a ⭐️star⭐️ to help more people find Devii! 😎</p>
 <p>To jump straight into the code, clone the repo and start the development server like so:</p>
-<pre><code class="sh language-sh">git clone git@github.com:colinhacks/devii.git mysite
+<pre><code class="bash language-bash">git clone git@github.com:colinhacks/devii.git mysite
 cd mysite
 yarn
 yarn dev
-</code></pre>]]></description><link>https://alyssaphacker.com/blog/the-ultimate-tech-stack</link><guid isPermaLink="true">https://alyssaphacker.com/blog/the-ultimate-tech-stack</guid><category><![CDATA[Static Site Generators]]></category><category><![CDATA[React]]></category><category><![CDATA[Next.js]]></category><dc:creator><![CDATA[Colin McDonnell]]></dc:creator><pubDate>Tue, 26 May 2020 03:18:56 GMT</pubDate></item><item><title><![CDATA[Devii's killer features]]></title><description><![CDATA[<p>This page is built with Devii! Check out the source code for this under <code>/md/blog/test.md</code>.</p>
-<p>Devii is a starter kit for building a personal website with the best tools 2020 has to offer.</p>
-<ul>
-<li><strong>Markdown-based</strong>: Just add a Markdown file to <code>/md/blog</code> to add a new post to your blog!</li>
-<li><strong>TypeScript + React</strong>: aside from the parts that are rendered Markdown, everything else is fully built with TypeScript and functional React components. Implementing any sort of interactive widget is often hard using existing Markdown-centric static-site generators, but Devii makes it easy to mix Markdown and React on the same page.</li>
-<li><strong>Frontmatter support</strong>: Every post can include a frontmatter block containing metadata: <code>title</code>, <code>subtitle</code>, <code>datePublished</code> (timestamp), <code>author</code>, <code>authorPhoto</code>, and <code>bannerPhoto</code>.</li>
-<li><strong>Medium-inspired styles</strong>: The Markdown renderer (<code>Markdown.tsx</code>) contains default styles inspired by Medium.</li>
-<li><strong>Static generation</strong>: you can generate a fully static version of your site using <code>yarn build &amp;&amp; yarn export</code>. Powered by Next.js.</li>
-<li><strong>GitHub-style code blocks</strong>: with syntax highlighting powered by <a href="https://github.com/conorhastings/react-syntax-highlighter">react-syntax-highlighter</a>. Works out-of-the-box for all programming languages. Just use Markdown's triple backtick syntax with a "language identifier", <a href="https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks">just like GitHub</a>.</li>
-</ul>
-<pre><code class="ts language-ts">  // pretty neat huh?
-  const test: (arg: string) =&gt; boolean = (arg) =&gt; {
-    return arg.length &gt; 5;
-  };
-</code></pre>
-<ul>
-<li><strong>Utterly customizable</strong>: We provide a minimal interface to get you started, but you can customize every aspect of the rendering and styling by just modifying <code>index.tsx</code> (the home page), <code>BlogPost.tsx</code> (the blog post template), and <code>Markdown.tsx</code> (the Markdown renderer). And of course you can add entirely new pages as well!</li>
-</ul>
-<p>Head to the GitHub repo to get started: <a href="https://github.com/colinhacks/devii">https://github.com/colinhacks/devii</a>. If you like this project, leave a ⭐️star⭐️ to help more people find Devii 😎</p>]]></description><link>https://alyssaphacker.com/blog/devii</link><guid isPermaLink="true">https://alyssaphacker.com/blog/devii</guid><category><![CDATA[Devii]]></category><category><![CDATA[Blogs]]></category><dc:creator><![CDATA[Ben Bitdiddle]]></dc:creator><pubDate>Sat, 09 May 2020 22:48:42 GMT</pubDate></item></channel></rss>
+</code></pre>]]></description><link>https://sabiolog.dev/blog/the-ultimate-tech-stack</link><guid isPermaLink="true">https://sabiolog.dev/blog/the-ultimate-tech-stack</guid><category><![CDATA[Static Site Generators]]></category><category><![CDATA[React]]></category><category><![CDATA[Next.js]]></category><dc:creator><![CDATA[Colin McDonnell]]></dc:creator><pubDate>Thu, 01 Jan 1970 05:36:40 GMT</pubDate></item></channel></rss>

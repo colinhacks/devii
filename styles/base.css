@@ -94,7 +94,7 @@ ol p {
 }
 
 a {
-  color: turquoise;
+  color: #176aa6;
 }
 
 a:hover {
@@ -218,7 +218,7 @@ hr {
 
 .author-container {
   width: 100%;
-  max-width: 550px;
+  max-width: 750px;
   margin: 0px;
   padding: 0px;
 }
@@ -262,7 +262,7 @@ hr {
 
 .blog-post-image {
   width: 100%;
-  max-width: 1600px;
+  max-width: 250px;
 }
 
 .blog-post-title {
@@ -375,4 +375,8 @@ hr {
   font-size: 12pt;
   color: #888;
   padding-top: 0px;
+}
+
+.table-container {
+  overflow-x: auto;
 }

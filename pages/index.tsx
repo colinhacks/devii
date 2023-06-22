@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
 import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
-import { PostCard } from '../components/PostCard';
+import PostCards from '../components/PostCards';
 
 const Home = (props: {
   introduction: string;
@@ -10,23 +10,19 @@ const Home = (props: {
   readme: string;
   posts: PostData[];
 }) => {
+
+  console.log(props.posts);
+  
   return (
     <div className="content">
       <Head>
-        <title>Introducing Devii</title>
+        <title>SabioLog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="introduction">
-        <h1>Introduction to Devii</h1>
+        <h1>This is SabioLog.</h1>
         <Markdown source={props.introduction} />
-      </div>
-
-      <div className="section">
-        <h2>Features</h2>
-        <div className="medium-wide">
-          <Markdown source={props.features} />
-        </div>
       </div>
 
       <div className="section">
@@ -39,11 +35,7 @@ const Home = (props: {
           implemented in the
           <code>/components/PostCard.tsx</code> component.
         </p>
-        <div className="post-card-container">
-          {props.posts.map((post, j) => {
-            return <PostCard post={post} key={j} />;
-          })}
-        </div>
+        <PostCards posts={props.posts} />
       </div>
 
       <div className="section">
